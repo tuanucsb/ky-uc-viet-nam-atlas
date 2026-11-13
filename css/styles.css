@@ -1,0 +1,1301 @@
+/* =========================================================================
+   KÝ ỨC VIỆT NAM ATLAS — DESIGN SYSTEM (DESIGN.md & DESIGN_REVIEW_ANTIGRAVITY.md)
+   Memorial & Archival Tone • 14px Type Floor • ≥ 4.5:1 WCAG AA Contrast
+   ========================================================================= */
+
+:root {
+  --ok-50: 233 248 240; --ok-100: 205 238 221; --ok-200: 159 220 191; --ok-300: 115 203 161; --ok-400: 76 195 138; --ok-500: 54 168 115; --ok-600: 42 134 92; --ok-700: 33 103 71; --ok-800: 25 76 53; --ok-900: 17 52 35; --ok-950: 10 32 22;
+  --n-50: 246 247 242; --n-100: 236 239 230; --n-200: 216 221 209; --n-300: 196 203 187; --n-400: 169 178 160; --n-500: 111 124 105; --n-600: 74 87 70; --n-700: 46 58 46; --n-800: 36 48 36; --n-900: 26 33 26; --n-950: 17 22 17;
+  --acc-50: 253 243 225; --acc-100: 251 228 189; --acc-200: 248 208 138; --acc-300: 245 189 95; --acc-400: 242 169 59; --acc-500: 224 149 42; --acc-600: 194 125 29; --acc-700: 154 98 22; --acc-800: 111 71 16; --acc-900: 74 47 11; --acc-950: 46 29 6;
+  /* E12 fix: --sa-400 adjusted to 244 114 106 (#f4726a) -> 5.65:1 contrast on #1a211a */
+  --sa-50: 253 236 234; --sa-100: 250 211 208; --sa-200: 248 180 175; --sa-300: 246 145 138; --sa-400: 244 114 106; --sa-500: 220 78 70; --sa-600: 172 50 43; --sa-700: 133 39 34; --sa-800: 95 28 24; --sa-900: 64 19 16; --sa-950: 39 11 9;
+  --sb-50: 234 242 253; --sb-100: 211 227 251; --sb-200: 169 200 245; --sb-300: 126 172 239; --sb-400: 98 158 240; --sb-500: 58 120 212; --sb-600: 44 96 176; --sb-700: 34 73 138; --sb-800: 26 54 102; --sb-900: 18 37 74; --sb-950: 11 23 46;
+
+  --surface: rgb(var(--n-950));
+  --surface-raised: rgb(var(--n-900));
+  --card-elevated: rgb(var(--n-800));
+  --text: rgb(var(--n-100));
+  --text-muted: rgb(var(--n-400));
+  --border-token: rgb(var(--n-700));
+  --accent: rgb(var(--acc-400));
+  --accent-contrast: rgb(var(--n-950));
+  --focus: rgb(var(--acc-400));
+  --side-a: rgb(var(--sa-400));
+  --side-b: rgb(var(--sb-400));
+  --ok: rgb(var(--ok-400));
+
+  --background: var(--surface);
+  --card: var(--surface-raised);
+  --foreground: var(--text);
+  --muted-foreground: var(--text-muted);
+  --border: var(--border-token);
+}
+
+html.light-theme,
+html[data-theme="light"] {
+  --ok-50: 12 51 32; --ok-100: 16 64 42; --ok-200: 22 82 54; --ok-300: 29 100 67; --ok-400: 47 122 82; --ok-500: 58 138 96; --ok-600: 76 154 112; --ok-700: 205 233 218; --ok-800: 223 241 231; --ok-900: 239 248 243; --ok-950: 247 252 249;
+  --n-50: 17 22 15; --n-100: 27 33 24; --n-200: 43 51 40; --n-300: 61 71 57; --n-400: 79 90 74; --n-500: 111 122 104; --n-600: 154 163 146; --n-700: 201 207 194; --n-800: 227 231 221; --n-900: 255 255 255; --n-950: 238 240 234;
+  --acc-50: 74 44 0; --acc-100: 90 53 0; --acc-200: 111 66 0; --acc-300: 127 76 0; --acc-400: 147 90 0; --acc-500: 154 92 0; --acc-600: 138 82 0; --acc-700: 245 217 168; --acc-800: 249 230 196; --acc-900: 252 241 221; --acc-950: 254 248 238;
+  /* E12 fix: light-mode --sa-400 = 175 38 30 (#af261e) -> 5.8:1 contrast on #ffffff */
+  --sa-50: 77 19 15; --sa-100: 99 24 19; --sa-200: 125 30 24; --sa-300: 158 39 32; --sa-400: 175 38 30; --sa-500: 192 52 43; --sa-600: 212 82 74; --sa-700: 246 207 204; --sa-800: 249 224 222; --sa-900: 252 239 238; --sa-950: 254 247 246;
+  --sb-50: 11 42 92; --sb-100: 15 54 117; --sb-200: 22 68 144; --sb-300: 27 82 168; --sb-400: 31 95 191; --sb-500: 42 108 204; --sb-600: 58 120 212; --sb-700: 201 220 246; --sb-800: 221 232 249; --sb-900: 237 243 252; --sb-950: 246 249 254;
+  --accent-contrast: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: clip; /* clip, not hidden: hidden makes body a scroll container and breaks position: sticky (6B) */
+  background-color: var(--background);
+  scrollbar-color: rgb(var(--n-600)) rgb(var(--n-900));
+}
+
+body {
+  margin: 0;
+  color: var(--foreground);
+  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 15.5px;
+  line-height: 1.55;
+  caret-color: var(--accent);
+}
+
+/* E11 fix: 14px minimum typography floor across all utility classes */
+.text-xs,
+.text-sm {
+  font-size: 0.875rem !important; /* 14px floor */
+  line-height: 1.45 !important;
+}
+
+::selection {
+  background: rgb(var(--acc-400) / 0.3);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.font-display {
+  font-family: "Barlow Condensed", "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.015em;
+}
+
+.font-serif-archival {
+  font-family: "IBM Plex Serif", Georgia, serif;
+}
+
+.font-mono-num,
+.tabular-nums,
+[data-num] {
+  font-family: "IBM Plex Mono", monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+  background: rgb(var(--n-900) / 0.3);
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: rgb(var(--n-600) / 0.6);
+  border-radius: 9999px;
+}
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--acc-400) / 0.8);
+}
+
+canvas {
+  user-select: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* =========================================================================
+   APP BAR TABS, SUB-TABS & FILTER PILLS
+   Uses CSS Anchor Positioning sliding tab underline where supported
+   (modern-web-guidance: anchor-positioning-tab-underline)
+   ========================================================================= */
+#view-tabs {
+  position: relative;
+}
+
+.app-tab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 0 14px;
+  min-height: 44px;
+  height: 100%;
+  white-space: nowrap;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--muted-foreground);
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: color 150ms ease-out, border-color 150ms ease-out;
+}
+
+.app-tab:hover {
+  color: var(--foreground);
+}
+
+.app-tab[aria-selected="true"],
+.app-tab[aria-current="page"] {
+  color: var(--foreground);
+  border-bottom-color: var(--accent);
+}
+
+@supports (anchor-name: --active-tab) and (left: anchor(left)) {
+  .app-tab[aria-selected="true"] {
+    anchor-name: --active-tab;
+    border-bottom-color: transparent;
+  }
+  #view-tabs::after {
+    content: "";
+    position: absolute;
+    left: anchor(--active-tab left);
+    right: anchor(--active-tab right);
+    bottom: 0;
+    height: 2px;
+    background-color: var(--accent);
+    transition: left 180ms ease-out, right 180ms ease-out;
+    pointer-events: none;
+  }
+}
+
+.sub-tab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted-foreground);
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 150ms ease-out, border-color 150ms ease-out;
+}
+
+.sub-tab:hover {
+  color: var(--foreground);
+}
+
+.sub-tab[aria-selected="true"] {
+  color: var(--foreground);
+  border-bottom-color: var(--accent);
+}
+
+.cf-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 36px;
+  padding: 0 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--muted-foreground);
+  background: transparent;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 150ms ease-out, background-color 150ms ease-out, border-color 150ms ease-out;
+}
+
+.cf-btn:hover {
+  color: var(--foreground);
+  border-color: rgb(var(--acc-400) / 0.5);
+}
+
+.cf-btn[aria-pressed="true"],
+.period-pill[aria-pressed="true"] {
+  color: var(--foreground);
+  border-color: var(--accent);
+  background: rgb(var(--acc-400) / 0.16);
+  font-weight: 600;
+}
+
+.period-pill {
+  cursor: pointer;
+  transition: color 150ms ease-out, background-color 150ms ease-out, border-color 150ms ease-out;
+}
+
+.period-pill:hover {
+  border-color: rgb(var(--acc-400) / 0.5);
+}
+
+.badge-l4,
+.badge-l3,
+.badge-l2,
+.badge-none,
+.badge-photo {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 14px;
+  line-height: 1.35;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.badge-l4 {
+  color: rgb(var(--ok-400));
+  background: rgb(var(--ok-400) / 0.14);
+  border: 1px solid rgb(var(--ok-400) / 0.38);
+}
+
+/* Decision 3A: L4 --ok, L3 --accent, L2 accent outline, unverified muted. Words carry the meaning, colour only supports it. */
+.badge-l3 {
+  color: var(--accent);
+  background: rgb(var(--acc-400) / 0.12);
+  border: 1px solid rgb(var(--acc-400) / 0.38);
+}
+
+.badge-l2 {
+  color: var(--accent);
+  background: transparent;
+  border: 1px dashed rgb(var(--acc-400) / 0.5);
+}
+
+.badge-none {
+  color: var(--muted-foreground);
+  background: transparent;
+  border: 1px solid var(--border);
+}
+
+.badge-l4, .badge-l3, .badge-l2, .badge-none { font-family: "IBM Plex Sans", sans-serif; }
+
+button.badge-button {
+  cursor: pointer;
+  min-height: 44px;
+}
+button.badge-button:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+/* Shared popover / phone sheet for the badge legend and award explanations (3A, 1F) */
+#info-sheet {
+  max-width: min(440px, calc(100vw - 32px));
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--card);
+  color: var(--foreground);
+  padding: 0;
+}
+#info-sheet::backdrop { background: rgb(0 0 0 / 0.45); }
+@media (max-width: 767px) {
+  #info-sheet {
+    margin: auto 0 0 0;
+    max-width: 100vw;
+    border-radius: 14px 14px 0 0;
+    max-height: 80dvh;
+  }
+}
+
+.badge-photo {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  color: var(--accent);
+  background: rgb(var(--acc-400) / 0.12);
+  border: 1px solid rgb(var(--acc-400) / 0.35);
+}
+
+.period-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+/* =========================================================================
+   PANEL SECTIONS & INTERACTIVE LIST BUTTONS (E6 & E15 fixes: no nested cards)
+   ========================================================================= */
+.panel-section {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.panel-section:last-child {
+  border-bottom: 0;
+}
+
+.story-btn,
+.story-card,
+.martyr-row-btn,
+.martyr-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+  min-height: 44px;
+  text-align: left;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--foreground);
+  cursor: pointer;
+  transition: border-color 150ms ease-out, background-color 150ms ease-out;
+}
+
+.story-btn:hover,
+.story-card:hover,
+.martyr-row-btn:hover,
+.martyr-item:hover {
+  border-color: var(--accent);
+  background: rgb(var(--acc-400) / 0.06);
+}
+
+.martyr-thumb {
+  object-fit: cover;
+  object-position: center 20%;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--background);
+  flex-shrink: 0;
+}
+
+.archival-figure {
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--background);
+  display: flex;
+  flex-direction: column;
+}
+
+.archival-figure img {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  height: auto;
+  object-fit: contain;
+  background: rgb(var(--n-950));
+}
+
+.archival-figure figcaption {
+  padding: 10px 14px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--muted-foreground);
+  border-top: 1px solid var(--border);
+  background: var(--card);
+}
+
+.archival-figure figcaption cite,
+.letter-attribution cite {
+  font-style: italic;
+  color: var(--foreground);
+}
+
+/* =========================================================================
+   GROUPED SEARCH COMBOBOX DROPDOWN (Decision 1C)
+   ========================================================================= */
+.search-dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  width: min(460px, 92vw);
+  max-height: 440px;
+  overflow-y: auto;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+  z-index: 60;
+}
+
+.search-group-label,
+.search-group-title {
+  padding: 8px 14px 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted-foreground);
+  background: var(--background);
+  border-bottom: 1px solid var(--border);
+}
+
+.search-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 14px;
+  text-align: left;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--foreground);
+  cursor: pointer;
+}
+
+.search-option:hover,
+.search-option[aria-selected="true"] {
+  background: rgb(var(--acc-400) / 0.14);
+}
+
+/* =========================================================================
+   RESPONSIVE ACCESSIBLE TABLE (modern-web-guidance: responsive-table)
+   ========================================================================= */
+.table-wrapper {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--card);
+}
+
+.table-wrapper:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.battle-compare {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14.5px;
+}
+
+.battle-compare caption {
+  text-align: left;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted-foreground);
+  background: var(--background);
+  border-bottom: 1px solid var(--border);
+}
+
+.battle-compare th,
+.battle-compare td {
+  text-align: left;
+  vertical-align: top;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.battle-compare thead th {
+  font-weight: 600;
+  border-bottom-width: 2px;
+  background: var(--background);
+}
+
+.battle-compare thead th.side-a {
+  color: var(--side-a);
+  border-bottom-color: var(--side-a);
+}
+
+.battle-compare thead th.side-b {
+  color: var(--side-b);
+  border-bottom-color: var(--side-b);
+}
+
+.battle-compare tbody th {
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.battle-compare td {
+  color: var(--foreground);
+}
+
+/* =========================================================================
+   NATIVE DIALOG MODALS (modern-web-guidance: dialog & light-dismiss-a-dialog)
+   ========================================================================= */
+dialog {
+  width: min(760px, 94vw);
+  max-height: 88vh;
+  background: var(--card);
+  color: var(--foreground);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0;
+}
+
+dialog:modal {
+  overscroll-behavior: contain;
+}
+
+dialog::backdrop {
+  background: rgba(8, 12, 8, 0.75);
+  overflow: hidden;
+  overscroll-behavior: contain;
+}
+
+.letter-parchment,
+.letter-paper {
+  margin: 0;
+  background: rgb(var(--n-950));
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 6px;
+  padding: 16px 18px;
+  color: var(--foreground);
+  font-family: "IBM Plex Serif", Georgia, serif;
+  font-size: 15.5px;
+  line-height: 1.75;
+  white-space: pre-line;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.battle-compare th:has(> .sort-th-btn) {
+  padding: 0;
+}
+
+.sort-th-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  min-height: 44px;
+  padding: 12px 14px;
+  text-align: left;
+  font: inherit;
+  font-weight: 600;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.sort-th-btn:hover {
+  color: var(--accent);
+}
+
+.sort-indicator {
+  flex-shrink: 0;
+  opacity: 0.45;
+  transition: opacity 150ms ease-out;
+}
+
+.sort-indicator .sort-up,
+.sort-indicator .sort-down {
+  transition: opacity 150ms ease-out;
+}
+
+th[aria-sort="ascending"] .sort-indicator,
+th[aria-sort="descending"] .sort-indicator {
+  opacity: 1;
+  color: var(--accent);
+}
+
+th[aria-sort="ascending"] .sort-indicator .sort-down {
+  opacity: 0.25;
+}
+
+th[aria-sort="descending"] .sort-indicator .sort-up {
+  opacity: 0.25;
+}
+
+.sort-th-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+  border-radius: 4px;
+}
+
+#all-martyrs-table tbody tr {
+  view-transition-name: match-element;
+}
+
+.badge-medal {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.35;
+  font-weight: 500;
+  color: var(--foreground);
+  background: rgb(var(--acc-400) / 0.14);
+  border: 1px solid rgb(var(--acc-400) / 0.36);
+}
+
+.cemetery-card,
+.award-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}
+.leaflet-container {
+  background: var(--background) !important;
+  font-family: "IBM Plex Sans", sans-serif !important;
+}
+
+.vn-sovereignty-pill {
+  background: var(--card);
+  border: 1.5px solid var(--accent);
+  color: var(--foreground);
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* =========================================================================
+   RESPONSIVE & TOUCH TARGETS (E4 fix: 375px phone, 44x44px targets)
+   ========================================================================= */
+.mobile-only {
+  display: none;
+}
+
+@media (pointer: coarse), (max-width: 767px) {
+  .cf-btn,
+  .app-tab,
+  .sub-tab,
+  .touch-target,
+  select,
+  input[type="search"] {
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 767px) {
+  .mobile-only {
+    display: inline-flex;
+  }
+  #view-tabs {
+    display: none;
+  }
+  #app-search {
+    display: none;
+  }
+  #app-bar.search-open #app-search {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 56px;
+    padding: 8px 12px;
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+    z-index: 55;
+  }
+  #app-bar.search-open #app-search input {
+    width: 100%;
+  }
+  #map-canvas-wrap {
+    height: 300px !important;
+  }
+  #map-panel {
+    height: auto !important;
+    max-height: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* =========================================================================
+   MAP: numbered markers, battle strip legend, cluster list (6D)
+   and the phone locator / tablet order with a battle selected (6A, T12)
+   ========================================================================= */
+.map-strip-btn { display: inline-flex; align-items: center; min-height: 44px; }
+.map-strip-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 26px;
+  height: 26px;
+  padding: 0 4px;
+  margin-right: 8px;
+  border-radius: 999px;
+  border: 1.5px solid currentColor;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.map-strip-year { color: var(--muted-foreground); }
+
+.map-cluster-popover {
+  position: absolute;
+  z-index: 40;
+  width: min(320px, calc(100% - 16px));
+  overflow-y: auto;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--foreground);
+  box-shadow: 0 8px 24px rgb(0 0 0 / 0.28);
+}
+.map-cluster-popover[hidden] { display: none; }
+.map-cluster-popover-title { margin: 2px 6px 6px; font-size: 14px; font-weight: 600; color: var(--muted-foreground); }
+.map-cluster-popover-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 2px; }
+.map-cluster-popover-list button {
+  width: 100%;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  background: transparent;
+  border: 0;
+  text-align: left;
+  font-size: 15px;
+  color: var(--foreground);
+  cursor: pointer;
+}
+.map-cluster-popover-list button:hover,
+.map-cluster-popover-list button:focus-visible { background: var(--background); outline: 2px solid var(--accent); outline-offset: -2px; }
+.map-cluster-popover-name { flex: 1 1 auto; min-width: 0; overflow-wrap: anywhere; }
+.map-cluster-popover-year { color: var(--muted-foreground); font-size: 14px; }
+
+/* Leaflet: numbered divIcon markers (44px hit area, visible 28/32px circle) */
+.map-num-marker-icon { display: flex; align-items: center; justify-content: center; background: transparent; border: 0; }
+.map-num-marker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: 2px solid;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.map-num-marker-icon:focus-visible { outline: none; }
+.map-num-marker-icon:focus-visible .map-num-marker { outline: 2px solid var(--accent); outline-offset: 3px; }
+.map-name-tooltip { font-family: "IBM Plex Sans", sans-serif; font-size: 13px; font-weight: 600; }
+.vn-sov-leaflet-icon { overflow: visible; }
+.vn-sov-leaflet-label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+  padding: 4px 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.35;
+  text-align: center;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+/* 6A locator: the whole map is one button; hidden unless .map-locator */
+.map-locator-btn { display: none; }
+#map-col.map-locator .map-locator-btn {
+  display: block;
+  position: absolute;
+  inset: 0;
+  z-index: 25;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  touch-action: pan-y; /* a drag scrolls the page, it does not pan the map */
+}
+#map-col.map-locator .map-locator-btn:focus-visible { outline: 3px solid var(--accent); outline-offset: -3px; }
+.map-locator-chip {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 14px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--foreground);
+  font-size: 15px;
+  font-weight: 600;
+}
+#map-col.map-locator #filter-row,
+#map-col.map-locator #map-battle-strip,
+#map-col.map-locator .map-zoom-controls,
+#map-col.map-locator .map-layers-control,
+#map-col.map-locator #leaflet-map-container,
+#map-col.map-locator #map-wheel-hint,
+#map-col.map-locator #map-cluster-popover { display: none !important; }
+
+/* Battle selected under 1024px: map first, then the panel (replaces the panel-first order). */
+@media (max-width: 1023px) {
+  #map-col.map-has-selection { order: -1; }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #map-col.map-has-selection #map-canvas-wrap { height: 320px !important; }
+}
+@media (max-width: 767px) {
+  #map-col.map-locator #map-canvas-wrap { height: 200px !important; }
+}
+
+/* Search-led entry and a navigation shell that reflows without hiding views. */
+body { font-size: 16px; line-height: 1.6; }
+.app-header-layout {
+  min-height: 72px;
+  display: grid;
+  grid-template-columns: auto 1fr minmax(230px, 340px) 44px;
+  align-items: center;
+  gap: 20px;
+}
+#app-search, #app-search input { width: 100%; min-width: 0; }
+#app-search input, #start-search-input { font-size: 16px !important; }
+#view-tabs { min-height: 56px; }
+.app-tab { min-height: 48px; }
+#filters-toggle { display: none; }
+#map-filter-controls { min-width: 0; }
+#theatre-select { max-width: 320px; }
+.atlas-layout > * { min-width: 0; }
+#map-panel.is-start-state { height: auto; max-height: none; overflow: visible; }
+.opening-search { padding: 28px 24px; }
+.opening-kicker { color: var(--muted-foreground); font-size: 14px; margin-bottom: 12px; }
+.opening-search h2 { font-size: clamp(28px, 3vw, 36px); line-height: 1.25; }
+.opening-search > p { font-size: 16px !important; line-height: 1.65 !important; margin-top: 12px; max-width: 52ch; }
+#start-search-input { min-height: 56px; }
+.opening-search button { min-height: 44px; }
+.opening-search .search-dropdown { left: 0; right: auto; width: 100%; }
+.opening-stories .story-card { border: 0; border-radius: 0; padding: 16px 0; border-bottom: 1px solid var(--border); }
+.opening-stories .story-card:last-child { border-bottom: 0; }
+.opening-stories .story-card p { line-height: 1.6 !important; }
+.opening-catalogue summary { min-height: 44px; color: var(--muted-foreground); cursor: pointer; }
+.panel-section p:not(.text-sm), .letter-paper, .letter-parchment { font-size: 16px; line-height: 1.7; }
+.search-option { min-height: 64px; }
+.search-option .truncate { white-space: normal; overflow-wrap: anywhere; }
+.search-option > div { min-width: 0; }
+.search-dropdown { max-height: min(480px, 55dvh); overscroll-behavior: contain; }
+
+@media (min-width: 768px) and (max-width: 1100px) {
+  .app-header-layout { grid-template-columns: minmax(180px, 1fr) auto 44px; gap: 12px; padding-top: 8px; padding-bottom: 8px; }
+  #view-tabs { grid-row: 2; grid-column: 1 / -1; justify-content: center; }
+  #app-search { grid-column: 2; grid-row: 1; width: 280px; }
+  #theme-toggle-btn { grid-column: 3; grid-row: 1; }
+}
+
+@media (max-width: 767px) {
+  .app-header-layout { grid-template-columns: minmax(0, 1fr) 44px; gap: 4px 12px; padding-top: 6px; padding-bottom: 8px; }
+  .app-header-layout > div:first-child { min-width: 0; }
+  #site-switcher-btn { max-width: 100%; padding-left: 0; }
+  #site-switcher-btn h1 { font-size: 22px; }
+  #theme-toggle-btn { grid-column: 2; grid-row: 1; }
+  #view-tabs { display: flex; grid-row: 2; grid-column: 1 / -1; min-height: 44px; overflow-x: auto; }
+  #view-tabs .app-tab { flex: 1 0 auto; justify-content: center; padding: 0 8px; min-height: 44px; font-size: 15px; }
+  #app-search, #app-bar.search-open #app-search { display: block; position: relative; top: auto; padding: 0; border: 0; grid-row: 3; grid-column: 1 / -1; background: transparent; }
+  #app-search input { min-height: 44px; }
+  #filters-toggle { display: flex; width: 100%; align-items: center; justify-content: space-between; min-height: 44px; padding: 8px 16px; font-size: 14px; color: var(--muted-foreground); background: transparent; border: 0; }
+  #map-filter-controls { display: none; }
+  .filters-expanded #map-filter-controls { display: flex; flex-wrap: wrap; white-space: normal; overflow: visible; padding-bottom: 12px; }
+  #period-filter-pills { flex-wrap: wrap; }
+  #theatre-select { margin: 8px 0 0; width: 100%; max-width: 100%; min-width: 0; font-size: 16px; }
+  #map-panel.is-start-state { display: contents; }
+  .atlas-layout:has(.is-start-state) .opening-search { order: -1; background: var(--card); border-radius: 10px; }
+  .atlas-layout:has(.is-start-state) #map-col { order: 0; }
+  .opening-stories { order: 1; background: var(--card); border-radius: 10px; }
+  .opening-catalogue { order: 2; background: var(--card); border-radius: 10px; }
+  .opening-search { padding: 24px 16px; }
+  .opening-search h2 { font-size: 30px; }
+  #map-canvas-wrap { height: 340px !important; }
+  .panel-section { padding: 16px; }
+  .search-dropdown { width: 100%; max-height: 45dvh; }
+  .search-option { align-items: flex-start; flex-wrap: wrap; gap: 6px; padding: 12px; }
+  .search-option > div { flex: 1 1 180px; }
+  .search-option .badge-l3, .search-option .badge-l4 { font-size: 14px; }
+  .sub-tab { white-space: normal; text-align: center; }
+  dialog { width: calc(100% - 16px); max-height: 92dvh; }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #map-panel.is-start-state { display: contents; }
+  .atlas-layout:has(.is-start-state) .opening-search { order: -1; background: var(--card); border-radius: 10px; }
+  .opening-stories { order: 1; background: var(--card); border-radius: 10px; }
+  .opening-catalogue { order: 2; background: var(--card); border-radius: 10px; }
+  #map-filter-controls { flex-wrap: wrap; white-space: normal; overflow: visible; }
+  #theatre-select { margin-left: 0; }
+}
+
+/* ==========================================================================
+   Design review 2026-11-12/13 (DESIGN_REVIEW_ANTIGRAVITY.md)
+   ========================================================================== */
+
+/* 44px minimum targets (adopted rule, T17) */
+.tap-target { min-height: 44px; }
+
+.search-option-sub { white-space: normal; }
+
+.not-found-block { border-top: 1px solid var(--border); }
+
+/* Skip link (6E, WCAG 2.4.1) */
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -100px;
+  z-index: 100;
+  padding: 10px 14px;
+  border-radius: 6px;
+  background: var(--card);
+  color: var(--foreground);
+  border: 2px solid var(--accent);
+  font-weight: 600;
+}
+.skip-link:focus { top: 8px; }
+
+/* Decision 3C: the writer's words — serif, left hairline, no decorative quote marks */
+.letter-text {
+  font-family: "IBM Plex Serif", Georgia, serif;
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--foreground);
+  border-left: 2px solid var(--border);
+  padding-left: 14px;
+  font-style: normal;
+}
+
+/* --- Header (6B): desktop one row; tablet one row ≤64px with a search icon; phone pins only the tabs row --- */
+#tabs-row { display: contents; }
+#mobile-search-btn, #mobile-search-close { display: none; }
+
+@media (min-width: 1024px) {
+  .app-header-layout { grid-template-columns: auto 1fr minmax(230px, 340px) 44px; min-height: 64px; gap: 16px; }
+  #view-tabs { grid-row: 1; grid-column: 2; justify-content: flex-start; min-height: 64px; }
+  #app-search { grid-row: 1; grid-column: 3; width: auto; }
+  #theme-toggle-btn { grid-row: 1; grid-column: 4; }
+  /* Decision 1G: a 500px panel fits the four sub-tabs on one line */
+  #view-ban-do .atlas-layout { grid-template-columns: minmax(0, 1fr) 500px; }
+  #view-ban-do .atlas-layout > #map-col, #view-ban-do .atlas-layout > #map-panel { grid-column: auto; }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .app-header-layout { grid-template-columns: auto 1fr 44px; min-height: 0; height: 64px; gap: 12px; padding-top: 0; padding-bottom: 0; }
+  #tabs-row { display: flex; grid-row: 1; grid-column: 2; align-items: stretch; min-width: 0; }
+  #view-tabs { grid-row: auto; grid-column: auto; min-height: 64px; flex: 1; justify-content: flex-start; }
+  #mobile-search-btn { display: inline-flex; align-self: center; }
+  #theme-toggle-btn { grid-row: 1; grid-column: 3; }
+  #app-search { display: none; }
+  #app-bar.search-open #app-search { display: flex; gap: 8px; position: absolute; left: 0; right: 0; top: 64px; padding: 8px 16px; background: var(--card); border-bottom: 1px solid var(--border); z-index: 55; width: auto; }
+  #app-bar.search-open #mobile-search-close { display: inline-flex; align-items: center; }
+  #app-bar.search-open #app-search .search-dropdown { top: 60px; }
+}
+
+@media (max-width: 767px) {
+  /* The header box dissolves so the tabs row can stick to the page, not to the header */
+  #app-bar, .app-header-layout { display: contents; }
+  .app-header-layout > div:first-child { padding: 8px 64px 4px 12px; background: var(--card); }
+  #theme-toggle-btn { position: absolute; top: 8px; right: 12px; z-index: 41; }
+  #tabs-row {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    height: 48px;
+    align-items: stretch;
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+    padding: 0 4px 0 8px;
+  }
+  #view-tabs { display: flex; flex: 1; min-height: 48px; overflow: visible; gap: 0; }
+  #view-tabs .app-tab { flex: 1 1 0; min-height: 48px; padding: 0 4px; font-size: 16px; justify-content: center; }
+  #mobile-search-btn { display: inline-flex; align-self: center; }
+  /* Start state: the "Tìm người thân" field is the only search on screen */
+  body[data-view="ban-do"]:not(.battle-selected) #mobile-search-btn { display: none; }
+  #app-search, #app-bar.search-open #app-search { display: none; }
+  #app-bar.search-open #app-search {
+    display: flex;
+    gap: 8px;
+    position: sticky;
+    top: 48px;
+    z-index: 39;
+    padding: 8px 12px;
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+  }
+  #app-bar.search-open #mobile-search-close { display: inline-flex; align-items: center; }
+  #app-search input { flex: 1; }
+}
+
+/* --- Battle sub-tabs (1G): 2×2 grid of 44px tabs on phones, one line from 768px --- */
+.battle-subtabs {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: start;
+  gap: 4px;
+  padding: 0 16px;
+  border-bottom: 1px solid var(--border);
+  background: var(--card);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.battle-subtab {
+  min-height: 44px;
+  padding: 0 12px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--muted-foreground);
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+}
+.battle-subtab:hover { color: var(--foreground); }
+.battle-subtab.is-active { color: var(--foreground); font-weight: 600; border-bottom-color: var(--accent); }
+@media (max-width: 767px) {
+  .battle-subtabs { grid-template-columns: 1fr 1fr; padding: 0 8px; top: 48px; z-index: 30; }
+  .battle-subtab { white-space: normal; text-align: center; padding: 0 6px; font-size: 16px; }
+  body.search-open-mobile .battle-subtabs { top: 108px; }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .battle-subtabs { top: 64px; z-index: 30; }
+}
+
+/* Battle header (1D): short */
+.battle-header { padding-bottom: 12px; }
+
+/* Record as a full page under 768px (1E) */
+@media (max-width: 767px) {
+  #martyr-dialog[open] {
+    width: 100vw;
+    max-width: 100vw;
+    height: 100dvh;
+    max-height: 100dvh;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+  }
+  #martyr-dialog-body { max-height: calc(100dvh - 64px) !important; }
+}
+
+/* Filter disclosure sits above the map (6B) */
+#map-col #filter-row { border-top: 0; }
+
+/* Start state cemetery list (1F): first 5 on phones, all from 768px */
+.opening-cemeteries .cem-more-toggle { display: none; }
+@media (max-width: 767px) {
+  .opening-cemeteries { order: 2; background: var(--card); border-radius: 10px; }
+  .opening-catalogue { order: 3; }
+  .opening-cemeteries:not(.show-all) .cem-more { display: none; }
+  .opening-cemeteries:not(.show-all) .cem-more-toggle { display: inline-flex; align-items: center; }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .opening-cemeteries { order: 2; background: var(--card); border-radius: 10px; }
+  .opening-catalogue { order: 3; }
+}
+
+/* Carried-filter chip (2C) */
+.filter-chip {
+  display: inline-flex; align-items: center; gap: 6px; padding: 0 12px;
+  border-radius: 999px; border: 1px solid var(--accent); color: var(--foreground);
+  background: rgb(var(--acc-400) / 0.1); font-size: 14px; font-weight: 500;
+}
+#view-liet-si .cf-btn, #view-liet-si select { min-height: 44px; }
+#martyr-sort-select { display: none; }
+
+/* Liệt sĩ list (6C): one table; under 768px each row is a short name-first block */
+@media (max-width: 767px) {
+  #martyr-sort-select { display: block; }
+  .martyr-selects { grid-template-columns: 1fr; }
+  #all-martyrs-table { min-width: 0 !important; width: 100%; table-layout: fixed; }
+  #all-martyrs-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  #all-martyrs-table, #all-martyrs-table tbody { display: block; }
+  #all-martyrs-table tr.martyr-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas: "name years" "home home" "badge badge";
+    column-gap: 12px; row-gap: 2px;
+    position: relative;
+    padding: 12px 28px 12px 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  #all-martyrs-table tr.martyr-row::after { content: "›"; position: absolute; right: 12px; top: 50%; transform: translateY(-50%); color: var(--muted-foreground); font-size: 20px; }
+  #all-martyrs-table td { display: block; padding: 0 !important; border: 0 !important; }
+  #all-martyrs-table .cell-name { grid-area: name; }
+  #all-martyrs-table .cell-years { grid-area: years; text-align: right; align-self: baseline; }
+  #all-martyrs-table .cell-home { grid-area: home; }
+  #all-martyrs-table .cell-badge { grid-area: badge; }
+  #all-martyrs-table .cell-battle, #all-martyrs-table .cell-open, #all-martyrs-table .row-extra, #all-martyrs-table .row-thumb { display: none; }
+  #all-martyrs-table .row-link { font-size: 18px; }
+  #all-martyrs-table .row-link::before { content: ""; position: absolute; inset: 0; }
+  #all-martyrs-table .home-unit { font-size: 16px; color: var(--muted-foreground); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  #all-martyrs-table .home-unit .text-sm { font-size: 16px; }
+  #all-martyrs-table tr.empty-row, #all-martyrs-table tr.empty-row td { display: block; }
+  #view-liet-si .table-wrapper { overflow-x: visible; }
+}
+
+/* Phones: the panel scrolls with the page so the sub-tab grid can stick under the tabs row */
+@media (max-width: 1023px) {
+  #map-panel { overflow: visible !important; max-height: none !important; }
+}
+@media (max-width: 767px) {
+  #all-martyrs-table tr.martyr-row { padding: 10px 28px 10px 12px; row-gap: 2px; }
+  #all-martyrs-table .row-link { line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  #all-martyrs-table .home-unit { line-height: 1.4; }
+  #all-martyrs-table .cell-badge .badge-l4, #all-martyrs-table .cell-badge .badge-l3,
+  #all-martyrs-table .cell-badge .badge-l2, #all-martyrs-table .cell-badge .badge-none { padding: 0 8px; line-height: 1.5; margin-top: 2px; }
+  .battle-subtabs { row-gap: 0; }
+}
+.home-unit .short-text { display: none; }
+@media (max-width: 767px) {
+  #all-martyrs-table .home-unit .full-text { display: none; }
+  #all-martyrs-table .home-unit .short-text { display: inline; }
+}
+
+/* ==========================================================================
+   Multi-Martyr Families & Comrade Network Disclosures
+   (modern-web-guidance: accordion, search-hidden-content, content-first-noise-reduction)
+   ========================================================================== */
+details.memorial-disclosure > summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.65ch;
+  min-height: 48px;
+  padding: 12px 16px;
+  font-size: 15.5px;
+  font-weight: 600;
+  color: var(--foreground);
+  cursor: pointer;
+  user-select: none;
+}
+
+details.memorial-disclosure > summary::-webkit-details-marker {
+  display: none;
+}
+
+details.memorial-disclosure > summary:hover {
+  color: var(--accent);
+}
+
+details.memorial-disclosure > summary::before {
+  content: "";
+  inline-size: 1em;
+  block-size: 1em;
+  flex-shrink: 0;
+  background-color: currentColor;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") no-repeat center / contain;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") no-repeat center / contain;
+  rotate: -90deg;
+}
+
+details.memorial-disclosure[open] > summary::before {
+  rotate: 0deg;
+}
+
+details.memorial-disclosure::details-content {
+  interpolate-size: allow-keywords;
+  overflow: clip;
+  contain: layout;
+}
+
+details.memorial-disclosure:not([open])::details-content {
+  block-size: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  details.memorial-disclosure > summary::before {
+    transition: rotate 0.2s ease-out;
+  }
+  details.memorial-disclosure::details-content {
+    transition: block-size, content-visibility, display;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+    transition-behavior: allow-discrete;
+  }
+}
+
+.family-card {
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comrade-link-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px 12px;
+  min-height: 44px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--foreground);
+  text-decoration: none;
+  transition: border-color 150ms ease-out, background-color 150ms ease-out;
+}
+
+.comrade-link-item:hover {
+  border-color: var(--accent);
+  background: rgb(var(--acc-400) / 0.08);
+}
+
+.badge-family {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.35;
+  font-weight: 500;
+  color: var(--foreground);
+  background: rgb(var(--sa-400) / 0.14);
+  border: 1px solid rgb(var(--sa-400) / 0.4);
+}

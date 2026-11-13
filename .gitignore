@@ -1,0 +1,23 @@
+# macOS & Editor metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Local agent & tool state
+.claude/
+.gstack/
+.vscode/
+.idea/
+
+# Runtime & caches
+__pycache__/
+*.py[cod]
+node_modules/
+npm-debug.log*
+.env
+.env.*
+
+# Internal documents: kept locally, never published
+Brief_Brainstorm_Ky_Uc_Viet_Nam_v1_2 (1).pdf
+Kien_truc_giai_phap_Cloud_Ky_Uc_Viet_Nam.pdf

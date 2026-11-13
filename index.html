@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ký Ức Việt Nam Atlas — Cơ Sở Dữ Liệu Chiến Dịch, Liệt Sĩ, Nghĩa Trang &amp; Huân Chương (1954–1975)</title>
+  <meta name="description" content="Cơ sở dữ liệu và bản đồ tưởng niệm các chiến dịch, trận đánh lịch sử (1954–1975), hồ sơ Liệt sĩ, Huân chương – Danh hiệu Nhà nước, hệ thống Nghĩa trang Liệt sĩ Quốc gia và giải mã phiên hiệu đơn vị." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="vi_VN" />
+  <meta property="og:title" content="Ký Ức Việt Nam Atlas — Cơ Sở Dữ Liệu Liệt Sĩ, Chiến Dịch &amp; Nghĩa Trang (1954–1975)" />
+  <meta property="og:description" content="Tra cứu chiến dịch lịch sử, hồ sơ Liệt sĩ, thư thời chiến, Huân chương cao quý, Nghĩa trang Liệt sĩ Quốc gia và phiên hiệu đơn vị trên giấy báo tử." />
+  <meta property="og:image" content="assets/martyrs/thanh-co-quang-tri.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&display=swap" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    const tokenRamp = (name) => Object.fromEntries(
+      [50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950].map(s => [s, `rgb(var(--${name}-${s}) / <alpha-value>)`])
+    );
+    if (window.tailwind) {
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              white: 'rgb(var(--n-50) / <alpha-value>)',
+              slate: tokenRamp('n'),
+              gray: tokenRamp('n'),
+              zinc: tokenRamp('n'),
+              amber: tokenRamp('acc'),
+              yellow: tokenRamp('acc'),
+              orange: tokenRamp('acc'),
+              rose: tokenRamp('sa'),
+              red: tokenRamp('sa'),
+              sky: tokenRamp('sb'),
+              cyan: tokenRamp('sb'),
+              blue: tokenRamp('sb'),
+              emerald: tokenRamp('ok'),
+              green: tokenRamp('ok'),
+              teal: tokenRamp('ok')
+            },
+            fontFamily: {
+              sans: ['"IBM Plex Sans"', 'sans-serif'],
+              display: ['"Barlow Condensed"', '"IBM Plex Sans"', 'sans-serif'],
+              serif: ['"IBM Plex Serif"', 'Georgia', 'serif'],
+              mono: ['"IBM Plex Mono"', 'monospace']
+            },
+            fontSize: {
+              xs: ['0.875rem', { lineHeight: '1.45' }],
+              sm: ['0.9375rem', { lineHeight: '1.5' }]
+            }
+          }
+        }
+      };
+    }
+  </script>
+</head>
+<body class="bg-[var(--background)] text-[var(--foreground)] antialiased min-h-screen flex flex-col">
+  <a href="#main-content" class="skip-link">Bỏ qua tới nội dung chính</a>
+
+  <!-- ======================================================================= -->
+  <!-- STICKY APP BAR (56px) + PERIOD FILTER ROW (40px) — Decision 1A/1C       -->
+  <!-- ======================================================================= -->
+  <header id="app-bar" class="sticky top-0 z-40 bg-[var(--card)] border-b border-[var(--border)]">
+    <div class="app-header-layout max-w-[1800px] mx-auto px-3 sm:px-4">
+      <!-- Wordmark + Reference Menu -->
+      <div class="relative shrink-0 min-w-0">
+        <button id="site-switcher-btn" type="button" onclick="toggleSiteMenu()" aria-haspopup="menu" aria-expanded="false" aria-controls="site-menu"
+          class="touch-target h-11 flex items-center gap-2 px-2 rounded-md hover:bg-[var(--background)]">
+          <span class="w-2.5 h-2.5 rounded-full bg-amber-400 shrink-0" aria-hidden="true"></span>
+          <h1 class="font-display text-[21px] sm:text-[23px] leading-none text-[var(--foreground)] truncate">Ký Ức Việt Nam Atlas</h1>
+          <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-[var(--muted-foreground)] shrink-0"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div id="site-menu" role="menu" class="hidden absolute left-0 top-12 w-64 rounded-[10px] border border-[var(--border)] bg-[var(--card)] py-1.5 z-50">
+          <span role="menuitem" aria-current="page" class="flex items-center justify-between px-3.5 py-2.5 text-sm font-semibold text-[var(--foreground)]">
+            <span>Ký Ức Việt Nam Atlas</span>
+            <span class="text-amber-400 font-mono-num">hiện tại</span>
+          </span>
+          <a role="menuitem" href="PRD_Ban_Do_Ky_Uc_Tran_Danh_Liet_Si.md" target="_blank" class="block px-3.5 py-2.5 text-sm text-[var(--muted-foreground)] hover:text-[var(--foreground)] hover:bg-[var(--background)]">
+            Tài liệu PRD Kiến trúc
+          </a>
+          <a role="menuitem" href="DESIGN.md" target="_blank" class="block px-3.5 py-2.5 text-sm text-[var(--muted-foreground)] hover:text-[var(--foreground)] hover:bg-[var(--background)]">
+            Hệ thống Thiết kế (DESIGN.md)
+          </a>
+          <a role="menuitem" href="http://chinhsachquandoi.gov.vn" target="_blank" rel="noopener" class="block px-3.5 py-2.5 text-sm text-[var(--muted-foreground)] hover:text-[var(--foreground)] hover:bg-[var(--background)]">
+            Cổng Chính sách Quân đội (trang http)
+          </a>
+          <p class="px-3.5 py-2.5 text-sm text-[var(--muted-foreground)] border-t border-[var(--border)]">
+            Tra cứu chính thức: ứng dụng VNeID → Dịch vụ khác → Kết nối thân nhân liệt sĩ
+          </p>
+        </div>
+      </div>
+
+      <!-- 3 top-level views (Decisions 1A, 1F). On phones this row is the only pinned element (6B). -->
+      <div id="tabs-row">
+      <nav id="view-tabs" role="tablist" aria-label="Chế độ xem" class="flex-1 min-w-0 h-full flex items-stretch gap-1">
+        <button id="tab-ban-do" type="button" role="tab" aria-selected="true" aria-controls="view-ban-do" tabindex="0" onclick="switchMainView('ban-do')" class="app-tab" aria-current="page">
+          Bản đồ
+        </button>
+        <button id="tab-liet-si" type="button" role="tab" aria-selected="false" aria-controls="view-liet-si" tabindex="-1" onclick="switchMainView('liet-si')" class="app-tab">
+          Liệt sĩ
+        </button>
+        <button id="tab-phien-hieu" type="button" role="tab" aria-selected="false" aria-controls="view-phien-hieu" tabindex="-1" onclick="switchMainView('phien-hieu')" class="app-tab">
+          Phiên hiệu
+        </button>
+      </nav>
+        <button id="mobile-search-btn" type="button" onclick="toggleMobileSearch()" aria-label="Tìm kiếm" aria-expanded="false" aria-controls="app-search"
+          class="tap-target w-11 h-11 shrink-0 items-center justify-center rounded-md text-[var(--muted-foreground)] hover:text-[var(--foreground)]">
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        </button>
+      </div>
+
+      <!-- Global Combobox Search (Decision 1C) -->
+      <search id="app-search" class="relative shrink-0">
+        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="absolute left-3 top-1/2 -translate-y-1/2 text-[var(--muted-foreground)] pointer-events-none">
+          <circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/>
+        </svg>
+        <input
+          id="search-input"
+          type="search"
+          role="combobox"
+          aria-expanded="false"
+          aria-autocomplete="list"
+          aria-controls="top-search-listbox"
+          aria-label="Tìm tên liệt sĩ, quê quán, nghĩa trang, huân chương, phiên hiệu đơn vị hoặc trận đánh"
+          oninput="handleSearchInput(this.value, 'top')"
+          onfocus="handleSearchInput(this.value, 'top')"
+          onkeydown="handleSearchKeydown(event, 'top')"
+          placeholder="Tìm họ tên, quê quán, nghĩa trang…"
+          class="w-72 lg:w-80 h-10 pl-9 pr-9 rounded-md text-sm bg-[var(--background)] border border-[var(--border)] text-[var(--foreground)] placeholder-[var(--muted-foreground)]"
+        />
+        <button id="clear-search" type="button" onclick="clearSearch()" aria-label="Xóa tìm kiếm" class="hidden absolute right-1.5 top-1/2 -translate-y-1/2 w-8 h-8 rounded text-[var(--muted-foreground)] hover:text-[var(--foreground)]">
+          <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mx-auto"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+        <div id="top-search-listbox" role="listbox" aria-label="Kết quả gợi ý" class="search-dropdown hidden custom-scroll"></div>
+        <button type="button" id="mobile-search-close" onclick="toggleMobileSearch(false)" class="tap-target px-3 rounded-md border border-[var(--border)] text-sm font-medium">Đóng</button>
+      </search>
+
+      <!-- Theme Toggle (44x44px) -->
+      <button type="button" onclick="toggleTheme()" id="theme-toggle-btn" aria-label="Đổi giao diện Sáng hoặc Tối" title="Đổi giao diện Sáng hoặc Tối"
+        class="touch-target shrink-0 w-11 h-11 rounded-md flex items-center justify-center text-[var(--muted-foreground)] hover:text-[var(--foreground)] hover:bg-[var(--background)] border border-[var(--border)]">
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 000 18z" fill="currentColor"/></svg>
+      </button>
+    </div>
+
+  </header>
+
+  <!-- ======================================================================= -->
+  <!-- MAIN WORKSPACE                                                          -->
+  <!-- ======================================================================= -->
+  <main id="main-content" tabindex="-1" class="flex-1 max-w-[1800px] w-full mx-auto p-3 sm:p-4 flex flex-col gap-4">
+    <div id="sr-announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+    <!-- ===================================================================== -->
+    <!-- VIEW 1: BẢN ĐỒ (MAP + START STATE / BATTLE PANEL — Decision 1A & 1B)  -->
+    <!-- ===================================================================== -->
+    <section id="view-ban-do" role="tabpanel" aria-labelledby="tab-ban-do" class="flex flex-col gap-4">
+      <div class="atlas-layout grid grid-cols-1 lg:grid-cols-12 gap-4 items-start">
+        <!-- Left 7 Cols: Calm Memorial Map of Vietnam -->
+        <div id="map-col" class="lg:col-span-7 bg-[var(--card)] border border-[var(--border)] rounded-[10px] overflow-hidden flex flex-col">
+          <!-- Period & region filters sit directly above the map (6B) -->
+    <div id="filter-row" class="border-b border-[var(--border)] bg-[var(--background)]/60">
+      <button type="button" id="filters-toggle" aria-expanded="false" aria-controls="map-filter-controls" onclick="toggleMapFilters()">Giai đoạn &amp; vùng chiến trường <span aria-hidden="true">⌄</span></button>
+      <div id="map-filter-controls" class="max-w-[1800px] mx-auto min-h-11 px-3 sm:px-4 py-1 flex items-center gap-1.5 overflow-x-auto whitespace-nowrap custom-scroll">
+        <span class="text-sm font-medium text-[var(--muted-foreground)] mr-1">Giai đoạn:</span>
+        <div id="period-filter-pills" class="flex items-center gap-1.5"></div>
+
+        <select id="theatre-select" onchange="flyToTheatre(this.value)" aria-label="Chọn vùng chiến trường"
+          class="ml-auto h-9 px-2.5 rounded-md text-sm font-medium bg-[var(--card)] border border-[var(--border)] text-[var(--foreground)]">
+          <option value="ALL_VN">Toàn lãnh thổ Việt Nam &amp; Biển Đông</option>
+          <option value="NORTH_PKKQ">Miền Bắc — Hà Nội, Hải Phòng &amp; Quân khu 4</option>
+          <option value="DMZ_B5">Mặt trận Đường 9 – Khe Sanh – Thành cổ Quảng Trị</option>
+          <option value="KHU_5">Chiến trường Khu 5 — Thượng Đức, Vạn Tường, Ba Gia</option>
+          <option value="TAY_NGUYEN_B3">Mặt trận Tây Nguyên — Đắk Tô, Ia Đrăng, Buôn Ma Thuột</option>
+          <option value="MIEN_DONG_B2">Miền Đông Nam Bộ &amp; Sài Gòn — Phước Long, Xuân Lộc</option>
+          <option value="DBSCL_K8">Đồng bằng sông Cửu Long — Ấp Bắc, Tua Hai</option>
+        </select>
+      </div>
+    </div>
+          <div class="relative w-full h-[640px]" id="map-canvas-wrap">
+            <canvas id="vietnam-atlas-canvas" role="application" tabindex="0" aria-label="Bản đồ các chiến dịch, trận đánh lịch sử và Nghĩa trang Liệt sĩ Quốc gia giai đoạn 1954–1975. Dùng phím mũi tên trái/phải để chuyển giữa các chiến dịch, Enter để mở chi tiết." class="w-full h-full block cursor-grab active:cursor-grabbing"></canvas>
+
+            <!-- Vetted Label-Free Leaflet Topographic/Dark Fallback (E10 fix: nolabels base tiles only) -->
+            <div id="leaflet-map-container" class="hidden absolute inset-0 z-10"></div>
+
+            <!-- Empty state when search/filter matches 0 battles -->
+            <div id="map-no-results" role="status" class="hidden absolute inset-x-4 top-1/3 z-30 mx-auto max-w-md flex flex-col gap-2 p-4 rounded-[10px] border border-[var(--accent)] bg-[var(--card)]"></div>
+
+            <!-- Ctrl/Cmd + Scroll hint toast -->
+            <div id="map-wheel-hint" role="status" class="hidden absolute top-3 left-3 z-20 px-3 py-1.5 rounded-md bg-[var(--card)] border border-[var(--border)] text-sm text-[var(--foreground)] pointer-events-none">
+              Giữ Ctrl hoặc ⌘ khi cuộn chuột để phóng to bản đồ
+            </div>
+
+            <!-- Folded "Lớp bản đồ ▾" Control in Top-Right Corner (Decision 1B) -->
+            <div class="map-layers-control absolute top-3 right-3 z-20" data-map-control>
+              <button type="button" id="map-layers-btn" onclick="toggleMapLayersMenu()" aria-haspopup="menu" aria-expanded="false" aria-controls="map-layers-menu"
+                class="touch-target h-10 px-3 rounded-md bg-[var(--card)] border border-[var(--border)] text-sm font-medium text-[var(--foreground)] flex items-center gap-1.5 hover:border-[var(--accent)]">
+                <span>Lớp bản đồ</span>
+                <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div id="map-layers-menu" role="menu" class="hidden absolute right-0 top-11 w-72 rounded-[10px] border border-[var(--border)] bg-[var(--card)] p-2 z-30 flex flex-col gap-1">
+                <div class="px-2 py-1 text-sm font-semibold text-[var(--muted-foreground)]">Hiển thị điểm đánh dấu</div>
+                <button type="button" role="menuitemradio" id="mpm-both" aria-checked="true" onclick="setMapPinMode('both')" class="w-full text-left px-2.5 py-2 rounded-md text-sm font-medium bg-[var(--background)] text-[var(--foreground)]">
+                  Tất cả chiến dịch &amp; Nghĩa trang Quốc gia
+                </button>
+                <button type="button" role="menuitemradio" id="mpm-battles-only" aria-checked="false" onclick="setMapPinMode('battles-only')" class="w-full text-left px-2.5 py-2 rounded-md text-sm text-[var(--muted-foreground)] hover:text-[var(--foreground)]">
+                  Chỉ hiển thị các chiến dịch &amp; trận đánh
+                </button>
+                <button type="button" role="menuitemradio" id="mpm-cemeteries" aria-checked="false" onclick="setMapPinMode('cemeteries')" class="w-full text-left px-2.5 py-2 rounded-md text-sm text-[var(--muted-foreground)] hover:text-[var(--foreground)]">
+                  Hệ thống Nghĩa trang Liệt sĩ Quốc gia
+                </button>
+                <button type="button" role="menuitemradio" id="mpm-letters" aria-checked="false" onclick="setMapPinMode('letters')" class="w-full text-left px-2.5 py-2 rounded-md text-sm text-[var(--muted-foreground)] hover:text-[var(--foreground)]">
+                  Chiến dịch có thư &amp; nhật ký thời chiến
+                </button>
+                <div class="border-t border-[var(--border)] my-1"></div>
+                <div class="px-2 py-1 text-sm font-semibold text-[var(--muted-foreground)]">Nền bản đồ</div>
+                <button type="button" role="menuitemradio" id="map-engine-vector" aria-checked="true" onclick="setMapEngine('vector')" class="w-full text-left px-2.5 py-2 rounded-md text-sm font-medium bg-[var(--background)] text-[var(--foreground)]">
+                  Bản đồ Quân khu (Vector)
+                </button>
+                <button type="button" role="menuitemradio" id="map-engine-leaflet" aria-checked="false" onclick="setMapEngine('leaflet')" class="w-full text-left px-2.5 py-2 rounded-md text-sm text-[var(--muted-foreground)] hover:text-[var(--foreground)]">
+                  Bản đồ Nền Tối Giản (Leaflet)
+                </button>
+              </div>
+            </div>
+
+            <!-- Zoom Controls Bottom-Left, clear of the Hoàng Sa / Trường Sa labels (6D; 44x44px targets) -->
+            <div class="map-zoom-controls absolute bottom-3 left-3 z-20 flex flex-col gap-1" data-map-control>
+              <button type="button" onclick="zoomMapBy(1.35)" aria-label="Phóng to bản đồ" class="touch-target w-11 h-11 rounded-md border border-[var(--border)] bg-[var(--card)] hover:border-[var(--accent)] text-base font-semibold">+</button>
+              <button type="button" onclick="zoomMapBy(0.74)" aria-label="Thu nhỏ bản đồ" class="touch-target w-11 h-11 rounded-md border border-[var(--border)] bg-[var(--card)] hover:border-[var(--accent)] text-base font-semibold">−</button>
+              <button type="button" onclick="flyToTheatre('ALL_VN')" aria-label="Xem toàn cảnh Việt Nam" class="touch-target px-2.5 h-11 rounded-md border border-[var(--border)] bg-[var(--card)] hover:border-[var(--accent)] text-sm font-medium">Toàn</button>
+            </div>
+
+            <!-- 6A: under 768px with a battle open, the 200px locator map is one button -->
+            <button type="button" id="map-locator-btn" class="map-locator-btn" aria-label="Mở bản đồ đầy đủ" onclick="openFullMapFromLocator()">
+              <span class="map-locator-chip" data-map-control>Mở bản đồ</span>
+            </button>
+          </div>
+
+          <!-- Chronological Campaign Strip at Bottom of Map -->
+          <div class="p-2.5 bg-[var(--background)] border-t border-[var(--border)] flex items-center gap-2 overflow-x-auto custom-scroll" id="map-battle-strip" aria-label="Danh sách các chiến dịch theo trình tự thời gian"></div>
+        </div>
+
+        <!-- Right 5 Cols: Start State OR Selected Battle Panel (Decision 1B) -->
+        <aside id="map-panel" aria-label="Thông tin tra cứu và chi tiết trận đánh" class="lg:col-span-5 bg-[var(--card)] border border-[var(--border)] rounded-[10px] flex flex-col min-h-[640px] max-h-[720px] overflow-y-auto custom-scroll"></aside>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- VIEW 2: LIỆT SĨ (DATABASE ROLL OF HONOR, MEDALS & CEMETERIES)         -->
+    <!-- ===================================================================== -->
+    <section id="view-liet-si" role="tabpanel" aria-labelledby="tab-liet-si" class="hidden flex-col gap-4">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-[10px] p-4 sm:p-5 flex flex-col gap-3.5">
+        <div class="flex flex-wrap items-start justify-between gap-3">
+          <div>
+            <h2 class="font-serif-archival text-xl sm:text-2xl font-semibold text-[var(--foreground)]">Cơ sở dữ liệu Liệt sĩ, Gia đình Anh hùng &amp; Huân chương</h2>
+            <p class="text-sm text-[var(--muted-foreground)] mt-0.5">
+              Tra cứu hồ sơ chi tiết từng Liệt sĩ, đại gia đình Bà Mẹ Việt Nam Anh hùng, mạng lưới đồng đội cùng đơn vị, Nghĩa trang an táng hoặc tải cơ sở dữ liệu.
+            </p>
+          </div>
+          <div class="flex flex-wrap items-center gap-2">
+            <span id="martyrs-carried-chip"></span>
+            <span class="text-sm font-mono-num text-[var(--muted-foreground)] mr-1" id="martyrs-count-badge" role="status"></span>
+            <a href="data/ky_uc_viet_nam_liet_si_1954_1975.csv" download="ky_uc_viet_nam_liet_si_1954_1975.csv" class="cf-btn">Tải CSV</a>
+            <a href="data/ky_uc_viet_nam_database.json" download="ky_uc_viet_nam_database.json" class="cf-btn">Tải JSON</a>
+            <a href="db/ky_uc_viet_nam.sqlite" download="ky_uc_viet_nam.sqlite" class="cf-btn">Tải SQLite</a>
+          </div>
+        </div>
+
+        <search aria-label="Lọc danh bạ Liệt sĩ" class="flex flex-col gap-2.5 pt-1">
+          <div class="flex flex-wrap items-center gap-2">
+            <button type="button" id="mf-all" onclick="setMartyrListFilter('all')" class="cf-btn" aria-pressed="true">Tất cả hồ sơ</button>
+            <button type="button" id="mf-families" onclick="setMartyrListFilter('families')" class="cf-btn" aria-pressed="false">Gia đình nhiều Liệt sĩ</button>
+            <button type="button" id="mf-heroes" onclick="setMartyrListFilter('heroes')" class="cf-btn" aria-pressed="false">Anh hùng LLVTND</button>
+            <button type="button" id="mf-medals" onclick="setMartyrListFilter('medals')" class="cf-btn" aria-pressed="false">Huân chương &amp; Giải thưởng</button>
+            <button type="button" id="mf-photos" onclick="setMartyrListFilter('photos')" class="cf-btn" aria-pressed="false">Có ảnh tư liệu</button>
+            <button type="button" id="mf-letters" onclick="setMartyrListFilter('letters')" class="cf-btn" aria-pressed="false">Có thư &amp; nhật ký</button>
+            <button type="button" id="mf-l4" onclick="setMartyrListFilter('L4')" class="cf-btn" aria-pressed="false">Hồ sơ chính thức</button>
+            <button type="button" id="mf-l3" onclick="setMartyrListFilter('L3')" class="cf-btn" aria-pressed="false">Đối chiếu đơn vị</button>
+          </div>
+
+          <div class="martyr-selects grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-2.5">
+            <select id="filter-family-select" onchange="setMartyrFamilyFilter(this.value)" aria-label="Lọc theo Gia đình có nhiều Liệt sĩ"
+              class="h-11 px-3 rounded-md text-sm bg-[var(--background)] border border-[var(--border)] text-[var(--foreground)]">
+              <option value="ALL">Tất cả Gia đình nhiều Liệt sĩ</option>
+            </select>
+            <select id="filter-unit-select" onchange="setMartyrUnitFilter(this.value)" aria-label="Lọc theo Phiên hiệu đơn vị"
+              class="h-11 px-3 rounded-md text-sm bg-[var(--background)] border border-[var(--border)] text-[var(--foreground)]">
+              <option value="ALL">Tất cả Phiên hiệu đơn vị</option>
+            </select>
+            <select id="filter-cemetery-select" onchange="setMartyrCemeteryFilter(this.value)" aria-label="Lọc theo Nghĩa trang Liệt sĩ"
+              class="h-11 px-3 rounded-md text-sm bg-[var(--background)] border border-[var(--border)] text-[var(--foreground)]">
+              <option value="ALL">Tất cả Nghĩa trang &amp; Đài tưởng niệm</option>
+            </select>
+            <select id="filter-award-select" onchange="setMartyrAwardFilter(this.value)" aria-label="Lọc theo Huân chương hoặc Danh hiệu"
+              class="h-11 px-3 rounded-md text-sm bg-[var(--background)] border border-[var(--border)] text-[var(--foreground)]">
+              <option value="ALL">Tất cả Huân chương, Huy chương &amp; Danh hiệu</option>
+            </select>
+            <select id="filter-province-select" onchange="setMartyrProvinceFilter(this.value)" aria-label="Lọc theo tỉnh thành quê quán"
+              class="h-11 px-3 rounded-md text-sm bg-[var(--background)] border border-[var(--border)] text-[var(--foreground)]">
+              <option value="ALL">Tất cả tỉnh, thành quê quán</option>
+            </select>
+            <select id="martyr-sort-select" onchange="setMartyrSort(this.value)" aria-label="Sắp xếp danh sách"
+              class="h-11 px-3 rounded-md text-sm bg-[var(--background)] border border-[var(--border)] text-[var(--foreground)]">
+              <option value="">Sắp xếp: mặc định</option>
+              <option value="name">Sắp xếp: họ tên</option>
+              <option value="death">Sắp xếp: năm hy sinh</option>
+              <option value="home">Sắp xếp: quê quán</option>
+              <option value="unit">Sắp xếp: đơn vị</option>
+            </select>
+          </div>
+        </search>
+      </div>
+
+      <!-- Native <details> disclosures: searchable via Find-in-Page while compact by default (search-hidden-content, content-first-noise-reduction, accordion) -->
+      <div id="martyr-connections-disclosures" role="group" aria-label="Hồ sơ Gia đình có nhiều Liệt sĩ và Liên kết Đồng đội" class="flex flex-col gap-2.5">
+        <details id="disclosure-families" class="memorial-disclosure bg-[var(--card)] border border-[var(--border)] rounded-[10px]">
+          <summary id="disclosure-families-summary">Gia đình có nhiều Liệt sĩ &amp; Bà Mẹ Việt Nam Anh hùng</summary>
+          <div id="families-directory-body" class="p-4 sm:p-5 border-t border-[var(--border)]"></div>
+        </details>
+        <details id="disclosure-squads" class="memorial-disclosure bg-[var(--card)] border border-[var(--border)] rounded-[10px]">
+          <summary id="disclosure-squads-summary">Liên kết Liệt sĩ cùng Tiểu đội, Kíp chiến đấu &amp; Phiên hiệu Đơn vị</summary>
+          <div id="squads-directory-body" class="p-4 sm:p-5 border-t border-[var(--border)]"></div>
+        </details>
+      </div>
+
+      <p id="martyrs-sort-status" role="status" class="visually-hidden"></p>
+
+      <!-- Accessible Sortable & Responsive Table of Martyrs (modern-web-guidance: sortable-table, responsive-table) -->
+      <div tabindex="0" role="region" aria-labelledby="all-martyrs-table-caption" class="table-wrapper">
+        <table id="all-martyrs-table" class="battle-compare">
+          <caption id="all-martyrs-table-caption">Danh bạ Liệt sĩ, Tập thể Anh hùng, Huân chương và Nghĩa trang an táng (1954–1975)</caption>
+          <thead>
+            <tr>
+              <th scope="col" data-type="text">
+                <button type="button" commandfor="all-martyrs-table" command="--sort" class="sort-th-btn">
+                  <span>Họ tên Liệt sĩ / Tập thể</span>
+                  <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="sort-indicator"><path class="sort-up" d="M8 9l4-4 4 4"/><path class="sort-down" d="M16 15l-4 4-4-4"/></svg>
+                </button>
+              </th>
+              <th scope="col" data-type="number" aria-sort="ascending">
+                <button type="button" commandfor="all-martyrs-table" command="--sort" class="sort-th-btn">
+                  <span>Năm sinh – Hy sinh</span>
+                  <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="sort-indicator"><path class="sort-up" d="M8 9l4-4 4 4"/><path class="sort-down" d="M16 15l-4 4-4-4"/></svg>
+                </button>
+              </th>
+              <th scope="col" data-type="text">
+                <button type="button" commandfor="all-martyrs-table" command="--sort" class="sort-th-btn">
+                  <span>Chiến dịch / Trận đánh</span>
+                  <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="sort-indicator"><path class="sort-up" d="M8 9l4-4 4 4"/><path class="sort-down" d="M16 15l-4 4-4-4"/></svg>
+                </button>
+              </th>
+              <th scope="col" data-type="text">
+                <button type="button" commandfor="all-martyrs-table" command="--sort" class="sort-th-btn">
+                  <span>Quê quán, Đơn vị &amp; Nghĩa trang</span>
+                  <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="sort-indicator"><path class="sort-up" d="M8 9l4-4 4 4"/><path class="sort-down" d="M16 15l-4 4-4-4"/></svg>
+                </button>
+              </th>
+              <th scope="col" data-type="text">
+                <button type="button" commandfor="all-martyrs-table" command="--sort" class="sort-th-btn">
+                  <span>Huân chương &amp; Nguồn xác minh</span>
+                  <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="sort-indicator"><path class="sort-up" d="M8 9l4-4 4 4"/><path class="sort-down" d="M16 15l-4 4-4-4"/></svg>
+                </button>
+              </th>
+              <th scope="col">Hồ sơ</th>
+            </tr>
+          </thead>
+          <tbody id="all-martyrs-tbody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- VIEW 3: PHIÊN HIỆU (DEATH-NOTICE UNIT DECODER & GRAPH — Decision 1A)  -->
+    <!-- ===================================================================== -->
+    <section id="view-phien-hieu" role="tabpanel" aria-labelledby="tab-phien-hieu" class="hidden flex-col gap-4">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-start">
+        <!-- Left 5 Cols: Death-Notice (Giấy Báo Tử) Unit Decoder -->
+        <div class="lg:col-span-5 bg-[var(--card)] border border-[var(--border)] rounded-[10px] p-4 sm:p-5 flex flex-col gap-3">
+          <div>
+            <h2 class="font-serif-archival text-xl font-semibold text-[var(--foreground)]">Giải mã phiên hiệu đơn vị trên Giấy báo tử</h2>
+            <p class="text-sm text-[var(--muted-foreground)] mt-1">
+              Giấy báo tử thời chiến thường ghi ký hiệu đơn vị như <code>F325</code>, <code>E95</code>, <code>F304</code>, <code>E66</code>, <code>Q761</code>, <code>D261</code>, <code>C552</code>. Nhập hoặc chọn phiên hiệu bên dưới để đối chiếu chiến trường và các trận đánh đơn vị đã tham gia:
+            </p>
+          </div>
+          <input
+            type="search"
+            id="unit-decoder-input"
+            aria-label="Nhập phiên hiệu đơn vị trên giấy báo tử"
+            class="w-full h-11 px-3.5 rounded-md text-sm bg-[var(--background)] border border-[var(--border)] text-[var(--foreground)]"
+            placeholder="Nhập phiên hiệu đơn vị (ví dụ: F325, E66, F304, 377, Q761)..."
+          />
+          <div id="unit-decoder-results" class="flex flex-col divide-y divide-[var(--border)] max-h-[520px] overflow-y-auto custom-scroll"></div>
+        </div>
+
+        <!-- Right 7 Cols: Interactive Unit-to-Battle Network Graph -->
+        <div class="lg:col-span-7 bg-[var(--card)] border border-[var(--border)] rounded-[10px] overflow-hidden flex flex-col">
+          <div class="px-4 py-3 border-b border-[var(--border)] flex flex-wrap items-center justify-between gap-2">
+            <div>
+              <h3 class="text-base font-semibold text-[var(--foreground)]">Sơ đồ liên kết Phiên hiệu Đơn vị — Chiến dịch (1960–1975)</h3>
+              <p class="text-sm text-[var(--muted-foreground)]">Nhấp vào một phiên hiệu bên trái hoặc một chiến dịch bên phải để mở chi tiết.</p>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <button type="button" onclick="zoomUnitGraph(1.2)" aria-label="Phóng to sơ đồ" class="touch-target px-3 h-10 rounded-md border border-[var(--border)] bg-[var(--background)] hover:border-[var(--accent)] text-sm font-medium">+</button>
+              <button type="button" onclick="zoomUnitGraph(0.84)" aria-label="Thu nhỏ sơ đồ" class="touch-target px-3 h-10 rounded-md border border-[var(--border)] bg-[var(--background)] hover:border-[var(--accent)] text-sm font-medium">−</button>
+              <button type="button" onclick="resetUnitGraphCamera()" class="touch-target px-3 h-10 rounded-md border border-[var(--border)] bg-[var(--background)] hover:border-[var(--accent)] text-sm font-medium">Đặt lại</button>
+            </div>
+          </div>
+          <div class="relative w-full h-[680px]">
+            <canvas id="unit-lineage-canvas" role="img" aria-label="Sơ đồ mạng lưới liên kết các phiên hiệu đơn vị chủ lực với các chiến dịch lịch sử" class="w-full h-full block cursor-grab active:cursor-grabbing"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================= -->
+  <!-- UNIVERSAL MARTYR DOSSIER & WARTIME LETTER MODAL (<dialog closedby="any">)-->
+  <!-- Follows modern-web-guidance: dialog & light-dismiss-a-dialog            -->
+  <!-- ======================================================================= -->
+  <dialog id="martyr-dialog" closedby="any" aria-labelledby="martyr-dialog-title">
+    <div class="flex items-center justify-between gap-3 px-5 py-3.5 border-b border-[var(--border)] bg-[var(--background)]">
+      <h2 id="martyr-dialog-title" class="font-serif-archival text-lg sm:text-xl font-semibold text-[var(--foreground)]">Hồ sơ Liệt sĩ</h2>
+      <form method="dialog">
+        <button type="submit" class="tap-target h-11 px-3.5 rounded-md text-sm font-medium border border-[var(--border)] bg-[var(--card)] text-[var(--foreground)] hover:border-[var(--accent)]" autofocus>
+          Đóng
+        </button>
+      </form>
+    </div>
+    <div id="martyr-dialog-body" class="divide-y divide-[var(--border)] max-h-[76vh] overflow-y-auto custom-scroll"></div>
+  </dialog>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="data/battles_and_martyrs.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

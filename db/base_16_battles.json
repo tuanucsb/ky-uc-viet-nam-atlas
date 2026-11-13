@@ -1,0 +1,2417 @@
+{
+  "WAR_PERIODS": [
+    {
+      "id": "ALL",
+      "label": "Tất cả (1954–1975)",
+      "years": "1954–1975",
+      "color": "#f59e0b",
+      "description": "Toàn cảnh 21 năm kháng chiến chống Mỹ, cứu nước trên khắp các chiến trường miền Nam, miền Bắc và Trường Sơn.",
+      "shortLabel": "Tất cả"
+    },
+    {
+      "id": "P1_1954_1960",
+      "label": "1954–1960: Đồng Khởi",
+      "years": "1954–1960",
+      "color": "#10b981",
+      "description": "Đấu tranh chính trị kết hợp vũ trang tự vệ, bùng nổ thành cao trào Đồng Khởi ở Bến Tre, Tây Ninh, Trà Bồng (1959–1960).",
+      "shortLabel": "1954–1960"
+    },
+    {
+      "id": "P2_1961_1965",
+      "label": "1961–1965: Chiến tranh Đặc biệt",
+      "years": "1961–1965",
+      "color": "#3b82f6",
+      "description": "Đánh bại chiến thuật 'Trực thăng vận', 'Thiết xa vận' và quốc sách 'Ấp chiến lược' tại Ấp Bắc, Bình Giã, Ba Gia, Đồng Xoài.",
+      "shortLabel": "1961–1965"
+    },
+    {
+      "id": "P3_1965_1968",
+      "label": "1965–1968: Chiến tranh Cục bộ",
+      "years": "1965–1968",
+      "color": "#ef4444",
+      "description": "Đương đầu trực tiếp quân viễn chinh Mỹ ('Tìm và Diệt') và chiến tranh phá hoại miền Bắc lần 1; đỉnh cao là Vạn Tường, Ia Đrăng, Khe Sanh, Đồng Lộc và Tết Mậu Thân 1968.",
+      "shortLabel": "1965–1968"
+    },
+    {
+      "id": "P4_1969_1973",
+      "label": "1969–1973: Việt Nam hóa Chiến tranh",
+      "years": "1969–1973",
+      "color": "#a855f7",
+      "description": "Đập tan các cuộc hành quân lớn (Đường 9 - Nam Lào), Tiến công chiến lược 1972 (Thành cổ Quảng Trị, Đắk Tô - Tân Cảnh) và Điện Biên Phủ trên không.",
+      "shortLabel": "1969–1973"
+    },
+    {
+      "id": "P5_1973_1975",
+      "label": "1973–1975: Đại thắng Mùa Xuân 1975",
+      "years": "1973–1975",
+      "color": "#eab308",
+      "description": "Từ Thượng Đức, Phước Long đến 3 đòn chiến lược Tây Nguyên, Huế – Đà Nẵng và Chiến dịch Hồ Chí Minh lịch sử giải phóng hoàn toàn miền Nam.",
+      "shortLabel": "1973–1975"
+    }
+  ],
+  "BATTLES_DATA": [
+    {
+      "id": "dong-khoi-tua-hai-1960",
+      "name": "Phong trào Đồng Khởi & Trận Tua Hai",
+      "altName": "Mở màn đấu tranh vũ trang miền Nam",
+      "periodId": "P1_1954_1960",
+      "dateRange": "17/01/1960 – 26/01/1960",
+      "year": 1960,
+      "locationName": "Mỏ Cày (Bến Tre) & Căn cứ Tua Hai (Châu Thành, Tây Ninh)",
+      "modernProvince": "Bến Tre / Tây Ninh",
+      "militaryZone": "Khu 8 & Miền Đông Nam Bộ (B2)",
+      "coords": [
+        10.2435,
+        106.3756
+      ],
+      "verificationLevel": "L4",
+      "summary": "Phong trào Đồng Khởi (đỉnh cao từ 17/01/1960 tại Mỏ Cày, Bến Tre) kết hợp với chiến thắng đột kích căn cứ Tua Hai (26/01/1960 tại Tây Ninh) đã chuyển cách mạng miền Nam từ thế giữ gìn lực lượng sang thế tiến công, dẫn tới sự ra đời của Mặt trận Dân tộc Giải phóng miền Nam Việt Nam (20/12/1960).",
+      "phases": [
+        {
+          "date": "17/01/1960",
+          "title": "Đồng Khởi tại Định Thủy, Phước Hiệp, Bình Khánh (Mỏ Cày, Bến Tre)",
+          "desc": "Quần chúng và lực lượng vũ trang tự vệ nổi dậy phá thế kìm kẹp, thành lập Đội quân tóc dài."
+        },
+        {
+          "date": "26/01/1960",
+          "title": "Trận đánh căn cứ Tua Hai (Tây Ninh)",
+          "desc": "Lực lượng vũ trang miền Đông Nam Bộ tập kích Sở chỉ huy Trung đoàn 32 (Sư đoàn 21 QLVNCH), thu hơn 1.500 súng."
+        }
+      ],
+      "result": "Thắng lợi chiến lược: Phá vỡ hệ thống kìm kẹp ở nông thôn Nam Bộ, thu hàng ngàn vũ khí trang bị cho lực lượng vũ trang giải phóng.",
+      "combatants": {
+        "rev": {
+          "factions": [
+            "Lực lượng vũ trang Cách mạng miền Nam",
+            "Đội quân tóc dài Bến Tre"
+          ],
+          "commanders": [
+            "Nguyễn Thị Định (Phó Tư lệnh QGPMNVN)",
+            "Nguyễn Hữu Xuyến (Chỉ huy trận Tua Hai)",
+            "Mai Chí Thọ"
+          ],
+          "units": [
+            "Đơn vị Đặc công 60",
+            "Tiểu đoàn 502",
+            "Tiểu đoàn 512 An Giang",
+            "Du kích Mỏ Cày"
+          ],
+          "strength": "~600 chiến sĩ vũ trang & hàng vạn quần chúng nổi dậy",
+          "casualties": "Tại trận Tua Hai: 17 chiến sĩ hy sinh, 28 bị thương (Nguồn: Lịch sử LLVT Tây Ninh)"
+        },
+        "opp": {
+          "factions": [
+            "Quân lực Việt Nam Cộng hòa (QLVNCH)",
+            "Bảo an & Dân vệ"
+          ],
+          "commanders": [
+            "Trung tá Nguyễn Quang Thông (Trung đoàn trưởng E32)"
+          ],
+          "units": [
+            "Trung đoàn 32 (Sư đoàn 21 Bộ binh QLVNCH)",
+            "Bảo an tỉnh Bến Tre"
+          ],
+          "strength": "~1.600 quân tại căn cứ Tua Hai",
+          "casualties": "Tại Tua Hai: >100 chết và bị thương, ~400 bị bắt, thu 1.500 súng (Nguồn: Lịch sử Kháng chiến chống Mỹ, cứu nước — NXB Chính trị Quốc gia)"
+        }
+      },
+      "estimatedMartyrs": "17 liệt sĩ tại trận Tua Hai và hàng trăm cán bộ, chiến sĩ trong cao trào Đồng Khởi 1959–1960",
+      "martyrs": [
+        {
+          "id": "ls-ngo-minh-tri",
+          "name": "Ngô Minh Trị",
+          "birthYear": 1936,
+          "sacrificeDate": "26/01/1960",
+          "hometown": "Xã Thanh Tuyền, huyện Bến Cát, tỉnh Bình Dương (Sông Bé cũ)",
+          "rankRole": "Tiểu đội phó Đặc công - Anh hùng LLVTND",
+          "unitRaw": "Đơn vị Đặc công 60, Miền Đông Nam Bộ",
+          "cemetery": "Nghĩa trang Liệt sĩ tỉnh Tây Ninh",
+          "level": "L4",
+          "confidence": 1,
+          "featured": true,
+          "sourceName": "Bảo tàng Lịch sử Quân sự Việt Nam & Chuyên trang Câu chuyện Lịch sử",
+          "sourceUrl": "https://cauchuyenlichsu.vn/ky-uc-song-mai/anh-hung-llvtnd-ngo-minh-tri",
+          "story": "Trong trận tập kích căn cứ Tua Hai đêm 25 rạng 26/01/1960, được giao chỉ huy tổ mũi nhọn đánh thẳng vào sở chỉ huy Trung đoàn 32 địch, dù bị thương nhiều lần và bị chó nghiệp vụ tấn công, đồng chí Ngô Minh Trị vẫn anh dũng trườn lên ôm khối bộc phá xông thẳng vào đội hình địch kích nổ làm hiệu lệnh tổng tiến công toàn mặt trận, hy sinh ở tuổi 24. Ngày 05/05/1965, đồng chí được truy tặng danh hiệu Anh hùng LLVTND giải phóng.",
+          "secondarySourceName": "Cổng Thông tin Điện tử Bộ Quốc phòng — Chiến thắng Tua Hai",
+          "secondarySourceUrl": "https://mod.gov.vn/vn/noi-dung/sa-qlcddh/sa-qlcddh-cddh/bd1510a6-856b-4174-b530-04178eba56fb"
+        },
+        {
+          "id": "ls-duong-binh-giang",
+          "name": "Dương Bình Giang (Huỳnh Chí Công / Năm Giang)",
+          "birthYear": 1923,
+          "sacrificeDate": "15/06/1961",
+          "hometown": "Xã Tân An, huyện Tân Châu, tỉnh An Giang",
+          "rankRole": "Tiểu đoàn trưởng - Anh hùng LLVTND",
+          "unitRaw": "Tiểu đoàn 512, Tỉnh đội An Giang",
+          "cemetery": "Nghĩa trang Liệt sĩ tỉnh An Giang",
+          "level": "L4",
+          "confidence": 0.99,
+          "featured": false,
+          "sourceName": "Hồ sơ Anh hùng LLVTND & Chuyên trang Câu chuyện Lịch sử",
+          "sourceUrl": "https://cauchuyenlichsu.vn/ky-uc-song-mai/anh-hung-llvt-duong-binh-gianng-ngon-den-khong-tat-ben-dong-vinh-te",
+          "story": "Người chỉ huy kiên cường của Tiểu đoàn 512 tỉnh An Giang (tên thật Huỳnh Chí Công, bí danh Năm Giang), gắn liền với các trận chiến đấu bảo vệ căn cứ và mở rộng vùng giải phóng dọc kênh Vĩnh Tế trong cao trào Đồng Khởi biên giới Tây Nam. Ông anh dũng hy sinh tháng 6/1961 và được Chủ tịch nước truy tặng danh hiệu Anh hùng LLVTND ngày 09/10/2014."
+        }
+      ],
+      "sourceName": "Cổng Thông tin Điện tử Bộ Quốc phòng — Chiến thắng Tua Hai",
+      "sourceUrl": "https://mod.gov.vn/vn/noi-dung/sa-qlcddh/sa-qlcddh-cddh/bd1510a6-856b-4174-b530-04178eba56fb",
+      "secondarySourceName": "Báo Quân đội Nhân dân — Phong trào Đồng Khởi 1960",
+      "secondarySourceUrl": "https://www.qdnd.vn/vung-buoc-duoi-quan-ky-quyet-thang/lich-su-quan-doi-nhan-dan-viet-nam",
+      "archivalNote": "Theo Tổng kết của Viện Lịch sử Quân sự Việt Nam (Bộ Quốc phòng), trận tập kích căn cứ Tua Hai đêm 25 rạng 26/01/1960 tại Tây Ninh cùng cao trào Đồng Khởi Bến Tre (17/01/1960) đã mở đầu giai đoạn kết hợp đấu tranh chính trị với đấu tranh vũ trang trên toàn miền Nam, thu hơn 1.500 súng các loại trang bị cho các đơn vị chủ lực đầu tiên của Miền B2."
+    },
+    {
+      "id": "tran-ap-bac-1963",
+      "name": "Trận Ấp Bắc",
+      "altName": "Battle of Ap Bac",
+      "periodId": "P2_1961_1965",
+      "dateRange": "02/01/1963",
+      "year": 1963,
+      "locationName": "Ấp Bắc, xã Tân Phú, huyện Cai Lậy, tỉnh Mỹ Tho (nay là Tiền Giang)",
+      "modernProvince": "Tiền Giang",
+      "militaryZone": "Quân khu 8 (Tây Nam Bộ)",
+      "coords": [
+        10.4381,
+        106.1958
+      ],
+      "verificationLevel": "L4",
+      "summary": "Trận Ấp Bắc (02/01/1963) là chiến thắng lớn đầu tiên của lực lượng vũ trang Mặt trận Dân tộc Giải phóng miền Nam Việt Nam trước đội quân chính quy QLVNCH được cố vấn Mỹ chỉ huy, đánh bại chiến thuật 'Trực thăng vận' (H-21/UH-1) và 'Thiết xa vận' (M113).",
+      "phases": [
+        {
+          "date": "Sáng 02/01/1963",
+          "title": "Đánh lui các đợt đổ bộ đường bộ & trực thăng vận",
+          "desc": "Đại đội 1 Tiểu đoàn 261 và Tiểu đoàn 514 phục kích, bắn rơi 5 trực thăng Mỹ tại trận địa."
+        },
+        {
+          "date": "Chiều 02/01/1963",
+          "title": "Tiểu đội Gang Thép chặn đứng Chi đoàn Thiết giáp M113",
+          "desc": "3 chiến sĩ gang thép bám trụ công sự, tiêu diệt và đẩy lùi xe bọc thép M113; tối cùng ngày rút quân an toàn."
+        }
+      ],
+      "result": "Quân Giải phóng thắng lợi lớn; mở đầu phong trào 'Thi đua Ấp Bắc, giết giặc lập công', báo hiệu sự phá sản của chiến lược Chiến tranh Đặc biệt.",
+      "combatants": {
+        "rev": {
+          "factions": [
+            "Quân Giải phóng miền Nam Việt Nam"
+          ],
+          "commanders": [
+            "Võ Văn Điều (Hai Hoàng - Tiểu đoàn trưởng D261)",
+            "Đặng Minh Nhuận (Bảy Đen)"
+          ],
+          "units": [
+            "Đại đội 1 Tiểu đoàn 261 (Khu 8)",
+            "Đại đội 1 Tiểu đoàn 514 (Tỉnh đội Mỹ Tho)",
+            "Du kích xã Tân Phú"
+          ],
+          "strength": "~350 cán bộ, chiến sĩ",
+          "casualties": "18 chiến sĩ hy sinh, 39 bị thương (Nguồn: Sử Tỉnh đội Tiền Giang)"
+        },
+        "opp": {
+          "factions": [
+            "Quân lực Việt Nam Cộng hòa",
+            "Cố vấn & Không quân Hoa Kỳ"
+          ],
+          "commanders": [
+            "Đại tá Bùi Đình Đạm (Tư lệnh F7)",
+            "Trung tá John Paul Vann (Cố vấn trưởng Mỹ)",
+            "Thiếu tướng Huỳnh Văn Cao"
+          ],
+          "units": [
+            "Sư đoàn 7 Bộ binh QLVNCH",
+            "Tiểu đoàn 8 Nhảy dù",
+            "Chi đoàn 4 Thiết giáp (13 xe M113)",
+            "Phi đoàn trực thăng Mỹ"
+          ],
+          "strength": "1.400 – 1.800 quân, 13 xe M113, ~30 máy bay, 13 tàu chiến",
+          "casualties": "QLVNCH: 83 chết, >100 bị thương; Mỹ: 3 chết, 8 bị thương; 5 trực thăng rơi, 3 xe M113 cháy (Nguồn: Lịch sử Kháng chiến chống Mỹ, cứu nước — NXB Chính trị Quốc gia)"
+        }
+      },
+      "estimatedMartyrs": "18 liệt sĩ hy sinh tại trận địa Ấp Bắc ngày 02/01/1963",
+      "martyrs": [
+        {
+          "id": "ls-nguyen-van-dung-ap-bac",
+          "name": "Nguyễn Văn Đừng (Nguyễn Văn Còng / Công)",
+          "birthYear": 1938,
+          "sacrificeDate": "02/01/1963",
+          "hometown": "Chợ Gạo, Mỹ Tho (Tiền Giang)",
+          "rankRole": "Tiểu đội trưởng - Anh hùng LLVTND ('Ba chiến sĩ Gang Thép')",
+          "unitRaw": "Đại đội 1, Tiểu đoàn 261 (Đoàn Giron), Khu 8",
+          "cemetery": "Khu di tích & Nghĩa trang Ấp Bắc, Cai Lậy, Tiền Giang",
+          "level": "L4",
+          "confidence": 1,
+          "featured": true,
+          "sourceName": "Ban Quản lý Khu di tích Chiến thắng Ấp Bắc & Câu chuyện Lịch sử",
+          "sourceUrl": "https://cauchuyenlichsu.vn/ky-uc-song-mai/anh-hung-nguyen-van-dung-nguoi-chien-si-gang-thep-cua-tran-ap-bac-f1fe3f",
+          "story": "Chỉ huy Tiểu đội 2 chốt giữ Ấp Tân Hiệp. Khi đàn xe bọc thép M113 tràn vào công sự, anh cùng 2 đồng đội Đỗ Văn Trạch và Lê Văn Toản nhảy lên nắp xe ném thủ pháo tiêu diệt kíp lái và chiến đấu đến hơi thở cuối cùng, đi vào lịch sử với danh hiệu 'Ba chiến sĩ gang thép Ấp Bắc'.",
+          "portraitUrl": "assets/martyrs/ba-chien-si-gang-thep-ap-bac.jpg",
+          "portraitWidth": 456,
+          "portraitHeight": 304,
+          "imageKind": "memorial",
+          "portraitCaption": "Tượng đài 'Ba chiến sĩ Gang Thép Ấp Bắc' (Nguyễn Văn Đừng, Đỗ Văn Trạch, Lê Văn Toản) trên xác xe bọc thép M113 tại Khu di tích Chiến thắng Ấp Bắc, Tiền Giang.",
+          "portraitCredit": "Khu di tích Chiến thắng Ấp Bắc"
+        },
+        {
+          "id": "ls-do-van-trach-ap-bac",
+          "name": "Đỗ Văn Trạch (bí danh Hùng)",
+          "birthYear": 1940,
+          "sacrificeDate": "02/01/1963",
+          "hometown": "Mỹ Tho (Tiền Giang)",
+          "rankRole": "Chiến sĩ - Anh hùng LLVTND ('Ba chiến sĩ Gang Thép')",
+          "unitRaw": "Đại đội 1, Tiểu đoàn 261, Khu 8",
+          "cemetery": "Khu di tích Ấp Bắc, Cai Lậy, Tiền Giang",
+          "level": "L4",
+          "confidence": 1,
+          "featured": true,
+          "sourceName": "Khu di tích Chiến thắng Ấp Bắc & Lịch sử Tiểu đoàn 261 Khu 8",
+          "sourceUrl": "https://cauchuyenlichsu.vn/ky-uc-song-mai/anh-hung-nguyen-van-dung-nguoi-chien-si-gang-thep-cua-tran-ap-bac-f1fe3f",
+          "story": "Một trong 'Ba chiến sĩ gang thép Ấp Bắc' kiên cường bám trụ công sự đánh bại đợt càn của 13 xe bọc thép M113 ngày 02/01/1963, được truy tặng Anh hùng LLVTND.",
+          "portraitUrl": "assets/martyrs/ba-chien-si-gang-thep-ap-bac.jpg",
+          "portraitWidth": 456,
+          "portraitHeight": 304,
+          "imageKind": "memorial",
+          "portraitCaption": "Tượng đài tưởng niệm Tiểu đội Gang Thép Ấp Bắc (Nguyễn Văn Đừng, Đỗ Văn Trạch, Lê Văn Toản) tại huyện Cai Lậy, tỉnh Tiền Giang.",
+          "portraitCredit": "Khu di tích Chiến thắng Ấp Bắc"
+        },
+        {
+          "id": "ls-le-van-toan-ap-bac",
+          "name": "Lê Văn Toản (bí danh Hoàng)",
+          "birthYear": 1942,
+          "sacrificeDate": "02/01/1963",
+          "hometown": "Mỹ Tho (Tiền Giang)",
+          "rankRole": "Chiến sĩ - Anh hùng LLVTND ('Ba chiến sĩ Gang Thép')",
+          "unitRaw": "Đại đội 1, Tiểu đoàn 261, Khu 8",
+          "cemetery": "Khu di tích Ấp Bắc, Cai Lậy, Tiền Giang",
+          "level": "L4",
+          "confidence": 1,
+          "featured": true,
+          "sourceName": "Khu di tích Chiến thắng Ấp Bắc & Lịch sử Tiểu đoàn 261 Khu 8",
+          "sourceUrl": "https://cauchuyenlichsu.vn/ky-uc-song-mai/anh-hung-nguyen-van-dung-nguoi-chien-si-gang-thep-cua-tran-ap-bac-f1fe3f",
+          "story": "Cùng Nguyễn Văn Đừng và Đỗ Văn Trạch lập nên huyền thoại 'Tiểu đội Gang Thép' tại Ấp Bắc ngày 02/01/1963, được dựng tượng đài tại Khu di tích Ấp Bắc (Tiền Giang).",
+          "portraitUrl": "assets/martyrs/ba-chien-si-gang-thep-ap-bac.jpg",
+          "portraitWidth": 456,
+          "portraitHeight": 304,
+          "imageKind": "memorial",
+          "portraitCaption": "Tượng đài 'Ba chiến sĩ Gang Thép' tại Khu di tích Chiến thắng Ấp Bắc, xã Tân Phú, thị xã Cai Lậy, tỉnh Tiền Giang.",
+          "portraitCredit": "Khu di tích Chiến thắng Ấp Bắc"
+        }
+      ],
+      "sourceName": "Khu di tích Chiến thắng Ấp Bắc & Chuyên trang Câu chuyện Lịch sử",
+      "sourceUrl": "https://cauchuyenlichsu.vn/ky-uc-song-mai/anh-hung-nguyen-van-dung-nguoi-chien-si-gang-thep-cua-tran-ap-bac-f1fe3f",
+      "secondarySourceName": "Báo Ấp Bắc / Đồng Tháp — Di tích Chiến thắng Ấp Bắc",
+      "secondarySourceUrl": "https://baodongthap.vn/cong-dien-bao-cao-vo-cai-luong-canh-dong-ap-bac--a233522.html",
+      "archivalNote": "Tư liệu Ban Quản lý Khu di tích Chiến thắng Ấp Bắc (Cai Lậy, Tiền Giang) và Lịch sử Quân khu 8 ghi nhận: Chỉ với 1 đại đội của Tiểu đoàn 261, 1 đại đội của Tiểu đoàn 514 và du kích xã Tân Phú, Quân Giải phóng đã đánh bại cuộc càn quét hợp điểm của hơn 2.000 quân chủ lực địch có cố vấn Mỹ chỉ huy, bắn rơi tại chỗ 5 trực thăng và bắn cháy 3 xe bọc thép M113."
+    },
+    {
+      "id": "chien-dich-binh-gia-1964",
+      "name": "Chiến dịch Bình Giã & Chiến trường Miền Đông (1963–1965)",
+      "altName": "Battle of Binh Gia & Đồn Cây Trường",
+      "periodId": "P2_1961_1965",
+      "dateRange": "18/10/1963 – 03/01/1965 (Trận Bình Giã: 02/12/1964 – 03/01/1965)",
+      "year": 1964,
+      "locationName": "Bình Giã (Châu Đức, Bà Rịa – Vũng Tàu), Bến Cát (Bình Dương) & Sài Gòn",
+      "modernProvince": "Bà Rịa – Vũng Tàu / Bình Dương",
+      "militaryZone": "Miền Đông Nam Bộ (B2)",
+      "coords": [
+        10.6531,
+        107.2314
+      ],
+      "verificationLevel": "L4",
+      "summary": "Chuỗi trận đánh tiến công của bộ đội chủ lực Miền B2 (Trung đoàn Q761, Q762) từ trận công kiên đồn Cây Trường (Bến Cát) đến Chiến dịch Bình Giã (12/1964 – 01/1965), tiêu diệt gọn Tiểu đoàn 33 Biệt động quân và Tiểu đoàn 4 Thủy quân Lục chiến QLVNCH, đánh dấu sự phá sản hoàn toàn của chiến lược Chiến tranh Đặc biệt.",
+      "phases": [
+        {
+          "date": "18/10/1963",
+          "title": "Trận tập kích đồn Cây Trường (Bến Cát, Bình Dương)",
+          "desc": "Anh hùng Liệt sĩ Trừ Văn Thố lấy thân mình lấp lỗ châu mai mở đường cho Trung đoàn Q762 tiêu diệt cứ điểm."
+        },
+        {
+          "date": "02/12/1964 – 03/01/1965",
+          "title": "Chiến dịch Bình Giã: Tiêu diệt TĐ 33 Biệt động quân & TĐ 4 TQLC",
+          "desc": "Trung đoàn 1 (Q761 - Đoàn Bình Giã) và Trung đoàn 2 (Q762) đánh thiệt hại nặng lực lượng tổng dự bị chiến lược của QLVNCH."
+        }
+      ],
+      "result": "Thắng lợi chiến lược: Trung đoàn Q761 được tặng danh hiệu 'Đoàn Bình Giã'; chiến lược Chiến tranh Đặc biệt phá sản.",
+      "combatants": {
+        "rev": {
+          "factions": [
+            "Quân Giải phóng miền Nam Việt Nam (Miền B2)",
+            "Biệt động Sài Gòn – Gia Định"
+          ],
+          "commanders": [
+            "Thiếu tướng Trần Đình Xu (Tư lệnh)",
+            "Nguyễn Văn Linh",
+            "Lê Văn Tưởng (Chính ủy)",
+            "Tạ Minh Khâm (E trưởng Q761)"
+          ],
+          "units": [
+            "Trung đoàn 1 (Q761 - Đoàn Bình Giã)",
+            "Trung đoàn 2 (Q762 - Đoàn Đồng Xoài)",
+            "Đoàn 563 Pháo binh Biên Hòa",
+            "Đội Biệt động 65 Sài Gòn"
+          ],
+          "strength": "~4.000 quân chủ lực và bộ đội địa phương",
+          "casualties": "~32 chiến sĩ hy sinh trong trận chính tại Bình Giã, ~150 bị thương (Nguồn: Lịch sử Kháng chiến chống Mỹ, cứu nước — NXB Chính trị Quốc gia)"
+        },
+        "opp": {
+          "factions": [
+            "Quân lực Việt Nam Cộng hòa",
+            "Cố vấn & Không quân Hoa Kỳ"
+          ],
+          "commanders": [
+            "Thiếu tướng Cao Văn Viên",
+            "Thiếu tá Nguyễn Văn Nho (TĐ trưởng TĐ 4 TQLC - tử trận)"
+          ],
+          "units": [
+            "Tiểu đoàn 4 Thủy quân Lục chiến",
+            "Tiểu đoàn 33, 30, 35, 38 Biệt động quân",
+            "Chi đoàn 3 Thiết giáp M113"
+          ],
+          "strength": ">7.000 quân cơ động và bảo an, hàng chục trực thăng & xe M113",
+          "casualties": ">1.700 chết, bị thương và bị bắt; 56 máy bay bị bắn rơi/hư hại (Nguồn: Lịch sử Kháng chiến chống Mỹ, cứu nước — NXB Chính trị Quốc gia)"
+        }
+      },
+      "estimatedMartyrs": "Hơn 100 liệt sĩ thuộc Trung đoàn Q761 (Đoàn Bình Giã), Q762 và Biệt động Sài Gòn",
+      "martyrs": [
+        {
+          "id": "ls-tru-van-tho-1963",
+          "name": "Trừ Văn Thố",
+          "birthYear": 1936,
+          "sacrificeDate": "18/10/1963",
+          "hometown": "Thanh Hòa, Cai Lậy, Mỹ Tho (Tiền Giang)",
+          "rankRole": "Chiến sĩ Trinh sát Đặc công - Anh hùng LLVTND",
+          "unitRaw": "Đại đội Đặc công, Trung đoàn 2 (Q762), Chủ lực Miền B2",
+          "cemetery": "Nghĩa trang Liệt sĩ huyện Bàu Bàng / Bến Cát, Bình Dương",
+          "level": "L4",
+          "confidence": 1,
+          "featured": true,
+          "sourceName": "Bảo tàng Lịch sử Quân sự Việt Nam & Chuyên trang Câu chuyện Lịch sử",
+          "sourceUrl": "https://cauchuyenlichsu.vn/ky-uc-song-mai/tru-van-tho-mot-doi-nguoi-mot-ngon-lua-khong-tat-909d24",
+          "story": "Đêm 18/10/1963, trong trận đánh đồn Cây Trường (Bến Cát, Bình Dương), khi hỏa điểm đại liên trong lô cốt địch bắn rát làm thương vong nhiều đồng đội, chiến sĩ Trừ Văn Thố đã dũng cảm lao lên lấy thân mình lấp kín lỗ châu mai, hy sinh oanh liệt để mở đường cho đơn vị tiêu diệt toàn bộ đồn địch.",
+          "portraitUrl": "assets/martyrs/tru-van-tho.jpg",
+          "portraitWidth": 475,
+          "portraitHeight": 285,
+          "imageKind": "memorial",
+          "portraitCaption": "Tượng bán thân tưởng niệm Anh hùng Liệt sĩ Trừ Văn Thố (1936–1963) tại quê hương Cai Lậy, tỉnh Tiền Giang.",
+          "portraitCredit": "Báo Ấp Bắc (Tiền Giang)"
+        },
+        {
+          "id": "ls-nguyen-van-troi-1964",
+          "name": "Nguyễn Văn Trỗi",
+          "birthYear": 1940,
+          "sacrificeDate": "15/10/1964",
+          "hometown": "Làng Thanh Quýt, xã Điện Thắng Trung, thị xã Điện Bàn, tỉnh Quảng Nam",
+          "rankRole": "Chiến sĩ Biệt động Sài Gòn - Anh hùng LLVTND",
+          "unitRaw": "Đội Biệt động 65, Quân khu Sài Gòn – Gia Định",
+          "cemetery": "Nghĩa trang Liệt sĩ TP. Hồ Chí Minh",
+          "level": "L4",
+          "confidence": 1,
+          "featured": true,
+          "sourceName": "Bảo tàng Lịch sử Quốc gia & Chuyên trang Câu chuyện Lịch sử",
+          "sourceUrl": "https://cauchuyenlichsu.vn/ky-uc-song-mai/anh-hung-liet-si-nguyen-van-troi-nguoi-chien-si-biet-dong-sai-gon",
+          "story": "Tháng 5/1964, anh nhận nhiệm vụ đặt mìn tại cầu Công Lý (Sài Gòn) nhằm tiêu diệt phái đoàn quân sự cấp cao Mỹ do Bộ trưởng Quốc phòng Robert McNamara dẫn đầu. Bị bắt và đưa ra xử bắn tại khám Chí Hòa ngày 15/10/1964, anh tự giật băng bịt mắt và hô vang: 'Hãy nhớ lấy lời tôi! Đả đảo đế quốc Mỹ! Việt Nam muôn năm! Hồ Chủ tịch muôn năm!'.",
+          "portraitUrl": "assets/martyrs/nguyen-van-troi.jpg",
+          "portraitWidth": 300,
+          "portraitHeight": 371,
+          "imageKind": "portrait",
+          "portraitCaption": "Chân dung tư liệu Anh hùng Liệt sĩ Nguyễn Văn Trỗi (1940–1964), chiến sĩ Đội Biệt động 65 Sài Gòn – Gia Định.",
+          "portraitCredit": "Bảo tàng Lịch sử Quốc gia"
+        },
+        {
+          "id": "ls-le-hoang-vu-binh-gia",
+          "name": "Lê Hoàng Vũ (cùng Nguyễn Chí & Trần Viết Dũng)",
+          "birthYear": 1941,
+          "sacrificeDate": "02–03/1966",
+          "hometown": "Thái Bình (Lê Hoàng Vũ), Quảng Ngãi (Nguyễn Chí), Sài Gòn (Trần Viết Dũng)",
+          "rankRole": "3 Chiến sĩ Tiểu đội 1, Trung đội 'Ký Con' - Trung đoàn Bình Giã",
+          "unitRaw": "Trung đội Ký Con, Trung đoàn Bình Giã (Q761), Miền B2",
+          "cemetery": "Khu tưởng niệm rừng nguyên sinh Đồng Nai / NTLS Đồng Nai",
+          "level": "L3",
+          "confidence": 0.93,
+          "featured": true,
+          "sourceName": "Bảo tàng Lịch sử Quân sự Việt Nam & Đài Truyền hình Việt Nam (VTV)",
+          "sourceUrl": "https://vtv.vn/truyen-hinh/xuc-dong-buc-thu-cua-3-chien-si-giai-phong-quan-de-lai-truoc-khi-hi-sinh-20250428093014935.htm",
+          "story": "Ba người lính từ 3 miền Bắc – Trung – Nam thuộc Trung đoàn Bình Giã (Q761): Lê Hoàng Vũ (Thái Bình), Nguyễn Chí (Quảng Ngãi) và Trần Viết Dũng (Sài Gòn). Sau khi hoàn thành nhiệm vụ chiến đấu và bị thương nặng, kiệt sức giữa rừng nguyên sinh thượng nguồn sông Đồng Nai, cả 3 anh đã cùng viết bức thư tuyệt mệnh trên mảnh giấy nhỏ gửi lại cho những người đang sống.",
+          "letterText": "Chúng tôi: Lê Hoàng Vũ (quê Thái Bình), Nguyễn Chí (quê Quảng Ngãi), Trần Viết Dũng (quê Sài Gòn), thuộc Tiểu đội 1, Trung đội Ký Con, Trung đoàn Bình Giã...\n\nChúng tôi đã chiến đấu rất đẹp để giữ gìn mảnh đất thiêng liêng cho Tổ quốc. Khi nhận được những dòng chữ này, chúng tôi không còn nữa. Xin gửi lại cho Đảng, cho nhân dân và những người đang sống lời chào chiến thắng. Mong các đồng chí hãy sống xứng đáng với những người đã khuất!",
+          "secondarySourceName": "Hội Văn học Nghệ thuật tỉnh Đồng Nai — Bức thư giữa rừng già",
+          "secondarySourceUrl": "https://hvhnt.dongnai.gov.vn/pages/newsdetail.aspx?NewsId=4039&CatId=100"
+        }
+      ],
+      "sourceName": "Báo Nhân Dân (Chuyên trang đặc biệt) — Chiến dịch Bình Giã",
+      "sourceUrl": "https://special.nhandan.vn/chiendichbinhgia_bodoichuluc_chientruongmiennam/index.html",
+      "secondarySourceName": "Đài Truyền hình Việt Nam (VTV) — Tư liệu Trung đoàn Bình Giã",
+      "secondarySourceUrl": "https://vtv.vn/truyen-hinh/xuc-dong-buc-thu-cua-3-chien-si-giai-phong-quan-de-lai-truoc-khi-hi-sinh-20250428093014935.htm",
+      "archivalNote": "Theo công trình 'Lịch sử Kháng chiến chống Mỹ, cứu nước 1954–1975' (Tập III, NXB Chính trị Quốc gia), Bình Giã là chiến dịch tiến công đầu tiên của bộ đội chủ lực Miền B2 đánh tiêu diệt gọn từng tiểu đoàn dự bị chiến lược QLVNCH (Tiểu đoàn 33 Biệt động quân và Tiểu đoàn 4 Thủy quân Lục chiến) trong tác chiến vận động ban ngày."
+    },
+    {
+      "id": "chien-dich-dong-xoai-1965",
+      "name": "Chiến dịch Đồng Xoài",
+      "altName": "Đồng Xoài Rực Lửa Chiến Công (Battle of Dong Xoai)",
+      "periodId": "P2_1961_1965",
+      "dateRange": "10/05/1965 – 22/07/1965 (Trận then chốt: 09–12/06/1965)",
+      "year": 1965,
+      "locationName": "Chi khu Đồng Xoài, Đồn điền Thuận Lợi, tỉnh Phước Long (nay là TP. Đồng Xoài, Bình Phước)",
+      "modernProvince": "Bình Phước",
+      "militaryZone": "Miền Đông Nam Bộ (B2)",
+      "coords": [
+        11.5342,
+        106.8833
+      ],
+      "verificationLevel": "L4",
+      "summary": "Chiến dịch tiến công lớn của Quân Giải phóng miền Đông Nam Bộ (B2) đánh sập Chi khu quân sự Đồng Xoài và tiêu diệt liên tiếp các tiểu đoàn ứng cứu đường không của QLVNCH (Tiểu đoàn 1/7, Tiểu đoàn 52 Biệt động quân, Tiểu đoàn 7 Nhảy dù), góp phần đập tan hoàn toàn chiến lược Chiến tranh Đặc biệt.",
+      "phases": [
+        {
+          "date": "Đêm 09 rạng 10/06/1965",
+          "title": "Công kiên đánh chiếm Chi khu Đồng Xoài",
+          "desc": "Trung đoàn 2 (Q762) và Tiểu đoàn Đặc công 840 đột phá khu biệt động quân và trại lực lượng đặc biệt Mỹ."
+        },
+        {
+          "date": "10/06 – 12/06/1965",
+          "title": "Đánh viện tại Đồn điền Thuận Lợi – Tiêu diệt Tiểu đoàn 7 Nhảy dù",
+          "desc": "Trung đoàn 1 (Q761) phục kích tiêu diệt gọn các tiểu đoàn đổ bộ đường không đến giải tỏa."
+        }
+      ],
+      "result": "Trung đoàn 2 (Q762) được tặng danh hiệu vẻ vang 'Đoàn Đồng Xoài'; buộc Mỹ phải vội vã đưa quân viễn chinh trực tiếp vào miền Nam.",
+      "combatants": {
+        "rev": {
+          "factions": [
+            "Quân Giải phóng miền Nam Việt Nam (Chủ lực Miền B2)"
+          ],
+          "commanders": [
+            "Thiếu tướng Lê Trọng Tấn (Tư lệnh)",
+            "Thiếu tướng Trần Độ (Chính ủy)",
+            "Hoàng Cầm",
+            "Nguyễn Thế Bôn"
+          ],
+          "units": [
+            "Trung đoàn 2 (Q762 - Đoàn Đồng Xoài)",
+            "Trung đoàn 1 (Q761 - Đoàn Bình Giã)",
+            "Trung đoàn 3 (Q763)",
+            "Đoàn Pháo binh 563"
+          ],
+          "strength": "3 trung đoàn bộ binh chủ lực Miền & đặc công",
+          "casualties": "Hơn 200 chiến sĩ hy sinh trong trận công kiên ác liệt tại Chi khu Đồng Xoài (Nguồn: Lịch sử Kháng chiến chống Mỹ, cứu nước — NXB Chính trị Quốc gia)"
+        },
+        "opp": {
+          "factions": [
+            "Quân lực Việt Nam Cộng hòa",
+            "Lực lượng Đặc biệt (Green Berets) & Không quân Hoa Kỳ"
+          ],
+          "commanders": [
+            "Chuẩn tướng Nguyễn Hữu Có",
+            "Đại tướng William Westmoreland"
+          ],
+          "units": [
+            "Sư đoàn 5 Bộ binh QLVNCH (Trung đoàn 7)",
+            "Tiểu đoàn 52 Biệt động quân",
+            "Tiểu đoàn 7 Nhảy dù",
+            "Trại Lực lượng Đặc biệt A-342 Mỹ"
+          ],
+          "strength": "~6.000 quân + hơn 100 máy bay trực thăng và khu trục",
+          "casualties": ">4.400 quân địch bị loại khỏi vòng chiến (4 tiểu đoàn bị tiêu diệt), 32 máy bay bị bắn rơi (Nguồn: Lịch sử Quân sự VN)"
+        }
+      },
+      "estimatedMartyrs": "Hơn 200 liệt sĩ thuộc Đoàn Đồng Xoài (Q762), Đoàn Bình Giã (Q761) và các đơn vị phối thuộc",
+      "martyrs": [
+        {
+          "id": "ls-nguyen-phu-thanh-dong-xoai",
+          "name": "Nguyễn Phú Thạnh (Tám Thạnh)",
+          "birthYear": 1927,
+          "sacrificeDate": "10/06/1965",
+          "hometown": "Nam Bộ (Tổ quay phim B8, Điện ảnh Quân Giải phóng Miền B2)",
+          "rankRole": "Phóng viên Chiến trường – Nhà quay phim Điện ảnh Giải phóng",
+          "unitRaw": "Xưởng phim Quân Giải phóng miền Nam (Đi cùng mũi xung kích Trung đoàn Q762)",
+          "cemetery": "Nghĩa trang Liệt sĩ tỉnh Bình Phước",
+          "level": "L3",
+          "confidence": 0.91,
+          "featured": true,
+          "sourceName": "Báo Quân đội Nhân dân (Sự kiện & Nhân chứng) — Điện ảnh Giải phóng B2",
+          "sourceUrl": "https://sknc.qdnd.vn/theo-dong-su-kien/cau-chuyen-hao-hung-sau-nhung-tam-bia-503885",
+          "story": "Sáng 10/06/1965, trong lửa đạn ác liệt tại Chi khu Đồng Xoài, nhà quay phim Nguyễn Phú Thạnh (Xưởng phim Quân Giải phóng) luôn bám sát mũi xung kích đầu tiên để ghi lại những thước phim lịch sử chân thực cho bộ phim tài liệu 'Đồng Xoài rực lửa' (đạt Giải Bông Sen Vàng) và đã anh dũng hy sinh ngay trên chiến hào khi tay vẫn ôm chặt máy quay.",
+          "secondarySourceName": "Thông tấn xã Việt Nam (TTXVN) — Chiến dịch Đồng Xoài 1965",
+          "secondarySourceUrl": "https://nvsk.vnanet.vn/dong-xoai-ruc-lua-chien-cong-1-39434.vna"
+        },
+        {
+          "id": "ls-tran-van-dang-1965",
+          "name": "Trần Văn Đang (bí danh Sang)",
+          "birthYear": 1942,
+          "sacrificeDate": "22/06/1965",
+          "hometown": "Long Hồ, Vĩnh Long",
+          "rankRole": "Chiến sĩ Biệt động Sài Gòn - Anh hùng LLVTND",
+          "unitRaw": "Đội Biệt động 67, Quân khu Sài Gòn – Gia Định",
+          "cemetery": "Nghĩa trang Liệt sĩ TP. Hồ Chí Minh",
+          "level": "L4",
+          "confidence": 1,
+          "featured": true,
+          "sourceName": "Báo Quân đội Nhân dân — Chiến sĩ Biệt động Sài Gòn Trần Văn Đang",
+          "sourceUrl": "https://www.qdnd.vn/phong-su-dieu-tra/ky-su/chien-si-biet-dong-sai-gon-tran-van-dang-hien-ngang-ngoai-phap-truong-478269",
+          "story": "Chiến sĩ Đội Biệt động 67 đánh các mục tiêu Mỹ ở nội đô Sài Gòn phối hợp chiến trường miền Đông. Bị địch đưa ra xử bắn tại pháp trường cát chợ Bến Thành ngày 22/06/1965 (ngay giữa lúc chiến dịch Đồng Xoài đang rực lửa), anh hiên ngang hô vang khẩu hiệu cách mạng ở tuổi 23."
+        }
+      ],
+      "sourceName": "Báo Quân đội Nhân dân — Nghệ thuật quân sự Chiến dịch Đồng Xoài",
+      "sourceUrl": "https://www.qdnd.vn/quoc-phong-an-ninh/nghe-thuat-quan-su-vn/net-dac-sac-nghe-thuat-quan-su-trong-chien-dich-dong-xoai-699463",
+      "secondarySourceName": "Thông tấn xã Việt Nam (TTXVN) — Đồng Xoài rực lửa chiến công",
+      "secondarySourceUrl": "https://nvsk.vnanet.vn/dong-xoai-ruc-lua-chien-cong-1-39434.vna",
+      "archivalNote": "Hồ sơ Viện Lịch sử Quân sự Việt Nam và Thông tấn xã Việt Nam khẳng định Chiến dịch Đồng Xoài (05–07/1965) đã kết hợp chặt chẽ công kiên đánh sập Chi khu quân sự kiên cố với phục kích tiêu diệt viện binh đường không (Tiểu đoàn 7 Nhảy dù), đưa Trung đoàn 2 chủ lực Miền trở thành 'Đoàn Đồng Xoài' anh hùng."
+    },
+    {
+      "id": "van-tuong-ba-gia-khu-5",
+      "name": "Chiến dịch Ba Gia, Trận Vạn Tường & Chiến trường Khu 5",
+      "altName": "Đoàn Ba Gia – Sư đoàn 2 & Bệnh xá Đức Phổ (Quảng Ngãi – Đà Nẵng)",
+      "periodId": "P3_1965_1968",
+      "dateRange": "28/05/1965 – 19/08/1965 (Mở rộng chiến trường Quảng Ngãi 1965–1970)",
+      "year": 1965,
+      "locationName": "Ba Gia (Sơn Tịnh), Vạn Tường (Bình Sơn) & Đức Phổ, tỉnh Quảng Ngãi – Đà Nẵng",
+      "modernProvince": "Quảng Ngãi / Đà Nẵng",
+      "militaryZone": "Quân khu 5",
+      "coords": [
+        15.2764,
+        108.8953
+      ],
+      "verificationLevel": "L4",
+      "summary": "Tại chiến trường trọng điểm Quảng Ngãi – Đà Nẵng (Quân khu 5), Trung đoàn 1 (Đoàn Ba Gia) liên tiếp lập kỳ tích tiêu diệt Chiến đoàn hỗn hợp QLVNCH tại Ba Gia (tháng 5/1965) và đánh bại cuộc hành quân 'Ánh sáng sao' (Operation Starlite) của 5.500 lính Thủy quân Lục chiến Mỹ tại Vạn Tường (18/08/1965), mở đầu cao trào 'Tìm Mỹ mà đánh, lùng ngụy mà diệt'.",
+      "phases": [
+        {
+          "date": "28–31/05/1965",
+          "title": "Chiến thắng Ba Gia (Sơn Tịnh, Quảng Ngãi)",
+          "desc": "Trung đoàn 1 Quân khu 5 tiêu diệt gọn 4 tiểu đoàn tinh nhuệ của QLVNCH trong vận động tiến công."
+        },
+        {
+          "date": "18–19/08/1965",
+          "title": "Trận Vạn Tường (Bình Sơn, Quảng Ngãi)",
+          "desc": "Đánh bại cuộc hành quân 'Tìm và Diệt' đầu tiên của Thủy quân Lục chiến Mỹ, bắn cháy 22 xe tăng/xe lội nước và 13 trực thăng."
+        }
+      ],
+      "result": "Khẳng định Quân Giải phóng hoàn toàn đánh thắng được quân viễn chinh Mỹ trực tiếp tham chiến trên bộ.",
+      "combatants": {
+        "rev": {
+          "factions": [
+            "Quân Giải phóng miền Nam Việt Nam (Quân khu 5)",
+            "Biệt động Đà Nẵng & Quân dân y Quảng Ngãi"
+          ],
+          "commanders": [
+            "Thiếu tướng Chu Huy Mân",
+            "Lê Hữu Trữ (Trung đoàn trưởng E1 Ba Gia)",
+            "Nguyễn Đình Trọng (Chính ủy E1)"
+          ],
+          "units": [
+            "Trung đoàn 1 Bộ binh (Đoàn Ba Gia - Sư đoàn 2)",
+            "Đại đội 21 Đặc công Quảng Ngãi",
+            "Đội Biệt động Đà Nẵng",
+            "Bệnh xá Quân dân y Đức Phổ"
+          ],
+          "strength": "~1.500 – 3.000 cán bộ, chiến sĩ",
+          "casualties": "Tại Vạn Tường: 58 chiến sĩ hy sinh; Tại Ba Gia: ~90 chiến sĩ hy sinh (Nguồn: Lịch sử Sư đoàn 2 Quân khu 5)"
+        },
+        "opp": {
+          "factions": [
+            "Thủy quân Lục chiến Hoa Kỳ (USMC)",
+            "Hải quân Đệ thất Hạm đội Mỹ",
+            "Quân đoàn I QLVNCH"
+          ],
+          "commanders": [
+            "Trung tướng Lewis W. Walt",
+            "Đại tá Oscar F. Peatross",
+            "Thiếu tướng Nguyễn Chánh Thi"
+          ],
+          "units": [
+            "Sư đoàn 3 Thủy quân Lục chiến Mỹ (Trung đoàn 4, 7)",
+            "Trung đoàn 51 & Chiến đoàn B TQLC QLVNCH"
+          ],
+          "strength": "Tại Vạn Tường: ~5.500 lính TQLC Mỹ + 36 tàu chiến + 59 trực thăng",
+          "casualties": "Tại Vạn Tường: ~900 lính Mỹ thương vong (phía Mỹ công nhận 52 chết, 203 bị thương), 22 xe tăng/bọc thép cháy; Tại Ba Gia: >900 địch thương vong"
+        }
+      },
+      "estimatedMartyrs": "Hơn 150 liệt sĩ tại Ba Gia – Vạn Tường và hàng ngàn liệt sĩ trên chiến trường Quảng Ngãi – Đà Nẵng",
+      "martyrs": [
+        {
+          "id": "ls-le-do-da-nang-1965",
+          "name": "Lê Độ (tên thật: Lê Dậu)",
+          "birthYear": 1941,
+          "sacrificeDate": "15/04/1965",
+          "hometown": "Hòa Vang, TP. Đà Nẵng",
+          "rankRole": "Chiến sĩ Đặc công Biệt động - Anh hùng LLVTND",
+          "unitRaw": "Đội Biệt động thành phố Đà Nẵng, Quân khu 5",
+          "cemetery": "Nghĩa trang Liệt sĩ TP. Đà Nẵng",
+          "level": "L4",
+          "confidence": 1,
+          "featured": true,
+          "sourceName": "Báo Đà Nẵng / Báo An Giang — Khí phách Anh hùng Liệt sĩ Lê Độ",
+          "sourceUrl": "https://baoangiang.com.vn/con-mai-khi-phach-anh-hung-le-do-a419551.html",
+          "story": "Ngay sau khi Thủy quân lục chiến Mỹ đổ bộ vào Đà Nẵng (tháng 3/1965), đồng chí Lê Độ trực tiếp chỉ huy mũi đánh vào cư xá sĩ quan Mỹ tại khách sạn Modern (Bạch Đằng, Đà Nẵng) ngày 04/04/1965. Bị bắt và đưa ra xử bắn tại sân vận động Chi Lăng ngày 15/04/1965, anh giữ trọn khí tiết người chiến sĩ Quân khu 5.",
+          "portraitUrl": "assets/martyrs/le-do.jpg",
+          "portraitWidth": 750,
+          "portraitHeight": 859,
+          "imageKind": "portrait",
+          "portraitCaption": "Chân dung tư liệu Anh hùng Liệt sĩ Lê Độ (1941–1965), chiến sĩ Đội Biệt động thành phố Đà Nẵng.",
+          "portraitCredit": "Bảo tàng Đà Nẵng / Báo An Giang"
+        },
+        {
+          "id": "ls-dang-thuy-tram-quang-ngai",
+          "name": "Bác sĩ Đặng Thùy Trâm",
+          "birthYear": 1942,
+          "sacrificeDate": "22/06/1970",
+          "hometown": "Thừa Thiên Huế (sinh lớn tại Hà Nội, hy sinh tại Đức Phổ, Quảng Ngãi)",
+          "rankRole": "Bác sĩ Quân dân y - Anh hùng LLVTND",
+          "unitRaw": "Bệnh xá huyện Đức Phổ, Tỉnh đội Quảng Ngãi, Quân khu 5",
+          "cemetery": "Nghĩa trang Liệt sĩ xã Xuân Phương (Từ Liêm, Hà Nội)",
+          "level": "L4",
+          "confidence": 1,
+          "featured": true,
+          "sourceName": "Bảo tàng Lịch sử Quân sự Việt Nam & Chuyên trang Câu chuyện Lịch sử",
+          "sourceUrl": "https://cauchuyenlichsu.vn/ky-uc-song-mai/dang-thuy-tram-nguoi-bac-si-tre-giua-chien-truong",
+          "story": "Tốt nghiệp Đại học Y khoa Hà Nội năm 1966, chị xung phong vào chiến trường B phụ trách bệnh xá huyện Đức Phổ (Quảng Ngãi) — nơi tuyến lửa ác liệt của Quân khu 5. Ngày 22/06/1970, khi địch càn vào bệnh xá trên núi Ba Tơ – Đức Phổ, chị đã chiến đấu bảo vệ thương binh và anh dũng hy sinh. Hai cuốn nhật ký đẫm máu của chị được cựu binh Mỹ Fred Whitehurst giữ lại suốt 35 năm với lời nhắn: 'Đừng đốt, trong đó đã có lửa rồi!'.",
+          "letterText": "Ngày 20/6/1970 (Hai ngày trước khi hy sinh tại Đức Phổ, Quảng Ngãi):\n\nLại một đợt càn lớn của giặc Mỹ. Thương binh đông mà chỉ còn lại mấy chị em trong bệnh xá... Đời người phải trải qua giông tố nhưng không được cúi đầu trước giông tố. Dù gian khổ đến đâu mình cũng sẽ ở lại cùng các em thương binh cho đến người cuối cùng.\n\nBao giờ mình mới được trở về Hà Nội, đi dưới hàng cây cơm nguội vàng trên phố Lò Đúc và gục đầu vào lòng Mẹ? Nhưng nếu phải ngã xuống trên mảnh đất Quảng Ngãi kiên cường này, mình cũng không hề hối tiếc tuổi hai mươi...",
+          "secondarySourceName": "Báo Nhân Dân — Chiến trường Quảng Ngãi & Bệnh xá Đức Phổ",
+          "secondarySourceUrl": "https://nhandan.vn/chien-thang-van-tuong-moc-son-choi-loi-trong-lich-su-dan-toc-post901618.html",
+          "portraitUrl": "assets/martyrs/dang-thuy-tram.jpg",
+          "portraitWidth": 800,
+          "portraitHeight": 601,
+          "imageKind": "portrait",
+          "portraitCaption": "Chân dung Anh hùng Liệt sĩ, Bác sĩ Đặng Thùy Trâm (1942–1970) trước ngày lên đường vào chiến trường Đức Phổ, Quảng Ngãi.",
+          "portraitCredit": "Di ảnh gia đình Liệt sĩ Đặng Thùy Trâm & Bảo tàng Phụ nữ Việt Nam"
+        }
+      ],
+      "sourceName": "Báo Nhân Dân — Chiến thắng Vạn Tường: Mốc son lịch sử dân tộc",
+      "sourceUrl": "https://nhandan.vn/chien-thang-van-tuong-moc-son-choi-loi-trong-lich-su-dan-toc-post901618.html",
+      "secondarySourceName": "Chuyên trang Câu chuyện Lịch sử — Bác sĩ Đặng Thùy Trâm tại Khu 5",
+      "secondarySourceUrl": "https://cauchuyenlichsu.vn/ky-uc-song-mai/dang-thuy-tram-nguoi-bac-si-tre-giua-chien-truong",
+      "archivalNote": "Biên niên sử Quân khu 5 và Sư đoàn 2 ghi rõ: Sau chiến thắng tiêu diệt Chiến đoàn QLVNCH tại Ba Gia (05/1965), trận phản công Vạn Tường (18–19/08/1965) của Trung đoàn 1 (Đoàn Ba Gia) đã đánh bại cuộc hành quân 'Tìm và Diệt' mở màn của Thủy quân Lục chiến Mỹ, chứng minh khả năng đánh thắng quân viễn chinh Mỹ ngay từ trận đầu."
+    },
+    {
+      "id": "tran-ia-drang-pleime-1965",
+      "name": "Chiến dịch Pleime – Trận Ia Đrăng",
+      "altName": "Battle of Ia Drang (LZ X-Ray & LZ Albany)",
+      "periodId": "P3_1965_1968",
+      "dateRange": "19/10/1965 – 26/11/1965 (Ia Đrăng: 14–18/11/1965)",
+      "year": 1965,
+      "locationName": "Thung lũng Ia Đrăng, chân núi Chư Prông, huyện Chư Prông, tỉnh Gia Lai",
+      "modernProvince": "Gia Lai",
+      "militaryZone": "Mặt trận B3 Tây Nguyên",
+      "coords": [
+        13.5833,
+        107.7167
+      ],
+      "verificationLevel": "L4",
+      "summary": "Trận đụng độ lớn đầu tiên giữa chủ lực Quân đội Nhân dân Việt Nam (Mặt trận B3 Tây Nguyên) và Sư đoàn Kỵ binh bay số 1 (Không kỵ) Hoa Kỳ tại bãi đáp X-Ray và bãi đáp Albany dưới chân núi Chư Prông, nơi QĐNDVN sáng tạo chiến thuật 'nắm thắt lưng địch mà đánh' nhằm vô hiệu hóa ưu thế pháo binh và B-52 Mỹ.",
+      "phases": [
+        {
+          "date": "19/10 – 26/10/1965",
+          "title": "Vây đồn Pleime – Diệt viện trên Đường 21",
+          "desc": "Trung đoàn 33 vây trại biệt kích Pleime để kéo chủ lực địch vào bẫy phục kích của Trung đoàn 320."
+        },
+        {
+          "date": "14/11 – 16/11/1965",
+          "title": "Trận quyết chiến tại bãi đáp X-Ray (LZ X-Ray)",
+          "desc": "Trung đoàn 66 (Tiểu đoàn 7, 8, 9) tiến công giáp lá cà Tiểu đoàn 1/7 và 2/7 Không kỵ Mỹ."
+        },
+        {
+          "date": "17/11/1965",
+          "title": "Trận phục kích tiêu diệt tại bãi đáp Albany (LZ Albany)",
+          "desc": "Tiểu đoàn 8 (Trung đoàn 66) do Tiểu đoàn trưởng Lê Xuân Phôi chỉ huy cùng Tiểu đoàn 1 (Trung đoàn 33) đánh thiệt hại nặng Tiểu đoàn 2/7 Không kỵ Mỹ."
+        }
+      ],
+      "result": "Đánh bại cuộc hành quân của Sư đoàn Kỵ binh bay số 1 Mỹ; Trung đoàn 66 được tặng danh hiệu 'Đoàn Pleime'.",
+      "combatants": {
+        "rev": {
+          "factions": [
+            "Quân đội Nhân dân Việt Nam (Mặt trận B3 Tây Nguyên)"
+          ],
+          "commanders": [
+            "Thiếu tướng Chu Huy Mân (Tư lệnh kiêm Chính ủy B3)",
+            "Thượng tá Nguyễn Hữu An (Chỉ huy tiền phương)",
+            "La Ngọc Châu (E trưởng E66)",
+            "Đặng Vũ Hiệp (Chính ủy)"
+          ],
+          "units": [
+            "Trung đoàn 66 (Đoàn Pleime: Tiểu đoàn 7, 8, 9)",
+            "Trung đoàn 33 (Tiểu đoàn 1, 2, 3)",
+            "Trung đoàn 320 (Đoàn Đồng Bằng)"
+          ],
+          "strength": "~1.500 quân tham chiến trực tiếp tại thung lũng Ia Đrăng",
+          "casualties": "Tại khu vực bãi đáp: 208 chiến sĩ hy sinh, 146 bị thương; Toàn chiến dịch Pleime: 554 hy sinh (Nguồn: Tổng kết Mặt trận B3)"
+        },
+        "opp": {
+          "factions": [
+            "Quân đội Hoa Kỳ (Sư đoàn Kỵ binh số 1)",
+            "Quân lực Việt Nam Cộng hòa (Quân đoàn II)"
+          ],
+          "commanders": [
+            "Thiếu tướng Harry Kinnard (Tư lệnh F1 Không kỵ)",
+            "Trung tá Harold G. Moore (TĐ 1/7)",
+            "Trung tá Robert McDade (TĐ 2/7)"
+          ],
+          "units": [
+            "Lữ đoàn 3, Sư đoàn Kỵ binh số 1 Hoa Kỳ (Tiểu đoàn 1/7, 2/7, 2/5)",
+            "Không quân Chiến lược B-52"
+          ],
+          "strength": "1 lữ đoàn Không kỵ Mỹ + 1 chiến đoàn thiết giáp QLVNCH, hàng trăm trực thăng UH-1",
+          "casualties": "Mỹ công nhận tại Ia Đrăng: 234–305 lính tử trận, >524 bị thương (riêng tại LZ Albany 155 lính Mỹ chết trong 1 ngày) (Nguồn: Lịch sử Kháng chiến chống Mỹ, cứu nước — NXB Chính trị Quốc gia)"
+        }
+      },
+      "estimatedMartyrs": "554 liệt sĩ trong toàn Chiến dịch Pleime – Ia Đrăng (208 liệt sĩ tại khu vực bãi đáp Ia Đrăng)",
+      "martyrs": [
+        {
+          "id": "ls-le-xuan-phoi-ia-drang",
+          "name": "Lê Xuân Phôi",
+          "birthYear": 1930,
+          "sacrificeDate": "17/11/1965",
+          "hometown": "Xã Khánh Hải, huyện Yên Khánh, tỉnh Ninh Bình (An táng tại Thọ Xuân, Thanh Hóa)",
+          "rankRole": "Đại úy, Tiểu đoàn trưởng Tiểu đoàn 8 - Anh hùng LLVTND",
+          "unitRaw": "Tiểu đoàn 8, Trung đoàn 66 (Đoàn Pleime - Sư đoàn 304), Mặt trận B3 Tây Nguyên",
+          "cemetery": "Nghĩa trang Liệt sĩ huyện Thọ Xuân, tỉnh Thanh Hóa (Quy tập từ thung lũng Ia Đrăng, Gia Lai)",
+          "level": "L4",
+          "confidence": 1,
+          "featured": true,
+          "sourceName": "Báo Quân đội Nhân dân — Tìm hài cốt Anh hùng Lê Xuân Phôi tại thung lũng Ia Đrăng",
+          "sourceUrl": "https://www.qdnd.vn/phong-su-dieu-tra/phong-su/tim-hai-cot-anh-hung-le-xuan-phoi-tai-thung-lung-ia-drang-448792",
+          "story": "Ngày 17/11/1965 tại thung lũng Ia Đrăng (bãi đáp Albany), Đại úy Tiểu đoàn trưởng Lê Xuân Phôi trực tiếp chỉ huy Tiểu đoàn 8 (Trung đoàn 66) xuất kích đánh giáp lá cà chia cắt đội hình Tiểu đoàn 2/7 Sư đoàn Kỵ binh không vận số 1 Hoa Kỳ. Dù bị thương nặng vào bụng, ông vẫn tự băng bó vết thương và kiên cường chỉ huy bộ đội tiêu diệt sinh lực địch cho đến hơi thở cuối cùng. Ngày 30/08/1995, ông được Chủ tịch nước truy tặng danh hiệu Anh hùng LLVTND."
+        },
+        {
+          "id": "ls-y-xieng-ia-drang",
+          "name": "Y Xiêng",
+          "birthYear": 1940,
+          "sacrificeDate": "15/11/1965",
+          "hometown": "Tây Nguyên",
+          "rankRole": "Đại đội phó bộ binh",
+          "unitRaw": "Tiểu đoàn 7, Trung đoàn 66 (Đoàn Pleime), Mặt trận B3",
+          "cemetery": "Nghĩa trang Liệt sĩ huyện Chư Prông, Gia Lai",
+          "level": "L3",
+          "confidence": 0.89,
+          "featured": false,
+          "sourceName": "Bảo tàng Lịch sử Quân sự Việt Nam — Hồ sơ Chiến dịch Plei Me & Trung đoàn 66",
+          "sourceUrl": "https://btlsqsvn.mod.gov.vn/di-tich-quan-su/chi-tiet/di-tich-lich-su-chien-thang-plei-me-cf65034a-7e7c-4668-8765-b3f4ceef1b9c",
+          "story": "Cán bộ chỉ huy kiên cường của Trung đoàn 66 hy sinh trong trận đánh cận chiến tại bãi đáp X-Ray dưới chân núi Chư Prông tháng 11/1965."
+        },
+        {
+          "id": "ls-nguyen-van-dich-ia-drang",
+          "name": "Nguyễn Văn Đích",
+          "birthYear": 1944,
+          "sacrificeDate": "15/11/1965",
+          "hometown": "Miền Bắc",
+          "rankRole": "Xạ thủ trung liên",
+          "unitRaw": "Trung đoàn 66 (Đoàn Pleime), Mặt trận B3 Tây Nguyên",
+          "cemetery": "Nghĩa trang Liệt sĩ huyện Chư Prông, Gia Lai",
+          "level": "L3",
+          "confidence": 0.89,
+          "featured": false,
+          "sourceName": "Bảo tàng Lịch sử Quân sự Việt Nam — Hồ sơ Chiến dịch Plei Me & Trung đoàn 66",
+          "sourceUrl": "https://btlsqsvn.mod.gov.vn/di-tich-quan-su/chi-tiet/di-tich-lich-su-chien-thang-plei-me-cf65034a-7e7c-4668-8765-b3f4ceef1b9c",
+          "story": "Xạ thủ trung liên dũng cảm bám trụ chiến hào khóa chặt hỏa lực quân Không kỵ Mỹ tại thung lũng Ia Đrăng tháng 11/1965."
+        }
+      ],
+      "sourceName": "Bảo tàng Lịch sử Quân sự Việt Nam — Di tích Chiến thắng Plei Me",
+      "sourceUrl": "https://btlsqsvn.mod.gov.vn/di-tich-quan-su/chi-tiet/di-tich-lich-su-chien-thang-plei-me-cf65034a-7e7c-4668-8765-b3f4ceef1b9c",
+      "secondarySourceName": "Báo Quân đội Nhân dân — Ký ức thung lũng Ia Đrăng & Trung đoàn 66",
+      "secondarySourceUrl": "https://www.qdnd.vn/phong-su-dieu-tra/phong-su/tim-hai-cot-anh-hung-le-xuan-phoi-tai-thung-lung-ia-drang-448792",
+      "archivalNote": "Theo hồ sơ Bảo tàng Lịch sử Quân sự Việt Nam (Bộ Quốc phòng), Chiến dịch Plei Me – Ia Đrăng (10–11/1965) là trận đọ sức quyết liệt đầu tiên giữa chủ lực Mặt trận Tây Nguyên (B3) với Sư đoàn Kỵ binh không vận số 1 Hoa Kỳ, khẳng định hiệu quả phương châm 'nắm thắt lưng địch mà đánh' trong cận chiến."
+    },
+    {
+      "id": "duong-9-khe-sanh-1968",
+      "name": "Chiến dịch Đường 9 – Khe Sanh",
+      "altName": "Battle of Khe Sanh (Làng Vây – Tà Cơn – Làng Khoai)",
+      "periodId": "P3_1965_1968",
+      "dateRange": "20/01/1968 – 15/07/1968",
+      "year": 1968,
+      "locationName": "Khe Sanh, Tà Cơn, Làng Vây, Làng Khoai, huyện Hướng Hóa, tỉnh Quảng Trị",
+      "modernProvince": "Quảng Trị",
+      "militaryZone": "Mặt trận Đường 9 – Bắc Quảng Trị (B5)",
+      "coords": [
+        16.6542,
+        106.7242
+      ],
+      "verificationLevel": "L4",
+      "summary": "Chiến dịch tiến công hiệp đồng binh chủng kéo dài 170 ngày đêm nhằm thu hút, giam chân lực lượng cơ động chiến lược của Mỹ (TQLC và Kỵ binh bay) tại Đường 9, tạo điều kiện cho cuộc Tổng tiến công và nổi dậy Tết Mậu Thân 1968, kết thúc bằng việc quân Mỹ buộc phải rút bỏ căn cứ Khe Sanh và phá sản Hàng rào điện tử McNamara.",
+      "phases": [
+        {
+          "date": "20/01 – 07/02/1968",
+          "title": "Đợt 1: Tiêu diệt Chi khu Hướng Hóa và cứ điểm Làng Vây",
+          "desc": "Đêm 06 rạng 07/02/1968, Trung đoàn 24 (F304) phối hợp Tiểu đoàn xe tăng 198 (xe PT-76) lần đầu xuất trận san phẳng cứ điểm Làng Vây."
+        },
+        {
+          "date": "08/02 – 31/03/1968",
+          "title": "Đợt 2: Vây lấn căn cứ Tà Cơn",
+          "desc": "Trung đoàn 9 và Trung đoàn 66 (F304) đào hệ thống hào vây lấn sát hàng rào căn cứ Tà Cơn, khống chế đường băng tiếp tế của TQLC Mỹ."
+        },
+        {
+          "date": "01/04 – 15/07/1968",
+          "title": "Đợt 3 & 4: Chặn đánh quân giải tỏa tại Làng Khoai và giải phóng Khe Sanh",
+          "desc": "Bẻ gãy cuộc hành quân Pegasus, buộc quân Mỹ hủy bỏ căn cứ Tà Cơn – Khe Sanh."
+        }
+      ],
+      "result": "Thắng lợi chiến lược: Lần đầu tiên quân đội Hoa Kỳ phải từ bỏ một căn cứ quân sự trọng yếu do áp lực vây lấn; khai thông hành lang vận tải Trường Sơn.",
+      "combatants": {
+        "rev": {
+          "factions": [
+            "Quân đội Nhân dân Việt Nam (Mặt trận B5 - Đường 9)"
+          ],
+          "commanders": [
+            "Thiếu tướng Trần Quý Hai (Tư lệnh Mặt trận)",
+            "Thiếu tướng Lê Quang Đạo (Chính ủy)",
+            "Thượng tá Cao Văn Khánh"
+          ],
+          "units": [
+            "Sư đoàn 304 (Trung đoàn 9, 24, 66)",
+            "Sư đoàn 325C",
+            "Sư đoàn 320 (Trung đoàn 48, 64)",
+            "Trung đoàn 270",
+            "Tiểu đoàn Xe tăng 198 (Trung đoàn 203)"
+          ],
+          "strength": "~35.000 – 40.000 quân chủ lực hiệp đồng binh chủng",
+          "casualties": "~2.500 chiến sĩ hy sinh, ~3.000 bị thương qua 170 ngày đêm dưới hơn 100.000 tấn bom B-52 (Nguồn: Lịch sử Mặt trận B5)"
+        },
+        "opp": {
+          "factions": [
+            "Thủy quân Lục chiến Hoa Kỳ",
+            "Sư đoàn Kỵ binh bay số 1 Mỹ",
+            "Quân lực Việt Nam Cộng hòa"
+          ],
+          "commanders": [
+            "Đại tướng William Westmoreland",
+            "Đại tá David E. Lownds (Chỉ huy căn cứ Khe Sanh)"
+          ],
+          "units": [
+            "Trung đoàn 26 Thủy quân Lục chiến Mỹ (4 tiểu đoàn)",
+            "Sư đoàn Kỵ binh số 1 Mỹ (Hành quân Pegasus)",
+            "Tiểu đoàn 37 Biệt động quân QLVNCH",
+            "Trại Biệt kích Làng Vây"
+          ],
+          "strength": "6.680 quân tại Tà Cơn + ~30.000 quân giải tỏa",
+          "casualties": "Theo phía VN: >11.000 quân Mỹ - QLVNCH thương vong, 197 máy bay bị bắn rơi/phá hủy; Theo phía Mỹ: ~730 chết, >2.600 bị thương (Nguồn: Lịch sử Kháng chiến chống Mỹ, cứu nước — NXB Chính trị Quốc gia)"
+        }
+      },
+      "estimatedMartyrs": "Hơn 2.500 liệt sĩ thuộc Sư đoàn 304, 325C, 320 (an táng tại NTLS Quốc gia Đường 9 và NTLS Hướng Hóa)",
+      "martyrs": [
+        {
+          "id": "ls-bui-gia-ngoan-khe-sanh",
+          "name": "Bùi Gia Ngoãn",
+          "birthYear": 1940,
+          "sacrificeDate": "04/04/1968",
+          "hometown": "Huyện Quỳnh Phụ, tỉnh Thái Bình",
+          "rankRole": "Thượng sĩ, Đại đội phó Đại đội 11 - Anh hùng LLVTND",
+          "unitRaw": "Đại đội 11, Tiểu đoàn 3, Trung đoàn 9, Sư đoàn 304, Mặt trận Đường 9 - Khe Sanh",
+          "cemetery": "Nghĩa trang Liệt sĩ Quốc gia Đường 9, Quảng Trị",
+          "level": "L4",
+          "confidence": 1,
+          "featured": true,
+          "sourceName": "Báo Quân đội Nhân dân & Hồ sơ Anh hùng LLVTND Sư đoàn 304",
+          "sourceUrl": "https://www.qdnd.vn/phong-su-dieu-tra/dieu-tra/chien-si-su-doan-thep-nam-xua-tren-que-lua-478636",
+          "story": "Ngày 04/04/1968, tại chốt Làng Khoai (Khe Sanh) chặn đánh quân Mỹ hành quân giải tỏa Tà Cơn, Thượng sĩ Đại đội phó Bùi Gia Ngoãn (Đại đội 11, Tiểu đoàn 3, Trung đoàn 9, Sư đoàn 304) bị trúng bom pháo làm dập nát một chân chỉ còn dính lớp da. Để không vướng víu và không rời vị trí chỉ huy giữa lúc địch đang xung phong, ông đã dùng dao găm tự cắt đứt phần chân bị thương, nhờ đồng đội băng lại rồi tiếp tục bò dọc chiến hào chỉ huy đơn vị bẻ gãy 4 đợt tiến công của quân Mỹ cho đến lúc anh dũng hy sinh. Ngày 30/01/2011, ông được Chủ tịch nước truy tặng danh hiệu Anh hùng LLVTND.",
+          "secondarySourceName": "Chuyên trang Câu chuyện Lịch sử — Anh hùng Liệt sĩ Bùi Gia Ngoãn",
+          "secondarySourceUrl": "https://cauchuyenlichsu.vn/ky-uc-song-mai/cau-chuyen-ve-anh-hung-luc-luong-vu-trang-liet-sy-bui-gia-ngoan"
+        },
+        {
+          "id": "ls-tran-van-dang-f320-khe-sanh",
+          "name": "Trần Văn Đang",
+          "birthYear": 1943,
+          "sacrificeDate": "10/02/1968",
+          "hometown": "Miền Bắc",
+          "rankRole": "Thượng úy, Cán bộ Đại đội 9",
+          "unitRaw": "Đại đội 9, Tiểu đoàn 9, Trung đoàn 64, Sư đoàn 320, Mặt trận B5",
+          "cemetery": "Nghĩa trang Liệt sĩ Quốc gia Đường 9, Quảng Trị",
+          "level": "L3",
+          "confidence": 0.91,
+          "featured": false,
+          "sourceName": "Cổng Thông tin Điện tử Ngành Chính sách Quân đội — Hồ sơ Liệt sĩ Mặt trận B5",
+          "sourceUrl": "http://chinhsachquandoi.gov.vn",
+          "story": "Chiến đấu và anh dũng hy sinh ngày 10/02/1968 trong đợt tiến công vây ép trên trục Đường 9 – Khe Sanh."
+        },
+        {
+          "id": "ls-bui-van-chien-lang-vay",
+          "name": "Bùi Văn Chiên",
+          "birthYear": 1946,
+          "sacrificeDate": "02/1968",
+          "hometown": "Xã Sơn Vi, huyện Lâm Thao, tỉnh Phú Thọ",
+          "rankRole": "Chiến sĩ bộ binh",
+          "unitRaw": "Sư đoàn 304, Mặt trận Đường 9 - Khe Sanh (Khu vực Làng Vây)",
+          "cemetery": "Nghĩa trang Liệt sĩ huyện Hướng Hóa / Đường 9, Quảng Trị",
+          "level": "L3",
+          "confidence": 0.9,
+          "featured": false,
+          "sourceName": "Cổng Thông tin Điện tử Ngành Chính sách Quân đội — Hồ sơ Liệt sĩ Mặt trận Khe Sanh",
+          "sourceUrl": "http://chinhsachquandoi.gov.vn",
+          "story": "Hồ sơ liệt sĩ quê Sơn Vi, Lâm Thao, Phú Thọ hy sinh năm 1968 tại khu vực cứ điểm Làng Vây – Khe Sanh (Quảng Trị)."
+        }
+      ],
+      "sourceName": "Báo Nhân Dân (Chuyên trang đặc biệt) — Chiến thắng Đường 9 – Khe Sanh 1968",
+      "sourceUrl": "https://special.nhandan.vn/chien-thang-Duong9-Khe-Sanh-tran-danh-lam-nen-chien-cong-bat-tu-Tet-Mau-Than-1968-/index.html",
+      "secondarySourceName": "Báo Quân đội Nhân dân — Chiến sĩ Sư đoàn 304 trên tuyến lửa Khe Sanh",
+      "secondarySourceUrl": "https://www.qdnd.vn/phong-su-dieu-tra/dieu-tra/chien-si-su-doan-thep-nam-xua-tren-que-lua-478636",
+      "archivalNote": "Tổng kết Chiến dịch Đường 9 – Khe Sanh của Bộ Tư lệnh Mặt trận B5 ghi nhận: Trải qua 170 ngày đêm vây lấn hiệp đồng binh chủng dưới hơn 100.000 tấn bom B-52, các Sư đoàn 304, 325C, 320 và xe tăng Tiểu đoàn 198 đã đập tan Hàng rào điện tử McNamara ở hướng Tây và buộc Thủy quân Lục chiến Mỹ rút bỏ căn cứ Tà Cơn."
+    },
+    {
+      "id": "tet-mau-than-1968",
+      "name": "Tổng tiến công và nổi dậy Tết Mậu Thân 1968",
+      "altName": "Tet Offensive (Sài Gòn – Huế – Toàn miền Nam)",
+      "periodId": "P3_1965_1968",
+      "dateRange": "30/01/1968 – 28/03/1968 (Đợt 1) & Tháng 5, 8/1968",
+      "year": 1968,
+      "locationName": "Sài Gòn – Gia Định, Cố đô Huế, Đà Nẵng và 40 thị xã, thành phố miền Nam",
+      "modernProvince": "TP. Hồ Chí Minh / Thừa Thiên Huế",
+      "militaryZone": "Toàn miền Nam (Trọng điểm Sài Gòn - Gia Định & Trị - Thiên - Huế)",
+      "coords": [
+        16.4637,
+        107.5909
+      ],
+      "verificationLevel": "L4",
+      "summary": "Cuộc Tổng tiến công và nổi dậy đồng loạt đêm Giao thừa Tết Mậu Thân 1968 vào hầu khắp các đô thị, cơ quan đầu não của Mỹ và QLVNCH (Tòa Đại sứ Mỹ, Dinh Độc Lập, Bộ Tổng tham mưu, Đài Phát thanh, Kinh thành Huế - nơi lá cờ Mặt trận tung bay suốt 26 ngày đêm), tạo bước ngoặt chiến lược buộc Tổng thống Mỹ Lyndon B. Johnson tuyên bố xuống thang chiến tranh và ngồi vào bàn đàm phán Paris.",
+      "phases": [
+        {
+          "date": "Đêm 30 rạng 31/01/1968",
+          "title": "Tổng công kích đồng loạt vào Sài Gòn, Huế và 36 tỉnh lỵ",
+          "desc": "Biệt động Sài Gòn đánh thẳng vào Tòa Đại sứ Mỹ, Dinh Độc Lập; tại Huế, Quân Giải phóng làm chủ Kinh thành suốt 26 ngày đêm."
+        },
+        {
+          "date": "Tháng 5 & Tháng 8/1968",
+          "title": "Đợt 2 và Đợt 3 tiến công giữ thế chủ động chiến lược",
+          "desc": "Tiếp tục tiến công các mục tiêu đô thị, buộc Mỹ chấm dứt không điều kiện ném bom miền Bắc từ 01/11/1968."
+        }
+      ],
+      "result": "Thắng lợi chiến lược mang tính bước ngoặt: Làm lung lay tận gốc ý chí xâm lược của Hoa Kỳ, buộc Mỹ xuống thang chiến tranh và đàm phán tại Hội nghị Paris.",
+      "combatants": {
+        "rev": {
+          "factions": [
+            "Quân Giải phóng miền Nam Việt Nam",
+            "Lực lượng Biệt động Sài Gòn – Gia Định",
+            "QĐNDVN"
+          ],
+          "commanders": [
+            "Thượng tướng Trần Văn Trà",
+            "Thiếu tướng Lê Trọng Tấn",
+            "Trần Bạch Đằng",
+            "Nguyễn Đức Hùng (Tư Chu - Chỉ huy Biệt động Sài Gòn)",
+            "Thiếu tướng Lê Chưởng (Mặt trận Huế)"
+          ],
+          "units": [
+            "Cụm Biệt động Sài Gòn (Đội 5, Đội 11, Đội 4...)",
+            "Sư đoàn 5, 7, 9 (Miền B2)",
+            "Trung đoàn 6 (Đoàn Phú Xuân) & Trung đoàn 9 (Mặt trận Huế)"
+          ],
+          "strength": "~84.000 quân trực tiếp tham gia đợt 1 trên toàn miền Nam",
+          "casualties": "Hy sinh và tổn thất lớn về lực lượng cơ sở và các đội biệt động tinh nhuệ tại nội đô Sài Gòn, Huế"
+        },
+        "opp": {
+          "factions": [
+            "Quân đội Hoa Kỳ",
+            "Quân lực Việt Nam Cộng hòa",
+            "Quân đội Đồng minh"
+          ],
+          "commanders": [
+            "Đại tướng William Westmoreland",
+            "Đại tướng Cao Văn Viên",
+            "Trung tướng Nguyễn Ngọc Loan"
+          ],
+          "units": [
+            "Sư đoàn 1, 5 TQLC Mỹ (tại Huế)",
+            "Sư đoàn Kỵ binh số 1, Sư đoàn 25 Tia Chớp Nhiệt Đới Mỹ",
+            "Các Sư đoàn Dù, TQLC, Biệt động quân QLVNCH"
+          ],
+          "strength": ">1.000.000 quân Mỹ và QLVNCH trên toàn miền Nam",
+          "casualties": "Hàng chục ngàn binh sĩ thương vong, hơn 1.500 máy bay bị phá hủy/bắn rơi trong đợt Xuân 1968 (Nguồn: Lịch sử Kháng chiến chống Mỹ, cứu nước — NXB Chính trị Quốc gia)"
+        }
+      },
+      "estimatedMartyrs": "Hàng vạn cán bộ, chiến sĩ Giải phóng quân, Biệt động thành và cơ sở cách mạng",
+      "martyrs": [
+        {
+          "id": "ls-le-thi-rieng-1968",
+          "name": "Lê Thị Riêng",
+          "birthYear": 1925,
+          "sacrificeDate": "01/02/1968 (Mùng 2 Tết Mậu Thân)",
+          "hometown": "Vĩnh Mỹ, Giá Rai, Bạc Liêu",
+          "rankRole": "Ủy viên Trung ương Mặt trận DTGPMNVN, Phó Hội trưởng Hội LHPN Giải phóng - Anh hùng LLVTND",
+          "unitRaw": "Khu ủy Sài Gòn – Gia Định / Trung ương Cục miền Nam",
+          "cemetery": "Nghĩa trang Liệt sĩ TP. Hồ Chí Minh (Đồi Không Tên)",
+          "level": "L4",
+          "confidence": 1,
+          "featured": true,
+          "sourceName": "Cổng Thông tin Hội Liên hiệp Phụ nữ Việt Nam — Tiểu sử Anh hùng Liệt sĩ Lê Thị Riêng",
+          "sourceUrl": "https://vwu.vn/web/guest/tin-chi-tiet/-/chi-tiet/le-thi-rieng-nguoi-phu-nu-cua-phong-trao-phu-nu-mien-nam-9204-9.html",
+          "story": "Bị địch bắt tháng 5/1967 và tra tấn dã man nhưng một mực kiên trung bảo vệ cơ sở cách mạng. Đêm mùng 2 Tết Mậu Thân (01/02/1968), địch đưa bà ra thủ tiêu trên đường Hồng Bàng (Chợ Lớn); trước họng súng kẻ thù bà hiên ngang hô vang 'Đảng Lao động Việt Nam muôn năm! Hồ Chí Minh muôn năm!'.",
+          "secondarySourceName": "Cổng Giáo dục TP. Hồ Chí Minh — Nữ Anh hùng Liệt sĩ Lê Thị Riêng (1925–1968)",
+          "secondarySourceUrl": "https://thlethirieng.hcm.edu.vn/gioi-thieu/tieu-su-nu-anh-hung-liet-si-le-thi-rieng-1925-1968/ctmb/22442/83982",
+          "portraitUrl": "assets/martyrs/le-thi-rieng.webp",
+          "portraitWidth": 730,
+          "portraitHeight": 1035,
+          "imageKind": "portrait",
+          "portraitCaption": "Chân dung tư liệu Nữ Anh hùng Liệt sĩ Lê Thị Riêng (1925–1968), Phó Hội trưởng Hội Liên hiệp Phụ nữ Giải phóng miền Nam.",
+          "portraitCredit": "Bảo tàng Phụ nữ Nam Bộ & Hội LHPN Việt Nam"
+        },
+        {
+          "id": "ls-ngo-van-ngot-sua-quan-my",
+          "name": "Ngô Văn Ngọt (Ba Đen)",
+          "birthYear": 1939,
+          "sacrificeDate": "31/01/1968",
+          "hometown": "Long An",
+          "rankRole": "Đội trưởng Đội 11 Biệt động Sài Gòn",
+          "unitRaw": "Đội 11, Cụm Biệt động Sài Gòn – Gia Định (F100)",
+          "cemetery": "Bia tưởng niệm Biệt động Sài Gòn / NTLS TP.HCM",
+          "level": "L4",
+          "confidence": 1,
+          "featured": true,
+          "sourceName": "Báo Quân đội Nhân dân — Hồ sơ Biệt động Sài Gòn – Gia Định Tết Mậu Thân 1968",
+          "sourceUrl": "https://www.qdnd.vn/tu-lieu-ho-so/ho-so/biet-dong-sai-gon-gia-dinh-trong-tong-tien-cong-va-noi-day-tet-mau-than-1968-763483",
+          "story": "Chỉ huy 17 chiến sĩ cảm tử Đội 11 Biệt động Sài Gòn dùng thuốc nổ mở tường đánh chiếm Tòa Đại sứ Mỹ tại đường Thống Nhất (nay là Lê Duẩn) rạng sáng Mùng 2 Tết Mậu Thân (31/01/1968), chiến đấu ngoan cường suốt 6 giờ liền làm chấn động dư luận toàn cầu."
+        },
+        {
+          "id": "ls-to-hoai-thanh-dinh-doc-lap",
+          "name": "Tô Hoài Thanh (Ba Thanh)",
+          "birthYear": 1945,
+          "sacrificeDate": "31/01/1968",
+          "hometown": "Sài Gòn – Gia Định",
+          "rankRole": "Chiến sĩ Đội 5 Biệt động Sài Gòn - Anh hùng LLVTND",
+          "unitRaw": "Đội 5 Biệt động Sài Gòn (F100)",
+          "cemetery": "Di tích Biệt động Sài Gòn (Đường Nguyễn Du, Quận 1, TP.HCM)",
+          "level": "L4",
+          "confidence": 1,
+          "featured": false,
+          "sourceName": "Báo Nhân Dân (Chuyên trang đặc biệt) — Chiến sĩ Đội 5 Biệt động Sài Gòn Tô Hoài Thanh",
+          "sourceUrl": "https://special.nhandan.vn/hanh-trinh-tim-cha-cua-nguoi-con-biet-dong-SG/index.html",
+          "story": "Tham gia mũi tấn công cảm tử vào cổng sau Dinh Độc Lập rạng sáng 31/01/1968, kiên cường đánh trả hàng trăm quân dù và lính Mỹ suốt một ngày đêm.",
+          "secondarySourceName": "Báo Quân đội Nhân dân — Hồ sơ Biệt động Sài Gòn – Gia Định",
+          "secondarySourceUrl": "https://www.qdnd.vn/tu-lieu-ho-so/ho-so/biet-dong-sai-gon-gia-dinh-trong-tong-tien-cong-va-noi-day-tet-mau-than-1968-763483"
+        }
+      ],
+      "sourceName": "Báo Quân đội Nhân dân (Longform) — Tổng tiến công và nổi dậy Xuân Mậu Thân 1968",
+      "sourceUrl": "https://media.qdnd.vn/long-form/tong-tien-cong-va-noi-day-xuan-mau-than-nam-1968-dien-ra-nhu-the-nao-56416",
+      "secondarySourceName": "Báo Quân đội Nhân dân — Hồ sơ Biệt động Sài Gòn – Gia Định Tết Mậu Thân",
+      "secondarySourceUrl": "https://www.qdnd.vn/tu-lieu-ho-so/ho-so/biet-dong-sai-gon-gia-dinh-trong-tong-tien-cong-va-noi-day-tet-mau-than-1968-763483",
+      "archivalNote": "Tư liệu lưu trữ Bộ Quốc phòng và Khu ủy Sài Gòn – Gia Định xác nhận cuộc Tổng tiến công và nổi dậy Tết Mậu Thân 1968 đã nổ ra đồng loạt tại 4/6 thành phố lớn, 37/44 thị xã và hàng trăm quận lỵ miền Nam, làm đảo lộn thế bố trí chiến lược và buộc Hoa Kỳ phải chấp nhận đàm phán tại Hội nghị Paris."
+    },
+    {
+      "id": "nga-ba-dong-loc-truong-son-1968",
+      "name": "Tọa Độ Lửa Ngã Ba Đồng Lộc & Tuyến Chi Viện Trường Sơn",
+      "altName": "10 Nữ Anh Hùng Liệt Sĩ TNXP Ngã Ba Đồng Lộc & Kỹ Sư Phá Bom Hoàng Kim Giao",
+      "periodId": "P3_1965_1968",
+      "dateRange": "Tháng 4/1968 – 30/12/1968 (Đỉnh điểm Đồng Lộc: 24/07/1968)",
+      "year": 1968,
+      "locationName": "Ngã ba Đồng Lộc (huyện Can Lộc, Hà Tĩnh) & Tuyến lửa Quân khu 4 – Đường Trường Sơn",
+      "modernProvince": "Hà Tĩnh / Nghệ An",
+      "militaryZone": "Tuyến lửa Quân khu 4 & Đoàn 559 Trường Sơn",
+      "coords": [
+        18.3622,
+        105.7294
+      ],
+      "verificationLevel": "L4",
+      "summary": "Sau khi buộc phải ngừng ném bom từ vĩ tuyến 20 trở ra (31/03/1968), không quân Mỹ dồn toàn bộ sức mạnh đánh phá 'cổ họng' giao thông Ngã ba Đồng Lộc (Hà Tĩnh) và các bến phà Nghệ An nhằm cắt đứt mạch máu chi viện vào miền Nam. Chỉ tính riêng năm 1968, mỗi mét vuông đất Đồng Lộc phải gánh chịu trên 3 quả bom tấn. Nơi đây đã bất tử hóa hình ảnh 10 cô gái Thanh niên xung phong Tiểu đội 4 và các chiến sĩ công binh phá bom từ trường.",
+      "phases": [
+        {
+          "date": "Tháng 4 – Tháng 10/1968",
+          "title": "1.863 lần chiếc máy bay Mỹ trút gần 50.000 quả bom xuống Ngã ba Đồng Lộc",
+          "desc": "Hàng vạn bộ đội pháo cao xạ, công binh và TNXP bám đường với khẩu hiệu 'Máu có thể chảy, tim có thể ngừng, nhưng mạch máu giao thông không bao giờ tắc'."
+        },
+        {
+          "date": "16h30 ngày 24/07/1968",
+          "title": "Sự hy sinh bi tráng của 10 nữ TNXP Tiểu đội 4 (Đại đội 552)",
+          "desc": "Loạt bom thứ 15 trong ngày của tốp máy bay F-4 Mỹ nổ trực tiếp trên nóc hầm làm cả 10 cô gái tuổi 17–24 anh dũng hy sinh khi đang san lấp hố bom."
+        },
+        {
+          "date": "30/12/1968",
+          "title": "Đoàn nghiên cứu kỹ thuật phá bom từ trường MK42 trên tuyến lửa Quân khu 4",
+          "desc": "Kỹ sư – Đoàn trưởng Hoàng Kim Giao hy sinh khi trực tiếp tháo gỡ bom từ trường giữ thông tuyến đường huyết mạch."
+        }
+      ],
+      "result": "Giữ vững mạch máu giao thông chi viện chiến lược Bắc – Nam qua cửa khẩu Đường 15 tiến vào Trường Sơn.",
+      "combatants": {
+        "rev": {
+          "factions": [
+            "Tổng đội Thanh niên Xung phong 55 Hà Tĩnh",
+            "Quân đội Nhân dân Việt Nam (Quân khu 4 & Đoàn 559)"
+          ],
+          "commanders": [
+            "Thiếu tướng Đinh Đức Thiện",
+            "Thiếu tướng Đồng Sỹ Nguyên (Tư lệnh Đoàn 559)",
+            "Nguyễn Thế Linh (Trung đoàn trưởng E210 Cao xạ)"
+          ],
+          "units": [
+            "Tiểu đội 4, Đại đội 552, Tổng đội TNXP 55 Hà Tĩnh",
+            "Trung đoàn Pháo cao xạ 210",
+            "Đoàn Nghiên cứu Phá bom Quân khu 4"
+          ],
+          "strength": "~16.000 cán bộ, chiến sĩ phòng không, công binh, TNXP và dân công hỏa tuyến",
+          "casualties": "Hàng trăm chiến sĩ phòng không, công binh và TNXP hy sinh tại tọa độ lửa Đồng Lộc – Truông Bồn"
+        },
+        "opp": {
+          "factions": [
+            "Không quân & Hải quân Hoa Kỳ (Chiến dịch Sấm Rền / Rolling Thunder)"
+          ],
+          "commanders": [
+            "Đô đốc U. S. Grant Sharp Jr.",
+            "Đại tướng William W. Momyer"
+          ],
+          "units": [
+            "Không đoàn Không quân Chiến thuật Mỹ (F-4 Phantom, F-105 Thunderchief, A-6 Intruder)"
+          ],
+          "strength": "1.863 lần chiếc máy bay ném xuống gần 50.000 quả bom các loại (bom phá, bom bi, bom từ trường MK42)",
+          "casualties": "14 máy bay Mỹ bị bắn rơi ngay trên bầu trời Ngã ba Đồng Lộc (Nguồn: Khu di tích Ngã ba Đồng Lộc)"
+        }
+      },
+      "estimatedMartyrs": "10 Nữ Anh hùng Liệt sĩ TNXP Ngã ba Đồng Lộc, 13 Liệt sĩ TNXP Truông Bồn và hàng trăm chiến sĩ Phòng không – Công binh",
+      "martyrs": [
+        {
+          "id": "ls-vo-thi-tan-dong-loc",
+          "name": "Võ Thị Tần (cùng 9 nữ Liệt sĩ Tiểu đội 4 Ngã ba Đồng Lộc)",
+          "birthYear": 1944,
+          "sacrificeDate": "24/07/1968",
+          "hometown": "Xã Thiên Lộc, huyện Can Lộc, tỉnh Hà Tĩnh",
+          "rankRole": "Tiểu đội trưởng Tiểu đội 4 TNXP - Anh hùng LLVTND",
+          "unitRaw": "Tiểu đội 4, Đại đội 552, Tổng đội TNXP 55 Hà Tĩnh (Danh sách 10 cô gái: Võ Thị Tần, Hồ Thị Cúc, Nguyễn Thị Nhỏ, Dương Thị Xuân, Võ Thị Hợi, Nguyễn Thị Xuân, Hà Thị Xanh, Trần Thị Hường, Trần Thị Rạng, Võ Thị Hà)",
+          "cemetery": "Khu mộ 10 Nữ Anh hùng Liệt sĩ TNXP tại Khu di tích Quốc gia Đặc biệt Ngã ba Đồng Lộc, Hà Tĩnh",
+          "level": "L4",
+          "confidence": 1,
+          "featured": true,
+          "sourceName": "Thông tấn xã Việt Nam (TTXVN) & Ban Quản lý Khu di tích Ngã ba Đồng Lộc",
+          "sourceUrl": "https://nvsk.vnanet.vn/10-co-gai-thanh-nien-xung-phong-hy-sinh-tai-nga-ba-dong-loc-1-39773.vna",
+          "story": "Chiều 24/07/1968, Tiểu đội 4 gồm 10 cô gái tuổi từ 17 đến 24 do Võ Thị Tần làm Tiểu đội trưởng nhận lệnh ra san lấp hố bom tại Ngã ba Đồng Lộc để thông xe chuyển hàng vào miền Nam. Lúc 16h30, quả bom từ tốp máy bay phản lực Mỹ rơi trúng cửa hầm làm cả 10 cô gái anh dũng hy sinh. Chỉ 5 ngày trước đó (19/07/1968), Võ Thị Tần đã viết bức thư cuối cùng gửi mẹ.",
+          "letterText": "Đồng Lộc, ngày 19/7/1968 (5 ngày trước khi hy sinh):\n\nMẹ kính yêu của con!\nỞ đây vui lắm mẹ ạ, ban đêm giặc Mỹ thắp đèn để chúng con làm đường, còn ban ngày chúng đem bom giết cá để chúng con cải thiện. Bom đạn của chúng có thể làm rung chuyển núi rừng, nhưng không thể làm rung chuyển những trái tim của chúng con.\n\nMẹ ơi! Thời gian này mặc dù địch đánh phá ác liệt nhưng bọn con vẫn tập dượt văn nghệ để chuẩn bị ca hát mừng chiến thắng... Con hẹn ngày chiến thắng sẽ về thăm mẹ!",
+          "secondarySourceName": "Chuyên trang Câu chuyện Lịch sử — 10 cô gái Ngã ba Đồng Lộc",
+          "secondarySourceUrl": "https://cauchuyenlichsu.vn/ky-uc-song-mai/10-co-gai-dong-loc-mot-tieu-doi-mai-mai-tuoi-doi-muoi",
+          "portraitUrl": "assets/martyrs/dong-loc-tieu-doi-4-ttxvn.jpg",
+          "portraitWidth": 850,
+          "portraitHeight": 595,
+          "imageKind": "portrait",
+          "portraitCaption": "Bức ảnh tư liệu lịch sử chụp Tiểu đội 4 TNXP (Đại đội 552) san lấp hố bom đảm bảo giao thông tại Ngã ba Đồng Lộc năm 1968 trước ngày 10 cô gái anh dũng hy sinh.",
+          "portraitCredit": "Phóng viên chiến trường Văn Sắc — Thông tấn xã Việt Nam (TTXVN)",
+          "secondaryImageUrl": "assets/martyrs/nga-ba-dong-loc-10-co-gai.jpg",
+          "secondaryImageWidth": 1170,
+          "secondaryImageHeight": 878,
+          "secondaryImageCaption": "Khu di tích lịch sử Quốc gia Đặc biệt Ngã ba Đồng Lộc (huyện Can Lộc, tỉnh Hà Tĩnh) — nơi an nghỉ của 10 Nữ Anh hùng Liệt sĩ TNXP.",
+          "secondaryImageCredit": "Ban Quản lý Khu di tích Ngã ba Đồng Lộc"
+        },
+        {
+          "id": "ls-ho-thi-cuc-dong-loc",
+          "name": "Hồ Thị Cúc",
+          "birthYear": 1944,
+          "sacrificeDate": "24/07/1968",
+          "hometown": "Xã Sơn Bằng, huyện Hương Sơn, tỉnh Hà Tĩnh",
+          "rankRole": "Tiểu đội phó Tiểu đội 4 TNXP - Anh hùng LLVTND",
+          "unitRaw": "Tiểu đội 4, Đại đội 552, Tổng đội TNXP 55 Hà Tĩnh",
+          "cemetery": "Khu di tích Ngã ba Đồng Lộc, Can Lộc, Hà Tĩnh",
+          "level": "L4",
+          "confidence": 1,
+          "featured": false,
+          "sourceName": "Thông tấn xã Việt Nam (TTXVN) — 10 cô gái TNXP hy sinh tại Ngã ba Đồng Lộc",
+          "sourceUrl": "https://nvsk.vnanet.vn/10-co-gai-thanh-nien-xung-phong-hy-sinh-tai-nga-ba-dong-loc-1-39773.vna",
+          "story": "Tiểu đội phó Tiểu đội 4 TNXP Ngã ba Đồng Lộc. Khi đồng đội tìm thấy chị vào ngày thứ 3 sau trận bom trên đồi Trọ Voi, đầu chị đội nón, tay vẫn cầm cán cuốc và các đầu ngón tay bật máu vì bới đất tìm đường ra cứu đồng đội. Nhà thơ Yến Thanh đã xúc động viết bài thơ 'Cúc ơi!' ngay tại trận địa.",
+          "secondarySourceName": "Chuyên trang Câu chuyện Lịch sử — Tiểu đội 4 TNXP Ngã ba Đồng Lộc",
+          "secondarySourceUrl": "https://cauchuyenlichsu.vn/ky-uc-song-mai/10-co-gai-dong-loc-mot-tieu-doi-mai-mai-tuoi-doi-muoi",
+          "portraitUrl": "assets/martyrs/dong-loc-tieu-doi-4-ttxvn.jpg",
+          "portraitWidth": 850,
+          "portraitHeight": 595,
+          "imageKind": "portrait",
+          "portraitCaption": "Tiểu đội phó Hồ Thị Cúc cùng các đồng đội Tiểu đội 4 TNXP Đại đội 552 san lấp hố bom tại tọa độ lửa Ngã ba Đồng Lộc năm 1968.",
+          "portraitCredit": "Thông tấn xã Việt Nam (TTXVN)"
+        },
+        {
+          "id": "ls-hoang-kim-giao-1968",
+          "name": "Hoàng Kim Giao",
+          "birthYear": 1941,
+          "sacrificeDate": "30/12/1968",
+          "hometown": "Đồ Sơn, TP. Hải Phòng",
+          "rankRole": "Trung úy, Kỹ sư – Đoàn trưởng Nghiên cứu Phá bom - Anh hùng LLVTND",
+          "unitRaw": "Đoàn Nghiên cứu Kỹ thuật Phá bom, Bộ Tư lệnh Công binh (Phối thuộc Tuyến lửa Quân khu 4)",
+          "cemetery": "Nghĩa trang Liệt sĩ huyện Nam Đàn, Nghệ An / Hải Phòng",
+          "level": "L4",
+          "confidence": 1,
+          "featured": true,
+          "sourceName": "Báo Quân đội Nhân dân — Hoàng Kim Giao: Chân dung người kỹ sư phá bom từ trường",
+          "sourceUrl": "https://ct.qdnd.vn/phong-su-dieu-tra/hoang-kim-giao-chan-dung-tu-ban-nhac-khong-loi-508011",
+          "story": "Trí thức trẻ tài năng sở hữu 2 bằng đại học (Vật lý rắn ĐH Tổng hợp & Vô tuyến điện tử ĐH Bách khoa Hà Nội), thông thạo 4 ngoại ngữ. Ông xung phong vào tuyến lửa Quân khu 4 nghiên cứu nguyên lý và trực tiếp phá hàng loạt bom từ trường Mỹ để mở đường cho xe ra tiền tuyến. Ngày 30/12/1968, khi đang tháo gỡ quả bom từ trường MK42 tại Nam Hưng (Nam Đàn, Nghệ An), quả bom phát nổ khiến ông và chiến sĩ lái xe Lương Trung Tín anh dũng hy sinh.",
+          "portraitUrl": "assets/martyrs/hoang-kim-giao.png",
+          "portraitWidth": 300,
+          "portraitHeight": 352,
+          "imageKind": "portrait",
+          "portraitCaption": "Chân dung Anh hùng Liệt sĩ, Kỹ sư – Trung úy Hoàng Kim Giao (1941–1968), Đoàn trưởng Đoàn Nghiên cứu Phá bom Quân khu 4 (Giải thưởng Hồ Chí Minh đợt I).",
+          "portraitCredit": "Bảo tàng Binh chủng Công binh & Báo Quân đội Nhân dân"
+        }
+      ],
+      "sourceName": "Thông tấn xã Việt Nam (TTXVN) — Hồ sơ 10 cô gái TNXP Ngã ba Đồng Lộc",
+      "sourceUrl": "https://nvsk.vnanet.vn/10-co-gai-thanh-nien-xung-phong-hy-sinh-tai-nga-ba-dong-loc-1-39773.vna",
+      "secondarySourceName": "Báo Quân đội Nhân dân — Chân dung Anh hùng phá bom Hoàng Kim Giao",
+      "secondarySourceUrl": "https://ct.qdnd.vn/phong-su-dieu-tra/hoang-kim-giao-chan-dung-tu-ban-nhac-khong-loi-508011",
+      "archivalNote": "Hồ sơ Khu di tích lịch sử Quốc gia Đặc biệt Ngã ba Đồng Lộc (Hà Tĩnh) và Đoàn 559 Trường Sơn ghi nhận từ tháng 4 đến tháng 10/1968, không quân Mỹ đã trút gần 50.000 quả bom các loại xuống tọa độ lửa Đồng Lộc; lực lượng phòng không, công binh và Thanh niên xung phong vẫn kiên cường thông đường chi viện cho tiền tuyến miền Nam."
+    },
+    {
+      "id": "duong-9-nam-lao-1971",
+      "name": "Chiến dịch phản công Đường 9 – Nam Lào",
+      "altName": "Đánh bại Cuộc hành quân Lam Sơn 719 (30/01 – 23/03/1971)",
+      "periodId": "P4_1969_1973",
+      "dateRange": "30/01/1971 – 23/03/1971",
+      "year": 1971,
+      "locationName": "Trục Đường 9 từ Lao Bảo (Quảng Trị) sang Bản Đông, Sê Pôn (Savannakhet, Lào)",
+      "modernProvince": "Quảng Trị (Giáp biên giới Lào)",
+      "militaryZone": "Mặt trận B70 (Đường 9 - Nam Lào)",
+      "coords": [
+        16.6194,
+        106.5861
+      ],
+      "verificationLevel": "L4",
+      "summary": "Chiến dịch phản công quy mô lớn của Bộ Tư lệnh Mặt trận 702 (QĐNDVN) phối hợp cùng Quân Giải phóng Nhân dân Lào đập tan cuộc hành quân Lam Sơn 719 — cuộc thử nghiệm cao nhất của học thuyết 'Việt Nam hóa chiến tranh' nhằm cắt đứt tuyến chi viện chiến lược Trường Sơn tại Sê Pôn.",
+      "phases": [
+        {
+          "date": "30/01 – 07/02/1971",
+          "title": "Triệt tiêu thế cơ động trực thăng vận trên cánh Bắc và Nam Đường 9",
+          "desc": "Lưới lửa phòng không dày đặc bắn rơi hàng trăm trực thăng Mỹ."
+        },
+        {
+          "date": "08/02 – 11/03/1971",
+          "title": "Bẻ gãy gọng kìm thiết giáp và tiêu diệt Căn cứ 31 (Đồi Không Tên), Đồi 500",
+          "desc": "Trung đoàn 64 (Sư đoàn 320) phối hợp xe tăng PT-76 tiến công tiêu diệt Lữ đoàn Dù 3 QLVNCH tại Căn cứ 31, bắt sống Đại tá Nguyễn Văn Thọ."
+        },
+        {
+          "date": "12/03 – 23/03/1971",
+          "title": "Tổng công kích cụm tập đoàn Bản Đông – Điểm cao 660",
+          "desc": "Đánh thiệt hại nặng Lữ đoàn 1 Thiết giáp, Sư đoàn Dù và Sư đoàn Bộ binh 1 QLVNCH."
+        }
+      ],
+      "result": "Thắng lợi chiến lược của QĐNDVN: Đánh bại hoàn toàn cuộc hành quân Lam Sơn 719, bảo vệ vững chắc hành lang vận tải chiến lược Trường Sơn.",
+      "combatants": {
+        "rev": {
+          "factions": [
+            "Quân đội Nhân dân Việt Nam (Mặt trận B70)",
+            "Quân Giải phóng Nhân dân Lào"
+          ],
+          "commanders": [
+            "Thiếu tướng Lê Trọng Tấn (Tư lệnh)",
+            "Thiếu tướng Chu Huy Mân (Chính ủy)",
+            "Đại tá Cao Văn Khánh",
+            "Đại tá Đồng Sỹ Nguyên"
+          ],
+          "units": [
+            "Sư đoàn 308 (Quân Tiên Phong)",
+            "Sư đoàn 304 (Đoàn Vinh Quang)",
+            "Sư đoàn 320 (Đoàn Đồng Bằng - Trung đoàn 64)",
+            "Sư đoàn 324, Sư đoàn 2",
+            "Các tiểu đoàn xe tăng 198, 297, 397"
+          ],
+          "strength": "~60.000 quân chủ lực binh chủng hợp thành",
+          "casualties": "2.163 cán bộ, chiến sĩ hy sinh, 6.176 bị thương (Nguồn: Lịch sử kháng chiến chống Mỹ cứu nước)"
+        },
+        "opp": {
+          "factions": [
+            "Quân lực Việt Nam Cộng hòa",
+            "Quân đội Hoa Kỳ (Sư đoàn 101 Dù, Sư đoàn 5 Bộ binh Cơ giới, Không quân Mỹ)"
+          ],
+          "commanders": [
+            "Trung tướng Hoàng Xuân Lãm",
+            "Trung tướng Dư Quốc Đống",
+            "Đại tướng Creighton Abrams"
+          ],
+          "units": [
+            "Sư đoàn Dù (Lữ đoàn 1, 2, 3)",
+            "Sư đoàn Thủy quân Lục chiến",
+            "Sư đoàn 1 Bộ binh",
+            "Lữ đoàn 1 Thiết giáp QLVNCH"
+          ],
+          "strength": "~42.000 quân (32.000 quân chủ lực cơ động QLVNCH + 10.000 quân Mỹ yểm trợ hỏa lực và trực thăng)",
+          "casualties": "Hơn 7.600–15.000 thương vong và bị bắt, 556 máy bay và trực thăng bị bắn rơi/phá hủy (Nguồn: Lịch sử Kháng chiến chống Mỹ, cứu nước — NXB Chính trị Quốc gia)"
+        }
+      },
+      "estimatedMartyrs": "2.163 Liệt sĩ Mặt trận B70 (quy tập chính tại Nghĩa trang Liệt sĩ Quốc gia Đường 9, TP. Đông Hà, Quảng Trị)",
+      "martyrs": [
+        {
+          "id": "ls-nguyen-quoc-doanh-1971",
+          "name": "Nguyễn Quốc Doanh",
+          "birthYear": 1939,
+          "sacrificeDate": "25/02/1971",
+          "hometown": "Xã Chuyên Nghiệp, huyện Duy Tiên, tỉnh Hà Nam",
+          "rankRole": "Phó Tiểu đoàn trưởng Tiểu đoàn 9 - Anh hùng LLVTND",
+          "unitRaw": "Tiểu đoàn 9, Trung đoàn 64, Sư đoàn 320 (Đoàn Đồng Bằng), Mặt trận B70 Đường 9 - Nam Lào",
+          "cemetery": "Nghĩa trang Liệt sĩ Quốc gia Đường 9, TP. Đông Hà, tỉnh Quảng Trị",
+          "level": "L4",
+          "confidence": 1,
+          "featured": true,
+          "sourceName": "Bảo tàng Lịch sử Quân sự Việt Nam & Hồ sơ Anh hùng LLVTND Sư đoàn 320",
+          "sourceUrl": "https://cauchuyenlichsu.vn/ky-uc-song-mai/anh-hung-liet-si-nguyen-quoc-doanh-fe9385",
+          "story": "Trong trận tiến công tiêu diệt Căn cứ 31 (Đồi Không Tên - Sở chỉ huy Lữ đoàn Dù 3 QLVNCH) ngày 25/02/1971 tại mặt trận Đường 9 - Nam Lào, Phó Tiểu đoàn trưởng Tiểu đoàn 9 Nguyễn Quốc Doanh (Trung đoàn 64, Sư đoàn 320) luôn đi đầu mũi đột kích hiệp đồng bộ binh - xe tăng. Dù bị thương nặng cả hai chân, ông tự băng bó và tiếp tục dẫn đầu bộ đội xung phong đánh chiếm hầm chỉ huy địch trước khi anh dũng hy sinh. Ngày 09/10/2014, Chủ tịch nước truy tặng ông danh hiệu Anh hùng LLVTND.",
+          "secondarySourceName": "Báo Quân đội Nhân dân — Chiến thắng Đường 9 – Nam Lào 1971",
+          "secondarySourceUrl": "https://www.qdnd.vn/vung-buoc-duoi-quan-ky-quyet-thang/lich-su-quan-doi-nhan-dan-viet-nam/chien-thang-duong-9-nam-lao-1971-pha-san-mot-buoc-co-ban-chien-luoc-viet-nam-hoa-chien-tranh-cua-my-803354",
+          "portraitUrl": "assets/martyrs/nguyen-quoc-doanh.png",
+          "portraitWidth": 600,
+          "portraitHeight": 400,
+          "imageKind": "portrait",
+          "portraitCaption": "Chân dung lưu trữ Anh hùng Liệt sĩ Nguyễn Quốc Doanh (1939–1971), Phó Tiểu đoàn trưởng Tiểu đoàn 9, Trung đoàn 64, Sư đoàn 320.",
+          "portraitCredit": "Bảo tàng Lịch sử Quân sự Việt Nam (btlsqsvn.mod.gov.vn)"
+        },
+        {
+          "id": "ls-tap-the-2163-duong-9-nam-lao",
+          "name": "Tập thể 2.163 Liệt sĩ Mặt trận B70 Đường 9 – Nam Lào (An táng tại NTLS Quốc gia Đường 9)",
+          "birthYear": 1948,
+          "sacrificeDate": "02–03/1971",
+          "hometown": "Các tỉnh, thành phố trên cả nước",
+          "rankRole": "Chiến sĩ bộ binh, xe tăng, pháo binh, phòng không Mặt trận B70",
+          "unitRaw": "Các Sư đoàn 308, 304, 320, 324, Sư đoàn 2 và Binh đoàn Trường Sơn",
+          "cemetery": "Nghĩa trang Liệt sĩ Quốc gia Đường 9 (Quy tập hơn 10.800 Liệt sĩ Đường 9 - Khe Sanh - Nam Lào)",
+          "level": "L3",
+          "confidence": 0.92,
+          "featured": false,
+          "sourceName": "Cổng Thông tin Điện tử về Liệt sĩ & Ban Quản lý NTLS Quốc gia Đường 9",
+          "sourceUrl": "http://thongtinlietsi.gov.vn",
+          "story": "2.163 cán bộ, chiến sĩ QĐNDVN đã ngã xuống trên các điểm cao 500, Căn cứ 31, Bản Đông, Điểm cao 723 (Phu Ko Boc) và dọc hành lang Sê Pôn mùa Xuân 1971 để giữ vững con đường Trường Sơn huyền thoại.",
+          "secondarySourceName": "Báo Nhân Dân (Chuyên trang đặc biệt) — Chiến dịch Đường 9 – Nam Lào 1971",
+          "secondarySourceUrl": "https://special.nhandan.vn/chien-dich-duong-9-nam-lao/index.html"
+        }
+      ],
+      "sourceName": "Báo Quân đội Nhân dân — Chiến thắng Đường 9 – Nam Lào 1971",
+      "sourceUrl": "https://www.qdnd.vn/vung-buoc-duoi-quan-ky-quyet-thang/lich-su-quan-doi-nhan-dan-viet-nam/chien-thang-duong-9-nam-lao-1971-pha-san-mot-buoc-co-ban-chien-luoc-viet-nam-hoa-chien-tranh-cua-my-803354",
+      "secondarySourceName": "Báo Nhân Dân (Chuyên trang đặc biệt) — Chiến dịch Đường 9 – Nam Lào",
+      "secondarySourceUrl": "https://special.nhandan.vn/chien-dich-duong-9-nam-lao/index.html",
+      "archivalNote": "Theo Tổng kết Chiến dịch phản công Đường 9 – Nam Lào của Bộ Tổng Tham mưu QĐNDVN, sau 52 ngày đêm tác chiến hiệp đồng binh chủng quy mô lớn (30/01 – 23/03/1971), Mặt trận B70 đã đánh thiệt hại nặng 2 sư đoàn tinh nhuệ nhất của tổng dự bị chiến lược QLVNCH, giữ vững hành lang chiến lược Đông – Tây Trường Sơn."
+    },
+    {
+      "id": "dak-to-tan-canh-1972",
+      "name": "Chiến dịch Bắc Tây Nguyên — Đắk Tô – Tân Cảnh (1972)",
+      "altName": "Huyền Thoại Kíp Xe Tăng 377 (30/03 – 05/06/1972)",
+      "periodId": "P4_1969_1973",
+      "dateRange": "30/03/1972 – 05/06/1972 (Đỉnh điểm Tân Cảnh – Đắk Tô 2: 24/04/1972)",
+      "year": 1972,
+      "locationName": "Căn cứ E42 Tân Cảnh, Sân bay Phượng Hoàng (Đắk Tô 2) và Thị xã Kon Tum",
+      "modernProvince": "Kon Tum",
+      "militaryZone": "Mặt trận Tây Nguyên (B3)",
+      "coords": [
+        14.6589,
+        107.8011
+      ],
+      "verificationLevel": "L4",
+      "summary": "Một trong 3 mũi tiến công chiến lược Xuân – Hè 1972. Lần đầu tiên bộ đội Tây Nguyên sử dụng xe tăng T-54 và tên lửa chống tăng B-72 đột phá tuyến phòng thủ kiên cố nhất Bắc Tây Nguyên tại Căn cứ E42 Tân Cảnh và Đắk Tô 2. Sáng 24/04/1972 tại Đắk Tô 2, Kíp xe tăng 377 (Tiểu đoàn 297) đã một mình dũng mãnh lao vào đội hình 10 xe tăng M41 của địch, bắn cháy liên tiếp 7 chiếc trước khi cả 4 chiến sĩ anh dũng hy sinh trong xe.",
+      "phases": [
+        {
+          "date": "30/03 – 23/04/1972",
+          "title": "Đập vỡ tuyến phòng thủ ngoại vi phía Tây sông Pô Kô (Điểm cao 1015 - Charlie, 1049 - Delta)",
+          "desc": "Sư đoàn 320 và Sư đoàn 2 bóc gỡ các căn cứ hỏa lực tiền tiêu."
+        },
+        {
+          "date": "24/04/1972",
+          "title": "Giải phóng Căn cứ E42 Tân Cảnh và trận quyết chiến của Xe tăng 377 tại Đắk Tô 2",
+          "desc": "Xe tăng T-54 số hiệu 377 dẫn đầu mũi đột kích vào Đắk Tô 2, một mình quần thảo với 10 xe tăng M41 địch, tiêu diệt 7 xe tăng địch."
+        }
+      ],
+      "result": "Thắng lợi lớn của Mặt trận Tây Nguyên (B3): Đập tan cụm phòng ngự Đắk Tô – Tân Cảnh chỉ trong 1 ngày đêm, giải phóng hoàn toàn vùng Bắc Kon Tum.",
+      "combatants": {
+        "rev": {
+          "factions": [
+            "Quân Giải phóng miền Nam Việt Nam",
+            "QĐNDVN (Bộ Tư lệnh Mặt trận Tây Nguyên B3)"
+          ],
+          "commanders": [
+            "Trung tướng Hoàng Minh Thảo (Tư lệnh Mặt trận B3)",
+            "Đại tá Trương Chí Cương (Chính ủy)",
+            "Đại tá Nguyễn Quốc Thước (Tham mưu trưởng)",
+            "Đại tá Kim Tuấn (Sư đoàn trưởng Sư đoàn 320)"
+          ],
+          "units": [
+            "Sư đoàn 320 (Đoàn Đồng Bằng)",
+            "Sư đoàn 2 (Quân khu 5)",
+            "Trung đoàn 66, Trung đoàn 28, Trung đoàn Đặc công 400",
+            "Tiểu đoàn Tăng 297 (Đại đội 7 - Xe tăng 377)"
+          ],
+          "strength": "~35.000 quân chủ lực Mặt trận B3",
+          "casualties": "Hàng trăm chiến sĩ bộ binh, đặc công và thiết giáp hy sinh trên các điểm cao Charlie, Delta, Tân Cảnh, Đắk Tô 2"
+        },
+        "opp": {
+          "factions": [
+            "Quân lực Việt Nam Cộng hòa (Quân đoàn II)",
+            "Không quân Hoa Kỳ (B-52 & Cố vấn Mỹ)"
+          ],
+          "commanders": [
+            "Trung tướng Ngô Dzu (Tư lệnh Quân đoàn II)",
+            "Đại tá Lê Đức Đạt (Sư đoàn trưởng Sư đoàn 22 QLVNCH - Tử trận tại Tân Cảnh)",
+            "John Paul Vann (Cố vấn trưởng Mỹ vùng II Chiến thuật - Tử trận 09/06/1972)"
+          ],
+          "units": [
+            "Sư đoàn 22 Bộ binh (Trung đoàn 42, 47)",
+            "Lữ đoàn 2 Dù (Tiểu đoàn 11 Dù tại đồi Charlie)",
+            "Trung đoàn 14 Thiết giáp (Xe tăng M41)"
+          ],
+          "strength": "~25.000 quân phòng thủ Bắc Tây Nguyên",
+          "casualties": "Sư đoàn 22 QLVNCH bị xóa sổ tại Tân Cảnh; Đại tá Sư đoàn trưởng Lê Đức Đạt tử trận; Đại tá Vi Văn Bình bị bắt sống"
+        }
+      },
+      "estimatedMartyrs": "4 Anh hùng Liệt sĩ Kíp xe tăng 377 và các Liệt sĩ Sư đoàn 320, Sư đoàn 2, Trung đoàn 66",
+      "martyrs": [
+        {
+          "id": "ls-nguyen-nhan-trien-377",
+          "name": "Nguyễn Nhân Triển (Trưởng xe Tăng 377)",
+          "birthYear": 1948,
+          "sacrificeDate": "24/04/1972",
+          "hometown": "Xã Quế Nham, huyện Tân Yên, tỉnh Bắc Giang",
+          "rankRole": "Thiếu úy, Trung đội trưởng – Trưởng xe Tăng 377 - Anh hùng LLVTND",
+          "unitRaw": "Kíp xe tăng T-59 số hiệu 377, Đại đội 7, Tiểu đoàn Tăng 297, Mặt trận Tây Nguyên (B3)",
+          "cemetery": "Đài tưởng niệm Chiến thắng Đắk Tô – Tân Cảnh (Nơi trưng bày Bảo vật Quốc gia Xe tăng 377), huyện Đắk Tô, Kon Tum",
+          "level": "L4",
+          "confidence": 1,
+          "featured": true,
+          "sourceName": "Báo Điện tử Chính phủ & Hồ sơ Bảo vật Quốc gia Xe tăng 377",
+          "sourceUrl": "https://baochinhphu.vn/xe-tang-377-va-nhung-chien-cong-vang-doi-o-chien-truong-tay-nguyen-102230503063126619.htm",
+          "story": "Sáng 24/04/1972, trong trận tiến công căn cứ Đắk Tô 2 (sân bay Phượng Hoàng), xe tăng T-59 số hiệu 377 do Thiếu úy Nguyễn Nhân Triển chỉ huy vượt lên dẫn đầu đội hình. Phát hiện 10 xe tăng M41 của địch phản kích, dù chỉ có một mình trước ưu thế 1 chọi 10, Thiếu úy Nguyễn Nhân Triển quyết định ra lệnh cho xe 377 lao thẳng vào đội hình địch, bắn cháy liên tiếp 7 xe tăng M41 trước khi trúng đạn chống tăng. Cả 4 thành viên kíp xe anh dũng hy sinh. Ngày 09/01/2009, Kíp xe tăng 377 được truy tặng danh hiệu Anh hùng LLVTND; ngày 30/01/2023, Xe tăng 377 được công nhận là Bảo vật Quốc gia.",
+          "secondarySourceName": "Chuyên trang Câu chuyện Lịch sử — Nguyễn Nhân Triển và bản hùng ca Xe tăng 377",
+          "secondarySourceUrl": "https://cauchuyenlichsu.vn/ky-uc-song-mai/nguyen-nhan-trien-va-ban-hung-ca-xe-tang-377",
+          "portraitUrl": "assets/martyrs/xe-tang-377-dak-to.jpg",
+          "portraitWidth": 1024,
+          "portraitHeight": 768,
+          "imageKind": "memorial",
+          "portraitCaption": "Bảo vật Quốc gia Xe tăng 377 trưng bày trang trọng tại Đài tưởng niệm Chiến thắng Đắk Tô – Tân Cảnh (tỉnh Kon Tum).",
+          "portraitCredit": "Thông tấn xã Việt Nam (TTXVN)",
+          "secondaryImageUrl": "assets/martyrs/xe-tang-tay-nguyen-1972.jpg",
+          "secondaryImageWidth": 777,
+          "secondaryImageHeight": 485,
+          "secondaryImageCaption": "Đội hình xe tăng Tiểu đoàn 297 cơ động xuyên rừng tác chiến tại mặt trận Bắc Tây Nguyên mùa Xuân – Hè năm 1972.",
+          "secondaryImageCredit": "Bảo tàng Binh chủng Tăng Thiết giáp / Báo Điện tử Chính phủ"
+        },
+        {
+          "id": "ls-cao-tran-vinh-377",
+          "name": "Cao Trần Vịnh (Pháo thủ số 2 Xe tăng 377)",
+          "birthYear": 1949,
+          "sacrificeDate": "24/04/1972",
+          "hometown": "Tỉnh Vĩnh Phúc",
+          "rankRole": "Hạ sĩ, Pháo thủ số 2 Xe tăng 377 - Tập thể Anh hùng LLVTND",
+          "unitRaw": "Kíp xe tăng T-59 số hiệu 377, Đại đội 7, Tiểu đoàn Tăng 297, Mặt trận Tây Nguyên (B3)",
+          "cemetery": "Nghĩa trang Liệt sĩ huyện Đắk Tô, tỉnh Kon Tum",
+          "level": "L4",
+          "confidence": 1,
+          "featured": false,
+          "sourceName": "Báo Điện tử Chính phủ — Hồ sơ Bảo vật Quốc gia Xe tăng 377",
+          "sourceUrl": "https://baochinhphu.vn/xe-tang-377-va-nhung-chien-cong-vang-doi-o-chien-truong-tay-nguyen-102230503063126619.htm",
+          "story": "Thành viên kíp xe tăng T-59 số hiệu 377 (cùng Trưởng xe Nguyễn Nhân Triển, Pháo thủ số 1 Nguyễn Đắc Lượng và Lái xe Hoàng Văn Ái). Sau trận đánh đột phá căn cứ E42 Tân Cảnh rạng sáng 24/04/1972, anh tiếp tục cùng kíp xe cơ động thần tốc sang Đắk Tô 2 nạp đạn chiến đấu ở cường độ cao, bắn cháy 7 xe tăng M41 địch trước khi hy sinh anh dũng trong tháp pháo.",
+          "portraitUrl": "assets/martyrs/xe-tang-377-dak-to.jpg",
+          "portraitWidth": 1024,
+          "portraitHeight": 768,
+          "imageKind": "memorial",
+          "portraitCaption": "Di tích Bảo vật Quốc gia Xe tăng 377 tại trung tâm huyện Đắk Tô, tỉnh Kon Tum — nơi ghi danh 4 Liệt sĩ Kíp xe 377.",
+          "portraitCredit": "Thông tấn xã Việt Nam (TTXVN)"
+        },
+        {
+          "id": "ls-nguyen-dac-luong-hoang-van-ai-377",
+          "name": "Nguyễn Đắc Lượng & Hoàng Văn Ái (Pháo thủ số 1 & Lái xe Tăng 377)",
+          "birthYear": 1950,
+          "sacrificeDate": "24/04/1972",
+          "hometown": "Hà Tĩnh (LS Nguyễn Đắc Lượng) & Thanh Hóa (LS Hoàng Văn Ái, sinh 1951)",
+          "rankRole": "Hạ sĩ Pháo thủ số 1 Nguyễn Đắc Lượng & Hạ sĩ Lái xe Hoàng Văn Ái - Tập thể Anh hùng LLVTND",
+          "unitRaw": "Kíp xe tăng T-59 số hiệu 377, Đại đội 7, Tiểu đoàn Tăng 297, Mặt trận Tây Nguyên (B3)",
+          "cemetery": "Nghĩa trang Liệt sĩ huyện Đắk Tô, tỉnh Kon Tum",
+          "level": "L4",
+          "confidence": 1,
+          "featured": false,
+          "sourceName": "Báo Điện tử Chính phủ & Bảo tàng Binh chủng Tăng Thiết giáp",
+          "sourceUrl": "https://baochinhphu.vn/xe-tang-377-va-nhung-chien-cong-vang-doi-o-chien-truong-tay-nguyen-102230503063126619.htm",
+          "story": "Pháo thủ số 1 Nguyễn Đắc Lượng (sinh 1950, quê Hà Tĩnh) và Lái xe Hoàng Văn Ái (sinh 1951, quê Thanh Hóa) đã phối hợp điều khiển xe cơ động linh hoạt và ngắm bắn chính xác giữa khói lửa ngột ngạt tại sân bay Phượng Hoàng (Đắk Tô 2), tiêu diệt liên tiếp 7 xe tăng M41 của địch trước khi anh dũng hy sinh cùng toàn kíp xe ngày 24/04/1972.",
+          "portraitUrl": "assets/martyrs/xe-tang-377-dak-to.jpg",
+          "portraitWidth": 1024,
+          "portraitHeight": 768,
+          "imageKind": "memorial",
+          "portraitCaption": "Bảo vật Quốc gia Xe tăng 377 — biểu tượng bất tử của Bộ đội Tăng Thiết giáp trên chiến trường Tây Nguyên.",
+          "portraitCredit": "Thông tấn xã Việt Nam (TTXVN)"
+        }
+      ],
+      "sourceName": "Báo Điện tử Chính phủ — Bảo vật Quốc gia Xe tăng 377 ở Tây Nguyên",
+      "sourceUrl": "https://baochinhphu.vn/xe-tang-377-va-nhung-chien-cong-vang-doi-o-chien-truong-tay-nguyen-102230503063126619.htm",
+      "secondarySourceName": "Chuyên trang Câu chuyện Lịch sử — Nguyễn Nhân Triển và bản hùng ca Xe tăng 377",
+      "secondarySourceUrl": "https://cauchuyenlichsu.vn/ky-uc-song-mai/nguyen-nhan-trien-va-ban-hung-ca-xe-tang-377",
+      "archivalNote": "Theo Hồ sơ Bảo vật Quốc gia (Quyết định số 41/QĐ-TTg ngày 30/01/2023 của Thủ tướng Chính phủ) và Lịch sử Binh chủng Tăng Thiết giáp, trong trận tiến công Đắk Tô – Tân Cảnh ngày 24/04/1972, kíp xe tăng T-59 số hiệu 377 đã lập kỳ tích một mình đánh trả 10 xe tăng M41 của đối phương, bắn cháy liên tiếp 7 chiếc."
+    },
+    {
+      "id": "thanh-co-quang-tri-1972",
+      "name": "Trận Thành Cổ Quảng Trị — 81 Ngày Đêm Mùa Hè Đỏ Lửa",
+      "altName": "Second Battle of Quảng Trị (28/06/1972 – 16/09/1972)",
+      "periodId": "P4_1969_1973",
+      "dateRange": "28/06/1972 – 16/09/1972 (81 ngày đêm)",
+      "year": 1972,
+      "locationName": "Thành cổ Quảng Trị, Thị xã Quảng Trị & Bến vượt sông Thạch Hãn",
+      "modernProvince": "Quảng Trị",
+      "militaryZone": "Mặt trận Trị - Thiên (B5)",
+      "coords": [
+        16.7525,
+        107.1872
+      ],
+      "verificationLevel": "L4",
+      "summary": "Cuộc chiến đấu phòng ngự 81 ngày đêm bảo vệ Thành cổ và thị xã Quảng Trị phục vụ đấu tranh ngoại giao tại Hội nghị Paris. Trên diện tích chưa đầy 3 km², Mỹ và QLVNCH đã trút xuống 328.000 tấn bom đạn (tương đương sức công phá của 7 quả bom nguyên tử Hiroshima). Hàng ngàn chiến sĩ trẻ và sinh viên các trường đại học miền Bắc đã vượt sông Thạch Hãn vào thành chiến đấu và mãi mãi nằm lại tuổi hai mươi.",
+      "phases": [
+        {
+          "date": "28/06 – 27/07/1972",
+          "title": "Đánh chặn cuộc hành quân Lam Sơn 72 ở ngoại vi Triệu Phong – Hải Lăng",
+          "desc": "Trung đoàn 48 (Đoàn Thạch Hãn - Sư đoàn 320B) và Trung đoàn 95 (Sư đoàn 325) kiên cường bẻ gãy các đợt đột kích của Sư đoàn Dù."
+        },
+        {
+          "date": "28/07 – 16/09/1972",
+          "title": "Quyết tử giữ từng bức tường gạch vỡ trong lòng Thành cổ và bến vượt Thạch Hãn",
+          "desc": "Bất chấp mưa lũ ngập hầm và pháo hạm, B-52 rải thảm suốt ngày đêm, các chiến sĩ K3 Tam Đảo, E48, E95, E101 chiến đấu giữ Thành cổ đến ngày 16/09/1972."
+        }
+      ],
+      "result": "Cuộc phòng ngự bi tráng suốt 81 ngày đêm đã giữ vững thế chủ động trên bàn đàm phán Paris trước khi rút sang bờ Bắc sông Thạch Hãn.",
+      "combatants": {
+        "rev": {
+          "factions": [
+            "Quân đội Nhân dân Việt Nam (Mặt trận B5 Trị - Thiên)",
+            "Bộ đội địa phương tỉnh Quảng Trị"
+          ],
+          "commanders": [
+            "Thiếu tướng Lê Trọng Tấn (Tư lệnh)",
+            "Thiếu tướng Song Hào (Chính ủy)",
+            "Thượng tá Nguyễn Quốc Hồ (Tư lệnh trưởng Bảo vệ Thị xã)",
+            "Thiếu tá Lê Xuân Tấu (Chính ủy E48 Đoàn Thạch Hãn)"
+          ],
+          "units": [
+            "Trung đoàn 48 (Đoàn Thạch Hãn - Sư đoàn 320B)",
+            "Trung đoàn 95 & Trung đoàn 101 (Sư đoàn 325)",
+            "Tiểu đoàn K3 Tam Đảo & Tiểu đoàn 8 Tỉnh đội Quảng Trị",
+            "Lữ đoàn Công binh 249 (Bến vượt Thạch Hãn)"
+          ],
+          "strength": "~15.000–20.000 quân luân phiên vượt sông Thạch Hãn vào chốt giữ thị xã và Thành cổ",
+          "casualties": "Ước tính trên 4.000–10.000 chiến sĩ hy sinh trong 81 ngày đêm (phần lớn hòa vào đất Thành cổ và dòng sông Thạch Hãn)"
+        },
+        "opp": {
+          "factions": [
+            "Quân lực Việt Nam Cộng hòa",
+            "Không quân & Hải quân Hoa Kỳ (Đệ thất Hạm đội & B-52)"
+          ],
+          "commanders": [
+            "Trung tướng Ngô Quang Trưởng (Tư lệnh Quân đoàn I)",
+            "Chuẩn tướng Bùi Thế Lân (Tư lệnh Sư đoàn TQLC)",
+            "Trung tướng Dư Quốc Đống (Tư lệnh Sư đoàn Dù)"
+          ],
+          "units": [
+            "Sư đoàn Thủy quân Lục chiến (Lữ đoàn 147, 258, 369)",
+            "Sư đoàn Nhảy Dù",
+            "Liên đoàn 1 Biệt động quân"
+          ],
+          "strength": "~35.000 quân tinh nhuệ nhất của QLVNCH cùng hỏa lực B-52 và 12 tàu khu trục Hạm đội 7 Mỹ",
+          "casualties": "Hơn 7.750 binh sĩ Dù và Thủy quân Lục chiến thương vong trong 81 ngày đêm (Nguồn: Lịch sử Kháng chiến chống Mỹ, cứu nước — NXB Chính trị Quốc gia)"
+        }
+      },
+      "estimatedMartyrs": "Hàng ngàn Liệt sĩ Thành cổ Quảng Trị và dòng sông Thạch Hãn (tưởng niệm chung tại Ngôi mộ chung hình bát hương Thành cổ Quảng Trị)",
+      "martyrs": [
+        {
+          "id": "ls-le-van-huynh-1972",
+          "name": "Lê Văn Huỳnh",
+          "birthYear": 1949,
+          "sacrificeDate": "02/01/1973 (Viết thư dự cảm ngày 11/09/1972)",
+          "hometown": "Thôn Đồng Tâm, xã Lê Lợi, huyện Kiến Xương, tỉnh Thái Bình",
+          "rankRole": "Tiểu đội trưởng Công binh vượt sông Thạch Hãn (Sinh viên ĐH Xây dựng Hà Nội)",
+          "unitRaw": "Đại đội 4, Tiểu đoàn 1, Lữ đoàn Công binh 249 (Nguyên là Trung đoàn Công binh 249 mặt trận Quảng Trị)",
+          "cemetery": "Nghĩa trang Liệt sĩ xã Lê Lợi, huyện Kiến Xương, tỉnh Thái Bình",
+          "level": "L4",
+          "confidence": 1,
+          "featured": true,
+          "sourceName": "Bảo tàng Thành cổ Quảng Trị & Chuyên trang Câu chuyện Lịch sử",
+          "sourceUrl": "https://cauchuyenlichsu.vn/ky-uc-song-mai/liet-si-le-van-huynh-nguoi-chien-si-thanh-co-quang-tri",
+          "story": "Sinh viên năm thứ tư Khoa Xây dựng (Trường Đại học Xây dựng / Bách khoa Hà Nội), nhập ngũ tháng 5/1972 chỉ 6 ngày sau lễ cưới để chi viện cho mặt trận Thành cổ Quảng Trị. Giữa mưa bom B-52 ác liệt trong 81 ngày đêm bảo vệ Thành cổ, ngày 11/09/1972 anh đã viết bức thư di bút dài 10 trang gửi mẹ, người vợ trẻ Đặng Thị Xơ và gia đình, kèm sơ đồ chỉ dẫn vị trí nơi mình sẽ nằm xuống. Ngày 02/01/1973 (đúng tròn một năm ngày cưới), anh anh dũng hy sinh khi làm nhiệm vụ đưa bộ đội vượt sông Thạch Hãn. Năm 2002, gia đình đã tìm thấy hài cốt anh đúng theo sơ đồ trong bức thư.",
+          "letterText": "Quảng Trị, ngày 11/9/1972:\n\nToàn gia đình kính thương!\nHôm nay con ngồi đây biên vài dòng chữ cuối cùng phòng khi đã 'đi nghiên cứu bí mật trong lòng đất' thì gia đình khỏi thấy đó là điều đột ngột.\n\nMẹ kính mến! Lớn lên trong vòng tay mẹ từ khi còn trứng nước, chưa đền đáp được công ơn to lớn đó của mẹ thì đứa con út của mẹ đã phải đi thăm bố con rồi... Mẹ đừng buồn, có thương con thì mẹ hãy nén nỗi đau này lại để sống khỏe mạnh cùng anh chị.\n\nEm Xơ thương yêu của anh! Chúng mình mới lấy nhau được 6 ngày thì anh phải lên đường... Nếu anh thực sự hy sinh thì em hãy nén đau thương, còn trẻ tuổi em hãy đi bước nữa. Anh chỉ mong em luôn khỏe mạnh, yêu đời. Thôi nhé, em đừng buồn, khi được sống trong hòa bình hãy nhớ tới anh!\n(Di bút trưng bày tại Bảo tàng Thành cổ Quảng Trị)",
+          "secondarySourceName": "Tạp chí Người Hà Nội — Kỷ vật quý của Bảo tàng Thành cổ Quảng Trị",
+          "secondarySourceUrl": "https://nguoihanoi.vn/ky-vat-quy-cua-bao-tang-thanh-co-quang-tri-85890.html",
+          "portraitUrl": "assets/martyrs/le-van-huynh.jpg",
+          "portraitWidth": 1600,
+          "portraitHeight": 1908,
+          "imageKind": "portrait",
+          "portraitCaption": "Di ảnh Liệt sĩ Lê Văn Huỳnh (1949–1973), Tiểu đội trưởng Công binh Lữ đoàn 249 tại bến vượt sông Thạch Hãn — Thành cổ Quảng Trị.",
+          "portraitCredit": "Bảo tàng Thành cổ Quảng Trị & Gia đình Liệt sĩ",
+          "secondaryImageUrl": "assets/martyrs/le-van-huynh-thu.jpg",
+          "secondaryImageWidth": 1200,
+          "secondaryImageHeight": 630,
+          "secondaryImageCaption": "Những trang đầu bức thư di bút đề ngày 11/09/1972 của Liệt sĩ Lê Văn Huỳnh hiện trưng bày trang trọng tại Bảo tàng Thành cổ Quảng Trị.",
+          "secondaryImageCredit": "Bảo tàng Thành cổ Quảng Trị"
+        },
+        {
+          "id": "ls-nguyen-van-thac-1972",
+          "name": "Nguyễn Văn Thạc",
+          "birthYear": 1952,
+          "sacrificeDate": "30/07/1972",
+          "hometown": "Làng Bưởi (Cổ Nhuế, Từ Liêm), TP. Hà Nội",
+          "rankRole": "Chiến sĩ Thông tin (Sinh viên Khoa Toán - Cơ, Đại học Tổng hợp Hà Nội)",
+          "unitRaw": "Tiểu đoàn 2, Trung đoàn 101, Sư đoàn 325, Mặt trận Quảng Trị",
+          "cemetery": "Nghĩa trang Liệt sĩ Quốc gia Trường Sơn, huyện Gio Linh, tỉnh Quảng Trị (Khu mộ Hà Nội)",
+          "level": "L4",
+          "confidence": 1,
+          "featured": true,
+          "sourceName": "Bảo tàng Lịch sử Quân sự Việt Nam & Thư viện Đại học Bách khoa Hà Nội (Tủ sách Mãi mãi tuổi hai mươi)",
+          "sourceUrl": "https://library.hust.edu.vn/vi/node/775",
+          "story": "Đạt giải Nhất cuộc thi học sinh giỏi Văn toàn miền Bắc năm học 1969–1970, sinh viên xuất sắc khoa Toán - Cơ Đại học Tổng hợp Hà Nội, xếp bút nghiên nhập ngũ ngày 06/09/1971. Trên đường hành quân vào chiến trường Quảng Trị, anh viết cuốn nhật ký 'Chuyện đời' (xuất bản với tên 'Mãi mãi tuổi hai mươi'). Ngày 30/07/1972, anh bị mảnh đạn pháo xuyên vào ngực phải khi đang làm nhiệm vụ tại chiến trường Thành cổ Quảng Trị và anh dũng hy sinh ở tuổi 20.",
+          "letterText": "Trích thư Liệt sĩ Nguyễn Văn Thạc gửi Phạm Thị Như Anh (ngày 18/09/1971) — lời tiên tri kỳ diệu về ngày 30/04/1975:\n\n\"Bất kỳ một sự vinh quang nào cũng cần phải trả bằng một giá. Và khó khăn gian khổ càng nhiều thì sự vinh quang đó càng trở nên rực rỡ. Chúng mình đừng đi tìm những chân lý sâu xa ngoài chân lý giản dị đó...\n\nNhư Anh có tin điều này không: Ngày 30/4/1975, Thạc sẽ trả lời cho Như Anh câu hỏi: Hạnh phúc là gì?\"",
+          "secondarySourceName": "Báo Nhân Dân (Chuyên trang đặc biệt) — 81 ngày đêm Thành cổ Quảng Trị",
+          "secondarySourceUrl": "https://special.nhandan.vn/bao-ve-Thanh-co-Quang-Tri/index.html",
+          "portraitUrl": "assets/martyrs/nguyen-van-thac.webp",
+          "portraitWidth": 1200,
+          "portraitHeight": 630,
+          "imageKind": "portrait",
+          "portraitCaption": "Chân dung Liệt sĩ Nguyễn Văn Thạc (1952–1972) thời sinh viên và bút tích nhật ký 'Chuyện đời' (Mãi mãi tuổi hai mươi) cùng lời hẹn ngày 30/4/1975.",
+          "portraitCredit": "Tư liệu gia đình Liệt sĩ Nguyễn Văn Thạc & NXB Thanh Niên"
+        },
+        {
+          "id": "ls-k3-tam-dao-1972",
+          "name": "Nguyễn Hữu Đoài & Lê Binh Chủng (Ban Chỉ huy Tiểu đoàn K3 Tam Đảo)",
+          "birthYear": 1942,
+          "sacrificeDate": "08/1972",
+          "hometown": "Nghệ An (LS Nguyễn Hữu Đoài) & Thanh Hóa (LS Lê Binh Chủng)",
+          "rankRole": "Chính trị viên & Chính trị viên phó Tiểu đoàn K3 Tam Đảo — Đơn vị Anh hùng LLVTND",
+          "unitRaw": "Tiểu đoàn 3 (K3 Tam Đảo), Tỉnh đội Quảng Trị, Mặt trận Bảo vệ Thành cổ Quảng Trị",
+          "cemetery": "Khu di tích Quốc gia Đặc biệt Thành cổ Quảng Trị, tỉnh Quảng Trị",
+          "level": "L4",
+          "confidence": 1,
+          "featured": true,
+          "sourceName": "Báo Quân đội Nhân dân — Sắt son lời thề 'K3 Tam Đảo còn, Thành cổ Quảng Trị còn'",
+          "sourceUrl": "https://www.qdnd.vn/xa-hoi/chinh-sach/sat-son-loi-the-giu-thanh-co-589723",
+          "secondarySourceName": "Sự kiện & Nhân chứng (Báo QĐND) — Địa chỉ đỏ trong lòng Thành cổ",
+          "secondarySourceUrl": "http://sknc.qdnd.vn/dia-chi-do/dia-chi-do-trong-long-thanh-co-501586",
+          "story": "Tháng 7/1972, Tiểu đoàn 3 Tỉnh đội Quảng Trị (K3 Tam Đảo) nhận lệnh chốt giữ hướng Tây và Tây Bắc Thành cổ Quảng Trị với lời thề quyết tử: 'K3 Tam Đảo còn, Thành cổ Quảng Trị còn!'. Tháng 8/1972, dưới sức công phá hủy diệt của bom đạn làm sập hầm chỉ huy tại khu vực Cửa Tây Thành cổ, Chính trị viên Nguyễn Hữu Đoài và Chính trị viên phó Lê Binh Chủng cùng hàng trăm cán bộ, chiến sĩ K3 Tam Đảo đã kiên cường bám trụ chiến đấu và anh dũng hy sinh ngay trong lòng Thành cổ. Ngày 23/09/1973, Tiểu đoàn K3 Tam Đảo được tuyên dương danh hiệu Đơn vị Anh hùng LLVTND.",
+          "portraitUrl": "assets/martyrs/thanh-co-quang-tri.jpg",
+          "portraitWidth": 1200,
+          "portraitHeight": 790,
+          "imageKind": "memorial",
+          "portraitCaption": "Thành cổ Quảng Trị và bến thả hoa đăng trên dòng sông Thạch Hãn — nơi tưởng niệm các Liệt sĩ K3 Tam Đảo, E48, E95, E101 ngã xuống mùa hè 1972.",
+          "portraitCredit": "Đài Tiếng nói Việt Nam (VOV)"
+        }
+      ],
+      "sourceName": "Báo Nhân Dân (Chuyên trang đặc biệt) — 81 ngày đêm bảo vệ Thành cổ Quảng Trị",
+      "sourceUrl": "https://special.nhandan.vn/bao-ve-Thanh-co-Quang-Tri/index.html",
+      "secondarySourceName": "Báo Quân đội Nhân dân — Sắt son lời thề giữ Thành cổ Quảng Trị",
+      "secondarySourceUrl": "https://www.qdnd.vn/xa-hoi/chinh-sach/sat-son-loi-the-giu-thanh-co-589723",
+      "archivalNote": "Tư liệu Bảo tàng Thành cổ Quảng Trị và Mặt trận B5 Trị – Thiên ghi nhận: Trong 81 ngày đêm mùa hè 1972 (28/06 – 16/09/1972), thị xã và Thành cổ Quảng Trị rộng chưa đầy 3 km² đã hứng chịu 328.000 tấn bom đạn; sự hy sinh của hàng ngàn chiến sĩ trẻ đã trực tiếp hậu thuẫn cuộc đấu tranh ngoại giao đi đến Hiệp định Paris."
+    },
+    {
+      "id": "dien-bien-phu-tren-khong-1972",
+      "name": "Chiến dịch Điện Biên Phủ Trên Không (Hà Nội – Hải Phòng 12 Ngày Đêm)",
+      "altName": "Đánh bại Chiến dịch Linebacker II (18/12/1972 – 29/12/1972)",
+      "periodId": "P4_1969_1973",
+      "dateRange": "18/12/1972 – 29/12/1972 (12 ngày đêm)",
+      "year": 1972,
+      "locationName": "Thủ đô Hà Nội, TP. Hải Phòng, Thái Nguyên và vùng trời miền Bắc Việt Nam",
+      "modernProvince": "Hà Nội / Hải Phòng",
+      "militaryZone": "Quân chủng Phòng không – Không quân (PK-KQ) & Quân khu Thủ đô",
+      "coords": [
+        21.0285,
+        105.8542
+      ],
+      "verificationLevel": "L4",
+      "summary": "Đỉnh cao cuộc đối đầu đất đối không trong lịch sử chiến tranh hiện đại. Tổng thống Mỹ Richard Nixon huy động gần 50% tổng số pháo đài bay chiến lược B-52 của Hoa Kỳ mở cuộc tập kích đường không 12 ngày đêm vào Hà Nội, Hải Phòng nhằm ép Việt Nam chấp nhận các điều khoản sửa đổi tại Paris. Quân chủng PK-KQ và quân dân miền Bắc đã bắn rơi 81 máy bay Mỹ (trong đó có 34 pháo đài bay B-52), buộc Mỹ ngừng ném bom và ký Hiệp định Paris ngày 27/01/1973.",
+      "phases": [
+        {
+          "date": "18/12 – 24/12/1972",
+          "title": "Đập tan đợt tập kích chiến lược thứ nhất và bắn rơi chiếc B-52 đầu tiên tại chỗ",
+          "desc": "20h13 đêm 18/12/1972, Tiểu đoàn 59 (Trung đoàn Tên lửa 261) bắn rơi tại chỗ chiếc B-52G đầu tiên trên cánh đồng Phù Lỗ (Đông Anh, Hà Nội)."
+        },
+        {
+          "date": "26/12 – 29/12/1972",
+          "title": "Đêm quyết chiến 26/12 bắn rơi 8 chiếc B-52 và đòn cảm tử của phi công Vũ Xuân Thiều (28/12)",
+          "desc": "Đêm 26/12 trở thành đêm tổn thất nặng nề nhất của Không quân Chiến lược Mỹ (SAC); đêm 28/12, phi công Vũ Xuân Thiều lái MiG-21 lao thẳng vào tiêu diệt B-52 trên bầu trời Sơn La."
+        }
+      ],
+      "result": "Thắng lợi quyết định: Đập tan uy thế 'Pháo đài bay B-52 bất khả xâm phạm', buộc Hoa Kỳ ký Hiệp định Paris (27/01/1973) và rút toàn bộ quân viễn chinh Mỹ khỏi miền Nam Việt Nam.",
+      "combatants": {
+        "rev": {
+          "factions": [
+            "Quân chủng Phòng không – Không quân (QĐNDVN)",
+            "Lực lượng Phòng không ba thứ quân Thủ đô Hà Nội & Hải Phòng"
+          ],
+          "commanders": [
+            "Đại tướng Võ Nguyên Giáp",
+            "Thượng tướng Văn Tiến Dũng",
+            "Đại tá Lê Văn Tri (Tư lệnh Quân chủng PK-KQ)",
+            "Đại tá Hoàng Phương (Chính ủy PK-KQ)",
+            "Đại tá Nguyễn Quang Bích"
+          ],
+          "units": [
+            "Sư đoàn Phòng không 361 (Hà Nội) — Trung đoàn Tên lửa SAM-2 257, 261, 274",
+            "Sư đoàn Phòng không 363 (Hải Phòng)",
+            "Sư đoàn Không quân 371 (Trung đoàn MiG-21 921 Sao Đỏ, 927 Lam Sơn)"
+          ],
+          "strength": "23 tiểu đoàn tên lửa phòng không SAM-2 (S-75 Dvina), 4 trung đoàn không quân tiêm kích MiG, 13 trung đoàn pháo cao xạ và 346 đội tự vệ",
+          "casualties": "Hơn 300 cán bộ, chiến sĩ PK-KQ hy sinh/bị thương, 3 máy bay MiG-21 tổn thất; 2.380 dân thường thiệt mạng tại Khâm Thiên, Bạch Mai, An Dương... (Nguồn: Lịch sử Kháng chiến chống Mỹ, cứu nước — NXB Chính trị Quốc gia)"
+        },
+        "opp": {
+          "factions": [
+            "Bộ Tư lệnh Không quân Chiến lược Hoa Kỳ (SAC)",
+            "Không quân Chiến thuật (TAC) & Hải quân Hoa Kỳ (TF-77)"
+          ],
+          "commanders": [
+            "Đại tướng John C. Meyer (Tư lệnh SAC)",
+            "Đại tướng John W. Vogt Jr. (Tư lệnh Tập đoàn Không quân 7)",
+            "Trung tướng Gerald W. Johnson"
+          ],
+          "units": [
+            "Không đoàn Chiến lược 43, 72 (Căn cứ Andersen - Guam) & Không đoàn 307 (U-Tapao - Thái Lan)",
+            "193/207 pháo đài bay chiến lược B-52D/G, máy bay cánh cụp cánh xòe F-111A"
+          ],
+          "strength": "193 pháo đài bay B-52 (xuất kích 729–741 lần chiếc) và hơn 1.000 máy bay chiến thuật ném hơn 20.000 tấn bom",
+          "casualties": "81 máy bay bị bắn rơi (gồm 34 máy bay B-52 và 5 chiếc F-111 theo công bố của QĐNDVN; phía Mỹ thừa nhận 16 B-52 rơi tại chỗ và 9 B-52 hỏng nặng), 43 giặc lái tử trận/mất tích, 49 giặc lái bị bắt vào Hỏa Lò"
+        }
+      },
+      "estimatedMartyrs": "Các Phi công Anh hùng Liệt sĩ Không quân Nhân dân Việt Nam, bộ đội Tên lửa, Ra-đa, Cao xạ và 2.380 đồng bào Hà Nội, Hải Phòng",
+      "martyrs": [
+        {
+          "id": "ls-vu-xuan-thieu-1972",
+          "name": "Vũ Xuân Thiều",
+          "birthYear": 1945,
+          "sacrificeDate": "28/12/1972",
+          "hometown": "Xã Hải Bắc, huyện Hải Hậu, tỉnh Nam Định (Sinh trưởng tại 21 Đặng Dung, Ba Đình, Hà Nội)",
+          "rankRole": "Thượng úy, Trung đội trưởng Phi công MiG-21 - Anh hùng LLVTND",
+          "unitRaw": "Đại đội 9 (Đánh đêm), Trung đoàn Không quân 921 (Đoàn Không quân Sao Đỏ), Sư đoàn 371, Quân chủng PK-KQ",
+          "cemetery": "Nghĩa trang Liệt sĩ Nhổn, TP. Hà Nội",
+          "level": "L4",
+          "confidence": 1,
+          "featured": true,
+          "sourceName": "Bảo tàng Phòng không – Không quân & Chuyên trang Câu chuyện Lịch sử",
+          "sourceUrl": "https://cauchuyenlichsu.vn/ky-uc-song-mai/anh-hung-vu-xuan-thieu-748496",
+          "story": "Sinh viên năm thứ 3 khoa Vô tuyến điện trường Đại học Bách khoa Hà Nội trước khi tuyển vào Không quân (1965). Đêm 28/12/1972, Thượng úy Vũ Xuân Thiều cất cánh từ sân bay dã chiến Cẩm Thủy (Thanh Hóa) trên chiếc MiG-21бис số hiệu 5121 vòng sau lưng đội hình tiêm kích hộ tống Mỹ tiếp cận tốp B-52 trên bầu trời Cò Nòi (Sơn La). Sau khi phóng cả 2 quả tên lửa ở cự ly gần nhưng B-52 chưa bốc cháy hẳn, anh quyết định tăng lực lao thẳng chiếc MiG-21 vào thân pháo đài bay B-52 biến thành quả cầu lửa khổng lồ trên bầu trời Tây Bắc. Năm 1994, anh được Nhà nước truy tặng danh hiệu Anh hùng LLVTND.",
+          "secondarySourceName": "Báo Công an TP.HCM — Chuyến bay bất tử của Anh hùng phi công Vũ Xuân Thiều",
+          "secondarySourceUrl": "https://congan.com.vn/van-hoa-giai-tri/chuyen-bay-bat-tu-cua-anh-hung-phi-cong-vu-xuan-thieu-qua-trang-sach_192130.html",
+          "portraitUrl": "assets/martyrs/vu-xuan-thieu.jpg",
+          "portraitWidth": 1500,
+          "portraitHeight": 999,
+          "imageKind": "portrait",
+          "portraitCaption": "Chân dung khắc họa Anh hùng Liệt sĩ phi công MiG-21 Vũ Xuân Thiều (1945–1972) trên ấn phẩm tư liệu 'Anh hùng Vũ Xuân Thiều và chuyến bay bất tử'.",
+          "portraitCredit": "NXB Kim Đồng & Báo Công an TP.HCM",
+          "secondaryImageUrl": "assets/martyrs/mig21-dien-bien-phu-tren-khong.jpg",
+          "secondaryImageWidth": 996,
+          "secondaryImageHeight": 614,
+          "secondaryImageCaption": "Tiêm kích MiG-21 của Không quân Nhân dân Việt Nam cất cánh bảo vệ bầu trời miền Bắc tháng 12/1972.",
+          "secondaryImageCredit": "Thông tấn xã Việt Nam (TTXVN)"
+        },
+        {
+          "id": "ls-hoang-tam-hung-1972",
+          "name": "Hoàng Tam Hùng",
+          "birthYear": 1948,
+          "sacrificeDate": "28/12/1972",
+          "hometown": "Sinh tại Hà Nội (Quê gốc: Thừa Thiên Huế; an táng tại Thanh Oai, TP. Hà Nội)",
+          "rankRole": "Trung úy Phi công MiG-21 - Anh hùng LLVTND",
+          "unitRaw": "Trung đoàn Không quân 927 (Đoàn Không quân Lam Sơn), Sư đoàn 371, Quân chủng PK-KQ",
+          "cemetery": "Nghĩa trang Liệt sĩ Văn Điển / Thanh Oai, TP. Hà Nội",
+          "level": "L4",
+          "confidence": 1,
+          "featured": true,
+          "sourceName": "Báo Quân đội Nhân dân (Sự kiện & Nhân chứng) — Giây phút hào hùng trên không",
+          "sourceUrl": "http://sknc.qdnd.vn/nhan-vat/giay-phut-hao-hung-tren-khong-502817",
+          "story": "Trưa 28/12/1972, phi công trẻ Hoàng Tam Hùng điều khiển tiêm kích MiG-21 thuộc Trung đoàn Không quân 927 (Đoàn Lam Sơn) cất cánh nghênh chiến với đội hình hàng chục máy bay tiêm kích Mỹ bảo vệ vùng trời Thủ đô. Ông mưu trí bắn rơi liên tiếp 2 máy bay phản lực Mỹ (1 chiếc RA-5C và 1 chiếc F-4J) trước khi máy bay trúng tên lửa địch và anh dũng hy sinh trên vùng trời Cẩm Giàng (Hải Dương). Ngày 25/04/2013, Chủ tịch nước truy tặng ông danh hiệu Anh hùng LLVTND.",
+          "secondarySourceName": "Chuyên trang Câu chuyện Lịch sử — Anh hùng Liệt sĩ phi công Hoàng Tam Hùng",
+          "secondarySourceUrl": "https://cauchuyenlichsu.vn/ky-uc-song-mai/anh-hung-liet-si-trung-uy-phi-cong-hoang-tam-hung",
+          "portraitUrl": "assets/martyrs/hoang-tam-hung.webp",
+          "portraitWidth": 709,
+          "portraitHeight": 500,
+          "imageKind": "portrait",
+          "portraitCaption": "Chân dung Anh hùng Liệt sĩ, phi công MiG-21 Hoàng Tam Hùng (1948–1972) bên buồng lái máy bay tiêm kích Trung đoàn 927.",
+          "portraitCredit": "Bảo tàng Phòng không – Không quân"
+        }
+      ],
+      "sourceName": "Báo Quân đội Nhân dân — Chiến thắng Hà Nội – Điện Biên Phủ trên không",
+      "sourceUrl": "https://www.qdnd.vn/quoc-phong-an-ninh/nghe-thuat-quan-su-vn/chien-thang-ha-noi-dien-bien-phu-tren-khong-gop-phan-thay-doi-cuc-dien-chien-tranh-826017",
+      "secondarySourceName": "Báo Nhân Dân (Chuyên trang đặc biệt) — Hà Nội 1972: Những ký ức không thể quên",
+      "secondarySourceUrl": "https://special.nhandan.vn/hanoi-1972-nhung-ky-uc-khong-the-nao-quen/index.html",
+      "archivalNote": "Theo Lịch sử Quân chủng Phòng không – Không quân (Bộ Quốc phòng), trong 12 ngày đêm từ 18 đến 29/12/1972, lưới lửa phòng không ba thứ quân miền Bắc đã bắn rơi 81 máy bay Mỹ các loại — trong đó có 34 pháo đài bay chiến lược B-52 và 5 máy bay F-111 — buộc Hoa Kỳ ngừng ném bom Bắc vĩ tuyến 20 và ký Hiệp định Paris ngày 27/01/1973."
+    },
+    {
+      "id": "thuong-duc-phuoc-long-1974-1975",
+      "name": "Trận Thượng Đức (1974) & Chiến dịch Đường 14 – Phước Long (1975)",
+      "altName": "Đòn trinh sát chiến lược trước Tổng tiến công Mùa Xuân 1975",
+      "periodId": "P5_1973_1975",
+      "dateRange": "29/07/1974 – 06/01/1975",
+      "year": 1974,
+      "locationName": "Chi khu Thượng Đức (Đại Lộc, Quảng Nam) & Tỉnh Phước Long (nay thuộc Bình Phước)",
+      "modernProvince": "Quảng Nam / Bình Phước",
+      "militaryZone": "Quân khu 5 (Thượng Đức) & Quân đoàn 4 – Miền B2 (Phước Long)",
+      "coords": [
+        11.8325,
+        106.9936
+      ],
+      "verificationLevel": "L4",
+      "summary": "Hai đòn quyết chiến 'trinh sát chiến lược' thử nghiệm tương quan lực lượng chủ lực sau Hiệp định Paris. Tại Thượng Đức (Quảng Nam, 7–11/1974), Sư đoàn 304 và Sư đoàn 324 đọ sức trực diện với Sư đoàn Dù QLVNCH. Tiếp đó, Chiến dịch Đường 14 – Phước Long (12/12/1974 – 06/01/1975) giải phóng hoàn toàn tỉnh đầu tiên ở miền Nam chỉ cách Sài Gòn 120km, khẳng định Mỹ không còn khả năng quay lại can thiệp quân sự và củng cố quyết tâm giải phóng miền Nam ngay trong năm 1975.",
+      "phases": [
+        {
+          "date": "29/07 – 07/08/1974",
+          "title": "Nhổ cụm cứ điểm 'Mắt ngọc' Thượng Đức và đánh bại phản kích trên Đồi 1062",
+          "desc": "Trung đoàn 66 (Sư đoàn 304) tiêu diệt chi khu Thượng Đức và quần thảo ác liệt với Sư đoàn Dù QLVNCH."
+        },
+        {
+          "date": "13/12 – 26/12/1974",
+          "title": "Đập tan hệ thống chi khu ngoại vi Bù Đăng, Bù Đốp, Đồng Xoài",
+          "desc": "Tại chi khu Bù Đăng (14/12/1974), chiến sĩ Đoàn Đức Thái (Trung đoàn 271, Sư đoàn 3) ôm bộc phá lao vào lô cốt đầu cầu mở cửa cho bộ đội xung phong."
+        },
+        {
+          "date": "31/12/1974 – 06/01/1975",
+          "title": "Tổng công kích giải phóng thị xã Phước Long và điểm cao Bà Rá",
+          "desc": "Quân đoàn 4 giải phóng hoàn toàn tỉnh Phước Long vào ngày 06/01/1975."
+        }
+      ],
+      "result": "Thắng lợi chiến lược mở màn Đại thắng Mùa Xuân 1975: Giải phóng tỉnh đầu tiên ở miền Nam, tạo cơ sở thực tiễn để Bộ Chính trị hạ quyết tâm giải phóng hoàn toàn miền Nam trong năm 1975.",
+      "combatants": {
+        "rev": {
+          "factions": [
+            "Quân đội Nhân dân Việt Nam (Quân đoàn 4 - Binh đoàn Cửu Long & Sư đoàn 304, 324)"
+          ],
+          "commanders": [
+            "Trung tướng Trần Văn Trà",
+            "Thiếu tướng Hoàng Cầm (Tư lệnh Quân đoàn 4)",
+            "Thiếu tướng Hoàng Thế Thiện (Chính ủy QĐ4)",
+            "Thượng tướng Chu Huy Mân (Tư lệnh Quân khu 5)"
+          ],
+          "units": [
+            "Quân đoàn 4 (Sư đoàn 7, Sư đoàn 3, Trung đoàn Đặc công 429)",
+            "Sư đoàn 304 (Trung đoàn 66, Trung đoàn 24) & Sư đoàn 324 (tại Thượng Đức)"
+          ],
+          "strength": "~32.000 quân trên cả hai chiến trường Thượng Đức và Phước Long",
+          "casualties": "921 Liệt sĩ hy sinh tại mặt trận Thượng Đức (trong đó Sư đoàn 304 có 620 Liệt sĩ); hơn 250 Liệt sĩ hy sinh tại Chiến dịch Đường 14 – Phước Long (Nguồn: Tượng đài Thượng Đức)"
+        },
+        "opp": {
+          "factions": [
+            "Quân lực Việt Nam Cộng hòa (Quân đoàn I & Quân đoàn III)"
+          ],
+          "commanders": [
+            "Trung tướng Ngô Quang Trưởng (QĐ I)",
+            "Trung tướng Dư Quốc Đống (QĐ III)",
+            "Chuẩn tướng Lê Nguyên Vỹ"
+          ],
+          "units": [
+            "Sư đoàn Nhảy Dù (Lữ đoàn 1, 3 tại Thượng Đức)",
+            "Tiểu khu Phước Long, Liên đoàn 81 Biệt cách Dù"
+          ],
+          "strength": "~18.000 quân phòng thủ và phản kích",
+          "casualties": "Hơn 4.700 thương vong tại Thượng Đức; toàn bộ Tiểu khu Phước Long bị tiêu diệt và tan rã (Nguồn: Lịch sử Kháng chiến chống Mỹ, cứu nước — NXB Chính trị Quốc gia)"
+        }
+      },
+      "estimatedMartyrs": "921 Liệt sĩ Mặt trận Thượng Đức (Quảng Nam) & hơn 250 Liệt sĩ Mặt trận Đường 14 – Phước Long",
+      "martyrs": [
+        {
+          "id": "ls-doan-duc-thai-1974",
+          "name": "Đoàn Đức Thái",
+          "birthYear": 1944,
+          "sacrificeDate": "14/12/1974",
+          "hometown": "Thị trấn Cát Bà, huyện Cát Hải, TP. Hải Phòng",
+          "rankRole": "Tiểu đội trưởng Bộc phá - Anh hùng LLVTND",
+          "unitRaw": "Đại đội 4, Tiểu đoàn 2, Trung đoàn 271, Sư đoàn 3 (Sao Vàng / Miền B2), Chiến dịch Đường 14 – Phước Long",
+          "cemetery": "Nghĩa trang Liệt sĩ tỉnh Bình Phước",
+          "level": "L4",
+          "confidence": 1,
+          "featured": true,
+          "sourceName": "Báo Nhân Dân & Bảo tàng Lịch sử Quân sự Việt Nam — Anh hùng Liệt sĩ Đoàn Đức Thái",
+          "sourceUrl": "https://nhandan.vn/nho-ve-anh-hung-doan-duc-thai-post586810.html",
+          "story": "Rạng sáng 14/12/1974, trong trận mở màn đánh chiếm Chi khu quân sự Bù Đăng trên Đường 14 (Phước Long), hỏa lực đại liên từ lô cốt đầu cầu và hàng rào dây thép gai nhiều tầng của địch chặn đứng đội hình xung kích. Dù đã bị thương ở tay và ngực trong 2 lần lên đánh bộc phá trước đó, Tiểu đội trưởng Đoàn Đức Thái kiên quyết ôm ống bộc phá thứ 3 nặng 12kg lao thẳng lên áp sát hàng rào và lô cốt địch kích nổ, lấy thân mình mở thông cửa mở cho đơn vị tràn vào giải phóng Chi khu Bù Đăng. Được Nhà nước truy tặng danh hiệu Anh hùng LLVTND.",
+          "secondarySourceName": "Cổng Thông tin Điện tử Bộ Quốc phòng — Chiến dịch Đường 14 – Phước Long",
+          "secondarySourceUrl": "https://mod.gov.vn/home/news/event/detail?current=true&urile=wcm:path:/mod/sa-mod-site/sa-ttsk/sa-tt-cmsk/sa-tt-cmsk-6/sa-tt-cmsk-6-tl/eb545c56-da19-479c-9ddb-188df0ee1cfc"
+        },
+        {
+          "id": "ls-tap-the-921-thuong-duc-1974",
+          "name": "Tập thể 921 Liệt sĩ Mặt trận Thượng Đức (620 Liệt sĩ Sư đoàn 304)",
+          "birthYear": 1952,
+          "sacrificeDate": "08–11/1974",
+          "hometown": "Thanh Hóa, Nghệ An, Hà Tĩnh, Phú Thọ, Thái Bình, Hà Nội, Quảng Nam...",
+          "rankRole": "Cán bộ, chiến sĩ Trung đoàn 66, Trung đoàn 24 (Sư đoàn 304) & Sư đoàn 324",
+          "unitRaw": "Sư đoàn 304 (Đoàn Vinh Quang), Sư đoàn 324 & LLVT huyện Đại Lộc, Quảng Nam",
+          "cemetery": "Khu Tượng đài Chiến thắng Thượng Đức & Nghĩa trang Liệt sĩ xã Đại Lãnh, huyện Đại Lộc, tỉnh Quảng Nam",
+          "level": "L3",
+          "confidence": 0.93,
+          "featured": false,
+          "sourceName": "Đền tưởng niệm Chiến thắng Thượng Đức (Đại Lộc, Quảng Nam) & Cổng Thông tin Liệt sĩ",
+          "sourceUrl": "http://thongtinlietsi.gov.vn",
+          "story": "Danh sách 921 Liệt sĩ hy sinh tại Chi khu Thượng Đức và Điểm cao 1062 (Ba Khe – Động Hà Sống) mùa Thu – Đông 1974 hiện được khắc trang trọng trên bia đá tại Đền tưởng niệm Chiến thắng Thượng Đức (xã Đại Lãnh, huyện Đại Lộc, tỉnh Quảng Nam)."
+        }
+      ],
+      "sourceName": "Cổng Thông tin Điện tử Bộ Quốc phòng — Chiến dịch Đường 14 – Phước Long",
+      "sourceUrl": "https://mod.gov.vn/home/news/event/detail?current=true&urile=wcm:path:/mod/sa-mod-site/sa-ttsk/sa-tt-cmsk/sa-tt-cmsk-6/sa-tt-cmsk-6-tl/eb545c56-da19-479c-9ddb-188df0ee1cfc",
+      "secondarySourceName": "Báo Nhân Dân — Nhớ về Anh hùng Liệt sĩ Đoàn Đức Thái tại Phước Long",
+      "secondarySourceUrl": "https://nhandan.vn/nho-ve-anh-hung-doan-duc-thai-post586810.html",
+      "archivalNote": "Viện Lịch sử Quân sự Việt Nam đánh giá thắng lợi tại Thượng Đức (Quảng Nam, 08/1974) và việc giải phóng hoàn toàn tỉnh Phước Long (06/01/1975) là 'đòn trinh sát chiến lược' có ý nghĩa quyết định để Bộ Chính trị hạ quyết tâm chiến lược giải phóng hoàn toàn miền Nam trong hai năm 1975–1976 và rút ngắn ngay trong năm 1975."
+    },
+    {
+      "id": "chien-dich-tay-nguyen-1975",
+      "name": "Chiến dịch Tây Nguyên — Đòn Điểm Huyệt Buôn Ma Thuột (03/1975)",
+      "altName": "Central Highlands Campaign (04/03/1975 – 03/04/1975)",
+      "periodId": "P5_1973_1975",
+      "dateRange": "04/03/1975 – 03/04/1975 (Giải phóng Buôn Ma Thuột: 10–11/03/1975)",
+      "year": 1975,
+      "locationName": "Thị xã Buôn Ma Thuột (Đắk Lắk), Pleiku, Kon Tum, Cheo Reo (Đường 7)",
+      "modernProvince": "Đắk Lắk / Gia Lai",
+      "militaryZone": "Mặt trận Tây Nguyên (B3 - Tiền thân Quân đoàn 3 Binh đoàn Tây Nguyên)",
+      "coords": [
+        12.6667,
+        108.05
+      ],
+      "verificationLevel": "L4",
+      "summary": "Chiến dịch mở màn cuộc Tổng tiến công và nổi dậy Mùa Xuân 1975. Bằng nghệ thuật nghi binh chiến dịch kiệt xuất thu hút chủ lực địch lên Bắc Tây Nguyên (Pleiku – Kon Tum) và cắt đứt Đường 19, Đường 14, Đường 21, đúng 02h03 ngày 10/03/1975 đại quân Tây Nguyên bất ngờ tung đòn điểm huyệt giải phóng thị xã Buôn Ma Thuột, đập tan cuộc phản kích của Sư đoàn 23 QLVNCH và truy kích tiêu diệt toàn bộ Quân đoàn II rút chạy trên Đường 7 (Cheo Reo).",
+      "phases": [
+        {
+          "date": "04/03 – 09/03/1975",
+          "title": "Nghi binh chiến dịch tại Pleiku và cắt đứt Đường 19, Đường 14, giải phóng Đức Lập",
+          "desc": "Sư đoàn 968 nghi binh hướng Bắc, trong khi Sư đoàn 320 cắt Đường 14 và Sư đoàn 10 tiêu diệt chi khu Đức Lập."
+        },
+        {
+          "date": "10/03 – 18/03/1975",
+          "title": "Đòn điểm huyệt giải phóng Buôn Ma Thuột (10–11/03) và đập tan phản kích Phước An",
+          "desc": "Lữ đoàn Đặc công 198, Sư đoàn 316, Trung đoàn 95B và Trung đoàn Thiết giáp 273 đánh chiếm Sư đoàn bộ 23 QLVNCH chỉ sau 32 giờ."
+        },
+        {
+          "date": "17/03 – 03/04/1975",
+          "title": "Truy kích thần tốc trên Đường số 7 (Cheo Reo) giải phóng toàn bộ Tây Nguyên",
+          "desc": "Sư đoàn 320 truy kích tiêu diệt lực lượng Quân đoàn II QLVNCH rút chạy trên Đường 7."
+        }
+      ],
+      "result": "Thắng lợi chiến lược mở đầu Đại thắng Mùa Xuân 1975: Tạo sự sụp đổ dây chuyền buộc Bộ Chính trị quyết định giải phóng miền Nam trước mùa mưa năm 1975.",
+      "combatants": {
+        "rev": {
+          "factions": [
+            "Quân đội Nhân dân Việt Nam (Bộ Tư lệnh Chiến dịch Tây Nguyên - Đại tướng Văn Tiến Dũng trực tiếp chỉ đạo)"
+          ],
+          "commanders": [
+            "Đại tướng Văn Tiến Dũng",
+            "Trung tướng Hoàng Minh Thảo (Tư lệnh Chiến dịch)",
+            "Đại tá Đặng Vũ Hiệp (Chính ủy)",
+            "Đại tá Vũ Lăng",
+            "Đại tá Nguyễn Năng",
+            "Đại tá Kim Tuấn"
+          ],
+          "units": [
+            "Sư đoàn 316 (Đoàn Bông Lau)",
+            "Sư đoàn 10 (Đoàn Đắk Tô)",
+            "Sư đoàn 320 (Đoàn Đồng Bằng)",
+            "Sư đoàn 968",
+            "Trung đoàn Thiết giáp 273",
+            "Lữ đoàn Đặc công 198"
+          ],
+          "strength": "~75.000 quân chủ lực và binh khí kỹ thuật hợp thành",
+          "casualties": "1.615 cán bộ, chiến sĩ hy sinh trong toàn Chiến dịch Tây Nguyên (Riêng trận Buôn Ma Thuột có 215 Liệt sĩ Sư đoàn 316 và 80 Liệt sĩ Lữ đoàn Đặc công 198 hy sinh - Nguồn: Bia tưởng niệm Buôn Ma Thuột)"
+        },
+        "opp": {
+          "factions": [
+            "Quân lực Việt Nam Cộng hòa (Quân đoàn II & Vùng II Chiến thuật)"
+          ],
+          "commanders": [
+            "Thiếu tướng Phạm Văn Phú (Tư lệnh Quân đoàn II)",
+            "Chuẩn tướng Lê Trung Tường (Tư lệnh Sư đoàn 23)",
+            "Đại tá Vũ Thế Quang (Tư lệnh phó Sư đoàn 23 - Bị bắt sống)"
+          ],
+          "units": [
+            "Sư đoàn 23 Bộ binh (Trung đoàn 44, 45, 53)",
+            "7 Liên đoàn Biệt động quân (4, 6, 21, 22, 23, 24, 25)",
+            "Lữ đoàn 2 Kỵ binh Thiết giáp"
+          ],
+          "strength": "~68.000 quân chủ lực và bảo an tại Vùng II Chiến thuật",
+          "casualties": "Quân đoàn II QLVNCH bị xóa sổ hoàn toàn; hơn 28.000 binh sĩ thương vong/bị bắt, thu và phá hủy hơn 1.100 xe quân sự, 150 máy bay (Nguồn: Lịch sử Kháng chiến chống Mỹ, cứu nước — NXB Chính trị Quốc gia)"
+        }
+      },
+      "estimatedMartyrs": "1.615 Liệt sĩ Chiến dịch Tây Nguyên (trong đó có 215 Liệt sĩ Sư đoàn 316 & 80 Liệt sĩ Lữ đoàn Đặc công 198 hy sinh tại Buôn Ma Thuột)",
+      "martyrs": [
+        {
+          "id": "ls-tap-the-215-f316-buon-ma-thuot",
+          "name": "Tập thể 215 Liệt sĩ Sư đoàn 316 hy sinh giải phóng Buôn Ma Thuột (10–11/03/1975)",
+          "birthYear": 1953,
+          "sacrificeDate": "10–11/03/1975",
+          "hometown": "Phú Thọ, Vĩnh Phúc, Tuyên Quang, Yên Bái, Thanh Hóa, Nghệ An, Hà Nội...",
+          "rankRole": "Cán bộ, chiến sĩ Trung đoàn 174, 148, 149 (Sư đoàn 316 - Đoàn Bông Lau)",
+          "unitRaw": "Sư đoàn Bộ binh 316, Mặt trận Tây Nguyên (B3)",
+          "cemetery": "Nhà bia tưởng niệm Liệt sĩ Sư đoàn 316 (Công viên Sơn La, đường Nguyễn Công Trứ, TP. Buôn Ma Thuột) & NTLS tỉnh Đắk Lắk",
+          "level": "L3",
+          "confidence": 0.94,
+          "featured": true,
+          "sourceName": "Báo Quân đội Nhân dân — Nhà bia ghi tên Liệt sĩ Sư đoàn 316 tại Buôn Ma Thuột",
+          "sourceUrl": "https://www.qdnd.vn/xa-hoi/chinh-sach/khoi-cong-xay-dung-nha-bia-ghi-ten-liet-si-su-doan-316-1061004",
+          "story": "Trong trận đột kích giải phóng thị xã Buôn Ma Thuột ngày 10–11/03/1975 (mũi thọc sâu đánh chiếm Ngã Sáu, Tiểu khu Đắk Lắk và Sư đoàn bộ 23 QLVNCH), 215 cán bộ, chiến sĩ Sư đoàn 316 đã anh dũng hy sinh. Toàn bộ họ tên, năm sinh, quê quán của 215 liệt sĩ hiện được khắc trên bia đá hoa cương tại Nhà bia tưởng niệm Liệt sĩ Sư đoàn 316 (TP. Buôn Ma Thuột, Đắk Lắk).",
+          "secondarySourceName": "Cổng Thông tin Điện tử về Liệt sĩ Quốc gia",
+          "secondarySourceUrl": "http://thongtinlietsi.gov.vn"
+        },
+        {
+          "id": "ls-tap-the-80-dac-cong-198-bmt",
+          "name": "Tập thể 80 Liệt sĩ Lữ đoàn Đặc công 198 (Trận Sân bay Hòa Bình & Kho Mai Hắc Đế)",
+          "birthYear": 1952,
+          "sacrificeDate": "10–17/03/1975",
+          "hometown": "Các tỉnh miền Bắc và miền Trung Việt Nam",
+          "rankRole": "Chiến sĩ Đặc công luồn sâu mở màn trận Buôn Ma Thuột",
+          "unitRaw": "Lữ đoàn Đặc công 198 (Bộ Tư lệnh Đặc công / Mặt trận Tây Nguyên B3)",
+          "cemetery": "Đài tưởng niệm Liệt sĩ Lữ đoàn Đặc công 198 (Xã Hòa Đông, huyện Krông Pắc, Đắk Lắk) & NTLS tỉnh Đắk Lắk",
+          "level": "L3",
+          "confidence": 0.93,
+          "featured": true,
+          "sourceName": "Báo Quân đội Nhân dân — Tri ân 80 Liệt sĩ Lữ đoàn Đặc công 198 tại Buôn Ma Thuột",
+          "sourceUrl": "https://www.qdnd.vn/xa-hoi/chinh-sach/khoi-cong-xay-dung-nha-bia-ghi-ten-liet-si-su-doan-316-1061004",
+          "story": "Đúng 02h03 rạng sáng 10/03/1975, các mũi đặc công Lữ đoàn 198 nổ súng mở màn Chiến dịch Tây Nguyên, đánh chiếm Sân bay thị xã Phụng Dực, Sân bay Hòa Bình, Hậu cứ Trung đoàn 53 và Kho Mai Hắc Đế. 80 cán bộ, chiến sĩ đặc công đã anh dũng hy sinh trong trận đánh mở đầu lịch sử này.",
+          "secondarySourceName": "Báo Đắk Lắk — Nhà bia ghi tên Liệt sĩ giải phóng Buôn Ma Thuột",
+          "secondarySourceUrl": "https://baodaklak.vn/van-hoa-xa-hoi/chinh-sach-xa-hoi/202610/khoi-cong-xay-dung-nha-bia-ghi-ten-liet-si-su-doan-316-1e0626a/"
+        }
+      ],
+      "sourceName": "Báo Quân đội Nhân dân — Chiến thắng Chiến dịch Tây Nguyên (03/1975)",
+      "sourceUrl": "https://www.qdnd.vn/quoc-phong-an-ninh/nghe-thuat-quan-su-vn/chien-thang-chien-dich-tay-nguyen-nua-the-ky-nhin-lai-819187",
+      "secondarySourceName": "Báo Quân đội Nhân dân — Nhà bia ghi tên Liệt sĩ Sư đoàn 316 & Đặc công 198 tại Buôn Ma Thuột",
+      "secondarySourceUrl": "https://www.qdnd.vn/xa-hoi/chinh-sach/khoi-cong-xay-dung-nha-bia-ghi-ten-liet-si-su-doan-316-1061004",
+      "archivalNote": "Theo Tổng kết Chiến dịch Tây Nguyên (Bộ Quốc phòng), nghệ thuật nghi binh chiến dịch hướng Bắc Tây Nguyên và đòn điểm huyệt bất ngờ vào Buôn Ma Thuột rạng sáng 10/03/1975 đã đập tan toàn bộ Quân đoàn II QLVNCH trong chưa đầy một tháng, chuyển cuộc tiến công chiến lược sang Tổng tiến công chiến lược trên toàn miền Nam."
+    },
+    {
+      "id": "xuan-loc-ho-chi-minh-1975",
+      "name": "Trận Xuân Lộc & Chiến dịch Hồ Chí Minh Toàn Thắng (04/1975)",
+      "altName": "Đập tan 'Cánh cửa thép' Xuân Lộc & Giải phóng Sài Gòn – Gia Định (09/04 – 30/04/1975)",
+      "periodId": "P5_1973_1975",
+      "dateRange": "09/04/1975 – 30/04/1975 (Đỉnh cao toàn thắng: 11h30 ngày 30/04/1975)",
+      "year": 1975,
+      "locationName": "Thị xã Xuân Lộc (Long Khánh, Đồng Nai) & Sài Gòn – Gia Định (Dinh Độc Lập)",
+      "modernProvince": "TP. Hồ Chí Minh / Đồng Nai",
+      "militaryZone": "5 Cánh quân Hợp vây Sài Gòn (Quân đoàn 1, 2, 3, 4 & Đoàn 232)",
+      "coords": [
+        10.7769,
+        106.6953
+      ],
+      "verificationLevel": "L4",
+      "summary": "Đỉnh cao chói lọi của cuộc kháng chiến chống Mỹ, cứu nước kéo dài 21 năm (1954–1975). Sau 12 ngày đêm chiến đấu quyết liệt của Quân đoàn 4 đập tan 'Cánh cửa thép' Xuân Lộc (09–21/04/1975), đúng 17h00 ngày 26/04/1975, 5 cánh quân thần tốc (Quân đoàn 1, 2, 3, 4 và Đoàn 232) đồng loạt tiến công hợp vây Sài Gòn. Để mở đường cho đại quân tiến vào nội đô, hàng trăm chiến sĩ Đặc công – Biệt động đã hy sinh giữ các cây cầu huyết mạch (Cầu Rạch Chiếc, Cầu Đồng Nai, Cầu Bông, Cầu Sáng) ngay trước giờ toàn thắng 11h30 ngày 30/04/1975.",
+      "phases": [
+        {
+          "date": "09/04 – 21/04/1975",
+          "title": "12 ngày đêm đập tan 'Cánh cửa thép' Xuân Lộc (Long Khánh)",
+          "desc": "Quân đoàn 4 (Sư đoàn 7, 341, 6) chiến đấu ngoan cường tiêu diệt chiến đoàn 52 và cô lập hoàn toàn thị xã Xuân Lộc, buộc Sư đoàn 18 và Lữ đoàn 1 Dù QLVNCH rút chạy."
+        },
+        {
+          "date": "26/04 – 29/04/1975",
+          "title": "5 cánh quân mở màn Chiến dịch Hồ Chí Minh và cuộc chiến giữ Cầu Rạch Chiếc (27–30/04)",
+          "desc": "Đoàn Đặc công Biệt động Z22, Z23 (Lữ đoàn 316) chiếm giữ Cầu Rạch Chiếc suốt 3 ngày đêm cho Binh đoàn Hương Giang tiến vào Sài Gòn."
+        },
+        {
+          "date": "11h30 ngày 30/04/1975",
+          "title": "Xe tăng Lữ đoàn 203 húc đổ cổng Dinh Độc Lập — Toàn thắng",
+          "desc": "Lá cờ Giải phóng tung bay trên nóc Dinh Độc Lập, Tổng thống Dương Văn Minh tuyên bố đầu hàng không điều kiện, đất nước hoàn toàn thống nhất."
+        }
+      ],
+      "result": "Toàn thắng lịch sử ngày 30/04/1975: Giải phóng hoàn toàn miền Nam, thống nhất Tổ quốc Việt Nam.",
+      "combatants": {
+        "rev": {
+          "factions": [
+            "Quân đội Nhân dân Việt Nam (Bộ Tư lệnh Chiến dịch Hồ Chí Minh)",
+            "LLVT Biệt động Sài Gòn – Gia Định"
+          ],
+          "commanders": [
+            "Đại tướng Văn Tiến Dũng (Tư lệnh Chiến dịch)",
+            "Phạm Hùng (Chính ủy)",
+            "Thượng tướng Trần Văn Trà",
+            "Trung tướng Lê Trọng Tấn",
+            "Trung tướng Đinh Đức Thiện",
+            "Trung tướng Lê Đức Anh",
+            "Thiếu tướng Nguyễn Hòa (QĐ1)",
+            "Thiếu tướng Nguyễn Hữu An (QĐ2)",
+            "Thiếu tướng Vũ Lăng (QĐ3)",
+            "Thiếu tướng Hoàng Cầm (QĐ4)"
+          ],
+          "units": [
+            "Quân đoàn 1 (Binh đoàn Quyết Thắng)",
+            "Quân đoàn 2 (Binh đoàn Hương Giang - Lữ đoàn Tăng 203, Sư đoàn 304)",
+            "Quân đoàn 3 (Binh đoàn Tây Nguyên)",
+            "Quân đoàn 4 (Binh đoàn Cửu Long - Sư đoàn 341, 7, 6)",
+            "Đoàn 232 & Lữ đoàn Đặc công Biệt động 316"
+          ],
+          "strength": "~270.000 quân chủ lực (15 sư đoàn bộ binh, 550 xe tăng - thiết giáp, 400 khẩu pháo lớn)",
+          "casualties": "Tại mặt trận Xuân Lộc: 460 cán bộ, chiến sĩ Quân đoàn 4 hy sinh; tại Cầu Rạch Chiếc: 52 chiến sĩ Lữ đoàn Đặc công Biệt động 316 hy sinh; nhiều chiến sĩ hy sinh ngay trước giờ toàn thắng sáng 30/04/1975"
+        },
+        "opp": {
+          "factions": [
+            "Quân lực Việt Nam Cộng hòa (Bộ Tổng tham mưu & Quân đoàn III)"
+          ],
+          "commanders": [
+            "Tổng thống Dương Văn Minh (Đầu hàng 30/04/1975)",
+            "Trung tướng Nguyễn Văn Toàn",
+            "Thiếu tướng Lê Minh Đảo (Sư đoàn 18 tại Xuân Lộc)",
+            "Chuẩn tướng Lê Nguyên Vỹ (Sư đoàn 5 - Tự sát tại Lai Khê)"
+          ],
+          "units": [
+            "Sư đoàn 18, Sư đoàn 5, Sư đoàn 25 Bộ binh",
+            "Sư đoàn Dù, Sư đoàn Thủy quân Lục chiến",
+            "Lữ đoàn 3 Kỵ binh Thiết giáp"
+          ],
+          "strength": "~150.000 quân chủ lực và địa phương quân trong tuyến phòng thủ Sài Gòn – Gia Định",
+          "casualties": "Toàn bộ hệ thống chính quyền và Quân lực Việt Nam Cộng hòa sụp đổ và hạ vũ khí đầu hàng không điều kiện trưa 30/04/1975"
+        }
+      },
+      "estimatedMartyrs": "460 Liệt sĩ Mặt trận Xuân Lộc (Đền thờ Liệt sĩ Long Khánh), 52 Liệt sĩ Đặc công Cầu Rạch Chiếc và các Liệt sĩ hy sinh ngày 30/04/1975",
+      "martyrs": [
+        {
+          "id": "ls-nguyen-van-tan-52-dac-cong-rach-chiec",
+          "name": "Tập thể 52 Liệt sĩ Đặc công Biệt động Cầu Rạch Chiếc",
+          "birthYear": 1945,
+          "sacrificeDate": "28–30/04/1975",
+          "hometown": "Bắc Giang, Hải Dương, Thái Bình, Hà Nội, Nam Định, TP. Hồ Chí Minh...",
+          "rankRole": "52 Cán bộ, chiến sĩ Đoàn Z22, Z23 & Tiểu đoàn 81 — Đơn vị Anh hùng LLVTND",
+          "unitRaw": "Đoàn Đặc công Z22, Z23 và Tiểu đoàn 81 thuộc Lữ đoàn Đặc công Biệt động 316 (Bộ Tham mưu Miền B2)",
+          "cemetery": "Bia tưởng niệm 52 Liệt sĩ Cầu Rạch Chiếc (TP. Thủ Đức) & Nghĩa trang Liệt sĩ TP. Hồ Chí Minh",
+          "level": "L4",
+          "confidence": 1,
+          "featured": true,
+          "sourceName": "Báo Quân đội Nhân dân — Quyết tử giữ Cầu Rạch Chiếc cửa ngõ Sài Gòn",
+          "sourceUrl": "https://www.qdnd.vn/quoc-phong-an-ninh/xay-dung-quan-doi/quyet-tu-giu-cau-rach-chiec-440207",
+          "story": "Đêm 27 rạng 28/04/1975, các mũi chiến đấu thuộc Đoàn Đặc công Z22, Z23 và Tiểu đoàn 81 (Lữ đoàn Đặc công Biệt động 316, Bộ Tham mưu Miền B2) bất ngờ đánh chiếm Cầu Rạch Chiếc — cửa ngõ huyết mạch phía Đông Sài Gòn. Suốt 3 ngày đêm (28–30/04/1975), trước các đợt phản kích điên cuồng bằng tàu chiến, pháo binh, xe tăng và Thủy quân Lục chiến của địch, 52 cán bộ, chiến sĩ đã chiến đấu đến viên đạn cuối cùng, giữ nguyên vẹn cây cầu cho binh đoàn xe tăng Quân đoàn 2 tiến thẳng vào Dinh Độc Lập sáng 30/04/1975.",
+          "secondarySourceName": "Đài Tiếng nói Việt Nam (VOV) — Ký ức trận đánh Cầu Rạch Chiếc oai hùng",
+          "secondarySourceUrl": "https://vov.vn/chinh-tri/50-nam-giai-phong-mien-nam-ky-uc-tran-danh-cau-rach-chiec-oai-hung-post1188390.vov",
+          "portraitUrl": "assets/martyrs/bia-cau-rach-chiec.jpg",
+          "portraitWidth": 650,
+          "portraitHeight": 426,
+          "imageKind": "memorial",
+          "portraitCaption": "Lễ dâng hoa tưởng niệm tại Bia tưởng niệm 52 Liệt sĩ Đặc công Biệt động Cầu Rạch Chiếc (TP. Thủ Đức, TP. Hồ Chí Minh).",
+          "portraitCredit": "Trang tin Điện tử Đảng bộ TP. Hồ Chí Minh (thanhuytphcm.vn)"
+        },
+        {
+          "id": "ls-dao-nguyen-hung-30-4-1975",
+          "name": "Đào Nguyên Hùng",
+          "birthYear": 1952,
+          "sacrificeDate": "30/04/1975 (Hy sinh lúc 10h00 sáng 30/04/1975)",
+          "hometown": "Tỉnh Thái Bình / Miền Bắc Việt Nam",
+          "rankRole": "Chiến sĩ Bộ binh thọc sâu tiến vào Dinh Độc Lập",
+          "unitRaw": "Trung đoàn 66, Sư đoàn 304 (Đoàn Vinh Quang), Quân đoàn 2 (Binh đoàn Hương Giang)",
+          "cemetery": "Nghĩa trang Liệt sĩ TP. Hồ Chí Minh (Đồi Không Tên, TP. Thủ Đức)",
+          "level": "L3",
+          "confidence": 0.91,
+          "featured": true,
+          "sourceName": "Cổng Thông tin Điện tử Ngành Chính sách Quân đội — Sổ vàng Liệt sĩ Trung đoàn 66 (F304)",
+          "sourceUrl": "http://chinhsachquandoi.gov.vn",
+          "story": "Chiến sĩ Trung đoàn 66, Sư đoàn 304 ngồi trên đội hình xe cơ giới thọc sâu cùng Lữ đoàn Tăng Thiết giáp 203 tiến qua Cầu Rạch Chiếc và Cầu Sài Gòn vào trung tâm Sài Gòn sáng 30/04/1975. Lúc 10h00 sáng 30/04/1975 — chỉ còn đúng 1 giờ 30 phút trước khi lá cờ Giải phóng tung bay trên nóc Dinh Độc Lập — anh ngã xuống vì hỏa lực ổ đề kháng cuối cùng của địch tại cửa ngõ nội đô Sài Gòn."
+        },
+        {
+          "id": "ls-tap-the-460-xuan-loc-1975",
+          "name": "Tập thể 460 Liệt sĩ Quân đoàn 4 hy sinh tại Mặt trận Xuân Lộc (09–21/04/1975)",
+          "birthYear": 1953,
+          "sacrificeDate": "09–21/04/1975",
+          "hometown": "Nghệ An, Hà Tĩnh, Thanh Hóa, Thái Bình, Nam Định, Đồng Nai, Bình Dương...",
+          "rankRole": "Cán bộ, chiến sĩ Sư đoàn 341 (Đoàn Sông Lam), Sư đoàn 7 & Sư đoàn 6 (Quân đoàn 4)",
+          "unitRaw": "Sư đoàn 341, Sư đoàn 7, Sư đoàn 6 — Quân đoàn 4 (Binh đoàn Cửu Long)",
+          "cemetery": "Đền thờ Liệt sĩ & Nghĩa trang Liệt sĩ TP. Long Khánh, tỉnh Đồng Nai",
+          "level": "L3",
+          "confidence": 0.93,
+          "featured": false,
+          "sourceName": "Đền thờ Liệt sĩ TP. Long Khánh (Đồng Nai) & Cổng Thông tin Liệt sĩ Quốc gia",
+          "sourceUrl": "http://thongtinlietsi.gov.vn",
+          "story": "Trong 12 ngày đêm quyết chiến mở 'Cánh cửa thép' Xuân Lộc (09–21/04/1975), 460 cán bộ, chiến sĩ Sư đoàn 341 (Đoàn Sông Lam), Sư đoàn 7 và Sư đoàn 6 thuộc Quân đoàn 4 đã anh dũng hy sinh để đập tan tuyến phòng thủ kiên cố nhất phía Đông Sài Gòn. Danh sách các liệt sĩ hiện được khắc ghi tại Đền thờ Liệt sĩ TP. Long Khánh (tỉnh Đồng Nai)."
+        }
+      ],
+      "sourceName": "Cổng Thông tin Điện tử Bộ Quốc phòng — Chiến dịch Hồ Chí Minh lịch sử",
+      "sourceUrl": "https://www.mod.gov.vn/vn/chi-tiet/sa-ttsk/sa-tt-cmsk/sa-tt-cmsk-6/sa-tt-cmsk-6-tl/nghe-thuat-quan-su-va-to-chuc-luc-luong-trong-chien-dich-ho-chi-minh",
+      "secondarySourceName": "Báo Quân đội Nhân dân & Đài VOV — Quyết tử giữ Cầu Rạch Chiếc cửa ngõ Sài Gòn",
+      "secondarySourceUrl": "https://www.qdnd.vn/quoc-phong-an-ninh/xay-dung-quan-doi/quyet-tu-giu-cau-rach-chiec-440207",
+      "archivalNote": "Theo Biên niên lịch sử Chiến dịch Hồ Chí Minh (Bộ Quốc phòng), sau 12 ngày đêm đập tan tuyến phòng thủ Xuân Lộc (09–21/04/1975), 5 cánh quân hợp vây cùng các lữ đoàn đặc công biệt động chốt giữ hệ thống cầu cửa ngõ đã tiến thẳng vào trung tâm Sài Gòn, cắm cờ Giải phóng trên nóc Dinh Độc Lập lúc 11h30 ngày 30/04/1975."
+    }
+  ],
+  "UNIT_AUTHORITY_DICT": [
+    {
+      "code": "D512 / D261 Khu 8",
+      "canonical": "Tiểu đoàn 512 & Tiểu đoàn 261 (Đoàn Giron — Khu 8)",
+      "zone": "Quân khu 8 (Đồng bằng sông Cửu Long)",
+      "aliases": [
+        "Tiểu đoàn 261",
+        "D261",
+        "Tiểu đoàn 512",
+        "D512",
+        "Đơn vị Đặc công 60",
+        "Ba chiến sĩ gang thép Ấp Bắc"
+      ],
+      "battles": [
+        "dong-khoi-tua-hai-1960",
+        "tran-ap-bac-1963"
+      ]
+    },
+    {
+      "code": "Q761 / Q762 / Q763 (F9)",
+      "canonical": "Trung đoàn 1 (Bình Giã), Trung đoàn 2 (Đồng Xoài), Trung đoàn 3 — Sư đoàn 9",
+      "zone": "Miền B2 (Đông Nam Bộ)",
+      "aliases": [
+        "Q761",
+        "Q762",
+        "Q763",
+        "Trung đoàn Bình Giã",
+        "Trung đoàn Đồng Xoài",
+        "Sư đoàn 9",
+        "F9",
+        "Trung đội Ký Con"
+      ],
+      "battles": [
+        "chien-dich-binh-gia-1964",
+        "chien-dich-dong-xoai-1965"
+      ]
+    },
+    {
+      "code": "E1 Ba Gia / F2 Khu 5",
+      "canonical": "Trung đoàn 1 (Đoàn Ba Gia) — Sư đoàn 2 Quân khu 5 & Bệnh xá Đức Phổ",
+      "zone": "Quân khu 5 (Trung Trung Bộ)",
+      "aliases": [
+        "Trung đoàn 1 Khu 5",
+        "Đoàn Ba Gia",
+        "E1",
+        "Sư đoàn 2",
+        "F2",
+        "Biệt động Đà Nẵng",
+        "Bệnh xá Đức Phổ"
+      ],
+      "battles": [
+        "van-tuong-ba-gia-khu-5",
+        "dak-to-tan-canh-1972"
+      ]
+    },
+    {
+      "code": "E33 / E66 / E320 (B3)",
+      "canonical": "Trung đoàn 33, Trung đoàn 66 (Đoàn Pleime), Trung đoàn 320 — Mặt trận Tây Nguyên B3",
+      "zone": "Mặt trận Tây Nguyên (B3)",
+      "aliases": [
+        "Trung đoàn 66",
+        "E66",
+        "Tiểu đoàn 7 E66",
+        "Tiểu đoàn 8 E66",
+        "Trung đoàn 33",
+        "E33",
+        "Trung đoàn 320",
+        "Mặt trận B3"
+      ],
+      "battles": [
+        "tran-ia-drang-pleime-1965",
+        "dak-to-tan-canh-1972"
+      ]
+    },
+    {
+      "code": "F304 / F325 (B5)",
+      "canonical": "Sư đoàn 304 (Đoàn Vinh Quang) & Sư đoàn 325 (Đoàn Bình Trị Thiên)",
+      "zone": "Mặt trận Đường 9 - Trị Thiên (B5) & Quân đoàn 2",
+      "aliases": [
+        "Sư đoàn 304",
+        "F304",
+        "Đoàn Vinh Quang",
+        "Trung đoàn 9",
+        "Trung đoàn 24",
+        "Sư đoàn 325",
+        "F325",
+        "Trung đoàn 95",
+        "Trung đoàn 101"
+      ],
+      "battles": [
+        "duong-9-khe-sanh-1968",
+        "duong-9-nam-lao-1971",
+        "thanh-co-quang-tri-1972",
+        "thuong-duc-phuoc-long-1974-1975",
+        "xuan-loc-ho-chi-minh-1975"
+      ]
+    },
+    {
+      "code": "F100 / Biệt động Sài Gòn",
+      "canonical": "Cụm Biệt động Sài Gòn – Gia Định (Đội 5, Đội 11, Đội 65, Đội 67)",
+      "zone": "Quân khu Sài Gòn – Gia Định",
+      "aliases": [
+        "Biệt động Sài Gòn",
+        "F100",
+        "Đội 5 Biệt động",
+        "Đội 11 Biệt động",
+        "Đội 65",
+        "Đội 67"
+      ],
+      "battles": [
+        "chien-dich-binh-gia-1964",
+        "chien-dich-dong-xoai-1965",
+        "tet-mau-than-1968"
+      ]
+    },
+    {
+      "code": "C552 / N55 TNXP Đồng Lộc",
+      "canonical": "Tiểu đội 4, Đại đội 552, Tổng đội TNXP 55 Hà Tĩnh & Đoàn 559 Trường Sơn",
+      "zone": "Tuyến lửa Quân khu 4 & Đoàn 559 Trường Sơn",
+      "aliases": [
+        "Tiểu đội 4 TNXP",
+        "Đại đội 552",
+        "Tổng đội 55",
+        "Ngã ba Đồng Lộc",
+        "Đoàn 559",
+        "Công binh phá bom"
+      ],
+      "battles": [
+        "nga-ba-dong-loc-truong-son-1968"
+      ]
+    },
+    {
+      "code": "E64 / F320 (Đoàn Đồng Bằng)",
+      "canonical": "Trung đoàn 64, Sư đoàn 320 (Đoàn Đồng Bằng)",
+      "zone": "Mặt trận Đường 9 – Nam Lào (B70) & Mặt trận Tây Nguyên (B3)",
+      "aliases": [
+        "Sư đoàn 320",
+        "F320",
+        "Đoàn Đồng Bằng",
+        "Trung đoàn 64",
+        "E64",
+        "Tiểu đoàn 9 E64"
+      ],
+      "battles": [
+        "duong-9-khe-sanh-1968",
+        "duong-9-nam-lao-1971",
+        "dak-to-tan-canh-1972",
+        "chien-dich-tay-nguyen-1975"
+      ]
+    },
+    {
+      "code": "Xe tăng 377 / D297 / E273",
+      "canonical": "Kíp Xe tăng 377, Đại đội 7, Tiểu đoàn Tăng 297, Trung đoàn Thiết giáp 273",
+      "zone": "Mặt trận Tây Nguyên (B3 - Đắk Tô Tân Cảnh & Buôn Ma Thuột)",
+      "aliases": [
+        "Xe tăng 377",
+        "377",
+        "Tiểu đoàn Tăng 297",
+        "D297",
+        "Trung đoàn Thiết giáp 273",
+        "E273"
+      ],
+      "battles": [
+        "dak-to-tan-canh-1972",
+        "chien-dich-tay-nguyen-1975"
+      ]
+    },
+    {
+      "code": "E48 / K3 Tam Đảo / C249",
+      "canonical": "Trung đoàn 48 (Đoàn Thạch Hãn - F320B), Tiểu đoàn K3 Tam Đảo & Lữ đoàn Công binh 249",
+      "zone": "Mặt trận Thành cổ Quảng Trị (81 ngày đêm 1972)",
+      "aliases": [
+        "Trung đoàn 48",
+        "E48",
+        "Đoàn Thạch Hãn",
+        "Sư đoàn 320B",
+        "Sư đoàn 390",
+        "K3 Tam Đảo",
+        "Công binh 249",
+        "C249"
+      ],
+      "battles": [
+        "thanh-co-quang-tri-1972"
+      ]
+    },
+    {
+      "code": "E921 / E927 / F361 PK-KQ",
+      "canonical": "Trung đoàn Không quân 921 (Sao Đỏ), 927 (Lam Sơn) & Sư đoàn Phòng không 361",
+      "zone": "Quân chủng Phòng không – Không quân (Hà Nội – Hải Phòng 1972)",
+      "aliases": [
+        "Trung đoàn 921",
+        "E921",
+        "Đoàn Sao Đỏ",
+        "Trung đoàn 927",
+        "E927",
+        "Đoàn Lam Sơn",
+        "Sư đoàn 361",
+        "F361",
+        "Tên lửa SAM-2",
+        "MiG-21"
+      ],
+      "battles": [
+        "dien-bien-phu-tren-khong-1972"
+      ]
+    },
+    {
+      "code": "F316 / Lữ đoàn Đặc công 198",
+      "canonical": "Sư đoàn 316 (Đoàn Bông Lau) & Lữ đoàn Đặc công 198",
+      "zone": "Chiến dịch Tây Nguyên — Trận Buôn Ma Thuột (03/1975)",
+      "aliases": [
+        "Sư đoàn 316",
+        "F316",
+        "Đoàn Bông Lau",
+        "Trung đoàn 174",
+        "Lữ đoàn Đặc công 198",
+        "Đặc công 198"
+      ],
+      "battles": [
+        "chien-dich-tay-nguyen-1975"
+      ]
+    },
+    {
+      "code": "F341 / QĐ4 / Lữ đoàn ĐC 316",
+      "canonical": "Sư đoàn 341 (Đoàn Sông Lam), Sư đoàn 7 (Quân đoàn 4) & Lữ đoàn Đặc công Biệt động 316 (Z22, Z23)",
+      "zone": "Trận Xuân Lộc & Chiến dịch Hồ Chí Minh (04/1975)",
+      "aliases": [
+        "Sư đoàn 341",
+        "F341",
+        "Đoàn Sông Lam",
+        "Quân đoàn 4",
+        "Sư đoàn 7",
+        "F7",
+        "Lữ đoàn Đặc công Biệt động 316",
+        "Đoàn Z22",
+        "Đoàn Z23",
+        "Cầu Rạch Chiếc"
+      ],
+      "battles": [
+        "thuong-duc-phuoc-long-1974-1975",
+        "xuan-loc-ho-chi-minh-1975"
+      ]
+    }
+  ]
+}
